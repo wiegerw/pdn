@@ -1,0 +1,1036 @@
+[Event "TTS Example 1"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,27,24,22:B20,15,10,7"]
+1. 27-23 
+{A guileless amateur would be tempted to run for a king by 22-17; but black has a draw by 7-11, 17-13, 11-16, 13-9, 16-19 etc.} 
+20x27 2. 23-18 {white wins immediately by executing a "double exposure slip"} 27-31 
+3. 18x2 10-14 4. 2-6 31-26 5. 6-9 {white wins} 0-1
+
+[Event "TTS Example 2"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,25,21,18,15:B13,8,6,5,4."]
+1. 21-17 
+{Again trying for a king by 18-14 is worthless as 6-9, 14-10, 13-17, 21-14, 9-18 to an easy draw.} 
+13x22 2. 15-10 {The "compound stroke" wins handily.} 6x15 3. 18x11 8x15 4. 25x11 5-9 5. 
+29-25 9-14 6. 25-22 {white wins.} 0-1
+
+[Event "TTS Example 3"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,28,23,19:B20,11,9,5."]
+1. 28-24 {The double corner "compound stroke"} 20x27 2. 19-15 11x18 3. 23x14 9x18 4. 
+32x14 {white wins} 0-1
+
+[Event "TTS Example 4"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,24,K14:BK29,22,16."]
+1. 14-17 
+{One of the more the spectacular fundamental principles is the "smother" idea.} 
+22-25 2. 24-19 16x23 3. 31-26 23x30 4. 17-21 30-26 5. 21x23 29-25 6. 23-18 {white wins} 0-1
+
+[Event "TTS Example 5"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,K2:B28,25,11."]
+1. 2-7 
+{White can bottle up black's pieces in just 5 moves using the "delayed double corner jam" idea.} 
+11-15 2. 7-10 15-18 3. 31-26 25-30 4. 10-14 30x23 5. 32-27 23x32 6. 14x23 {white wins} 0-1
+
+[Event "TTS Example 6"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,K3:BK32,20,11."]
+1. 3-8 {White utilizes the "seesaw shift/smother" combination to win.} 11-16 2. 8-12 
+16-19 3. 12-16 19-23 4. 16-19 23-27 5. 19-24 27-31 6. 22-25 {The "shift".} 20x27 7. 25-22 
+{Smothered! white wins.} 0-1
+
+[Event "TTS Example 7"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK32,14:BK25,6."]
+1. 32-27 {White utilizes the "sideboard seesaw" idea to draw.} 25-22 2. 27-23 22-17 
+{If 22-18, then 14-9 draws.} 3. 14-9 6x13 4. 23-18 17-21 5. 18-22 21-17 6. 22-18 
+{White seesaws between squares 18 and 22;  draw.} 1/2-1/2
+
+[Event "TTS Example 8"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W19,18,12:B11,8,3."]
+1. 11-16 
+{Black has just enough time to avoid defeat by using the "single corner hold" idea to draw.} 
+19-15 
+{White is threatening to crown the piece on 18 and return to square 6; then 15-10 followed by 10-7 to win.} 
+2. 16-20 18-14 3. 20-24 14-10 4. 24-27 10-6 5. 27-31 6-2 6. 31-27 2-6 7. 27-24 15-10 8. 
+24-20 10-7 9. 3x10 6x15 10. 8-11 15x8 11. 20-16 8-4 12. 16-11 12-8 13. 11-7 8-3 14. 7-11 3-8 
+15. 11-7 8-12 16. 7-11 12-8 17. 11-7 
+{Black draws by seesawing between squares 7 and 11.} 1/2-1/2
+
+[Event "TTS Example 9"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,27,23,22,19:B20,16,14,12,7."]
+1. 19-15 
+{White appears to win by 32-28; but 14-17, 22-13, 7-10, 13-9, 10-14, 19-15, 16-19, 23-16, 12-19, 9-6, 14-18 and steals the piece on 27 to draw.} 
+16-19 2. 23x16 12x19 3. 15-11 
+{This "pitch and block" coup has been muffed even by better players. } 7x16 4. 
+32-28 { white wins.} 0-1
+
+[Event "TTS Example 10"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,21,12:B28,13,1."]
+1. 12-8 {Can white alter the move and win without actually making an exchange?} 1-6 
+2. 8-3 6-10 3. 3-7 10-14 4. 7-11 14-18 5. 21-17 
+{The answer is yes; by using the "pitch and grip" idea.} 13x22 6. 11-15 18-23 7. 
+15-18 {White regains the piece and the move to win.} 0-1
+
+[Event "TTS Example 11"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,10:BK29,13,K1."]
+1. 28-24 1-5 2. 24-19 5-9 3. 19-15 9-14 4. 22-26 {The "shift and stem" principle.} 14x7 
+5. 26-22 {white wins.} 0-1
+
+[Event "TTS Example 12"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,29,25:B20,9,6."]
+1. 32-27 9-14 2. 25-22 6-10 3. 29-25 10-15 4. 27-23 20-24 5. 23-19 
+{The perfectly timed "pinch"; white wins} 0-1
+
+[Event "TTS Example 13"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,17,K11:B27,24,19,16."]
+1. 16-20 11-16 2. 19-23 16-19 3. 27-31 {The "optional take".} 19x28 4. 20-24 
+{Winning on the "two way double".} 28x26 5. 31x13 {black wins.} 1-0
+
+[Event "TTS Example 14"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,21,12:B25,22,3"]
+1. 21-17 {White wins in 10 moves by executing a "throwback two for one".} 25-29 2. 
+17-13 3-7 3. 12-8 7-10 4. 8-3 10-14 5. 3-7 14-18 6. 7-10 18-23 7. 10-14 22-26 
+{If 23-27, then 13-9*, 27-31, 14-17 white wins.} 8. 14-17 26-31 9. 30-25 29x22 10. 
+17x19 {white wins.  Paul R. Semple} 0-1
+
+[Event "TTS Example 15"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,28,23,22:B27,K14,8,4."]
+1. 23-19 
+{Whites position appears hopeless with the black king in a commanding center position.} 
+27-31 2. 22-18 {White executes a "hook-up triple".} 14x16 3. 32-27 31x24 4. 28x3 
+{white wins.} 0-1
+
+[Event "TTS Example 16"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,21,K14,13:B25,K23,12,6."]
+1. 21-17 {White must force a "delayed long-range triple".} 25-29 2. 14-9 6-10 3. 9-6 
+{Forcing the proper alignment.} 10-15 4. 30-25 
+{White starts the triple with this "throwback" maneuver.} 29x22 5. 13-9 22x13 6. 6-1 
+13x6 7. 1x26 12-16 8. 26-23 16-20 9. 23-19 {white wins.} 0-1
+
+[Event "TTS Example 17"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,23,22,17:BK31,13,10,7,6."]
+1. 22-18 13x22 {To get tactical support or "backing".} 2. 32-27 31x24 3. 23-19 
+{The "backup and throwback" maneuver.} 24x15 4. 18x2 10-15 5. 2x9 
+{Regaining the piece with a winning position.} 15-19 6. 9-14 19-23 7. 14-18 
+{white wins.} 0-1
+
+[Event "TTS Example 18"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,23,19,16:B26,24,22,8."]
+1. 16-12 {White starts by "squeezing" the piece on 8.} 8-11 2. 23-18 
+{White continues the campaign of force.} 26-31 3. 19-15 
+{White's attack is relentless.} 11-16 4. 30-26 {The surprise!} 22-25 5. 12-8 31x22 6. 
+15-11 {Now the "slip".} 22x15 7. 8-4 {Now comes the "crusher".} 15x8 8. 4x27 {white wins.} 
+0-1
+
+[Event "TTS Game 1 Canalejas Cannonball"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-16 23-18 2. 16-20 24-19 3. 8-11 
+{This is the losing move.  10-14 leads to a draw.} 19-15 4. 10x19 18-14 5. 9x18 22x8 
+6. 4x11 {By playing the 2x2 first, white removes the defensive Black piece on 4.} 
+27-24 7. 20x27 31x8 0-1
+
+
+
+[Event "TTS Game 2 Fools Trap"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 10-15 23-19 2. 6-10 22-17 3. 11-16 {It's all over now, play 1-6 to draw.} 17-13 4. 
+16x23 13x6 {White must make this jump first, to remove the piece on 2.} 5. 2x9 27x2 
+0-1
+
+
+
+
+
+[Event "TTS Game 3 Drummond's Dead End"]
+[Date ""]
+[Black "John Drummond"]
+[White "White"]
+[Result "1-0"]
+1. 9-14 22-18 2. 5-9 25-22 3. 11-16 29-25 4. 16-20 24-19 5. 8-11 28-24 
+{No hope after this,  21-17, 14-21, 18-15, 11-18, 23-5 etc. Draws  Wm. F. Ryan} 
+6. 11-16 18-15 7. 4-8 22-18 8. 7-11 26-22 9. 1-5 31-26 10. 3-7 32-28 11. 9-13 18x9 12. 
+11x18 22x15 13. 5x14 25-22 14. 14-18 23x14 15. 10x17 21x14 16. 16x32 1-0
+
+
+
+[Event "TTS Game 4 Decoy for Duffers"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 10-15 22-18 2. 15x22 25x18 3. 6-10 29-25 4. 10-15 25-22 
+{Black puts the game on ice, play 26-22 or 18-14 with a firm position in hand.} 
+5. 15-19 23x16 6. 12x19 24x15 7. 9-14 18x9 8. 11x25 9-6 9. 2x9 21-17 10. 25-29 1-0
+
+
+
+[Event "TTS Game 5 They'll do it Every Time"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 22-18 2. 15x22 25x18 3. 8-11 24-19 4. 10-15 19x10 5. 6x22 26x17 6. 9-13 17-14 7. 
+11-15 28-24 8. 4-8 {Loses, either 1-6 or 15-18 will draw.} 21-17 9. 13x22 14-10 10. 7x14 
+23-18 11. 14x23 27x4 12. 12-16 30-26 {White wins.} 0-1
+
+
+
+[Event "TTS Game 6 Look Before You Leap"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-19 2. 8-11 22-17 3. 4-8 17-13 4. 15-18 24-20 5. 9-14 28-24 6. 10-15 19x10 7. 
+6x15 26-23 8. 12-16 
+{Natural but loses,  15-19, 24-15, 5-9, 13-6, 1-26, 31-15, 11-18, 25-22, etc. draws} 
+23-19 9. 16x23 20-16 10. 11x20 25-22 11. 18x25 27x4 12. 20x27 32x23 13. 1-6 29x22 
+{White wins.} 0-1
+
+
+
+[Event "TTS Game 7 A Hole in the Dyke"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 22-17 2. 15-19 24x15 3. 10x19 23x16 4. 12x19 25-22 5. 8-11 29-25 
+{Weak but drawable, either 27-23 or 17-13 would be better. } 6. 11-15 27-23 
+{Hooked!  17-13, 4-8, 21-17*, 7-10, 27-23, 8-12, 23-16, 12-19, 31-17*, etc. to a critical draw } 
+7. 9-13 23x16 8. 15-18 22x15 9. 13x29 {Black wins.} 1-0
+
+
+
+[Event "TTS Game 8 A Six Move Blitz"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 10-14 23-19 2. 11-16 26-23 3. 9-13 24-20 
+{After this, it's all over but the shouting.  22-17 gets a good game for white.} 
+4. 14-17 21x14 {or 20-11, 17-26, 31-22, 8-31 etc. black wins.} 5. 6-10 20x11 6. 10x26 
+31x22 7. 8x31 1-0
+
+
+
+[Event "TTS Game 9 Goosewalk"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 22-18 2. 15x22 25x18 3. 8-11 29-25 4. 4-8 25-22 5. 12-16 24-20 6. 10-15 27-24 
+{This move or 28-24 loses and forms the "Goosewalk",  21-17 etc. draws.} 7. 15-19 
+24x15 8. 16-19 23x16 9. 9-14 18x9 10. 11x25 16-12 11. 5x14 {etc. to a black win.} 1-0
+
+
+
+[Event "TTS Game 10 Old Lassie Catch"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 24-20 2. 8-11 28-24 3. 4-8 23-19 4. 15-18 22x15 5. 11x18 26-22 6. 7-11 22x15 7. 
+11x18 30-26 8. 8-11 26-22 
+{The bad one! 25-22, 18-25, 29-22 , etc is correct to draw.} 9. 11-16 20x11 10. 3-7 
+22x15 11. 7x23 27x18 12. 10x28 {Black wins.} 1-0
+
+
+
+[Event "TTS Game 11 The Scrub's Delight"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-19 2. 8-11 22-17 3. 4-8 17-13 4. 15-18 24-20 5. 11-15 28-24 6. 8-11 26-23 7. 
+9-14 31-26 8. 6-9 13x6 9. 2x9 26-22 10. 9-13 
+{Loses and forms  "The Scrub's Delight", 1-6 etc is correct.  } 22-17 11. 13x22 
+20-16 12. 11x20 21-17 13. 14x21 23x14 14. 10x17 25x2 15. 17-22 19-15 
+{White wins.  Joshua Sturges  1800} 0-1
+
+
+
+
+
+[Event "TTS Game 12 Bumped off in the Run off"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 8-11 27-23 5. 4-8 23x16 6. 8-12 32-27 7. 
+12x19 27-23 8. 3-8 
+{Black gets a rude awakening after this plausible push,   play 11-16, 20-11, 7-16, etc. to a draw.} 
+23x16 9. 8-12 21-17 10. 12x19 18-14 11. 9x18 26-23 12. 18x27 31x8 {White wins.} 0-1
+
+
+
+[Event "TTS Game 13 Scotsman's Scoop"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-18 2. 9-14 18x11 3. 8x15 22-17 4. 4-8 26-23 5. 7-11 23-19 6. 5-9 30-26 7. 9-13 
+{Loses, 15-18 is the draw move.} 19-16 8. 12x19 27-23 9. 13x22 23x7 10. 2x11 25x2 
+{White wins.} 0-1
+
+
+
+[Event "TTS Game 14 Denvir's Demolition"]
+[Date ""]
+[Black "John T. Denvir"]
+[White "White"]
+[Result "1-0"]
+1. 9-14 22-18 2. 5-9 25-22 3. 11-16 24-19 4. 8-11 27-24 
+{No scientific salvation after this, either 22-17, 30-25, or 28-24 will draw.} 5. 
+16-20 31-27 6. 11-16 29-25 7. 4-8 19-15 8. 10x19 24x15 9. 7-11 22-17 10. 16-19 17x10 11. 
+19-24 28x19 12. 9-14 18x9 13. 11x18 23x14 14. 6x31 {Black wins.} 1-0
+
+
+
+[Event "TTS Game 15 A Twelve Move Sack"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 10-14 24-19 2. 11-16 28-24 3. 16-20 19-15 4. 9-13 23-19 5. 7-10 32-28 6. 14-18 21-17 
+{White misses the boat, 26-23, 2-7, 23-24, 10-26, 30-23, 8-11, 15-8, 4-11, 31-26 etc. will draw.  Wm. F. Ryan} 
+7. 10-14 17x10 8. 13-17 22x13 9. 18-23 27x18 10. 20x27 31x24 11. 8-11 15x8 12. 6x31 
+{Black wins.} 1-0
+
+
+
+[Event "TTS Game 16 An Old Familiar"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 9-13 23-19 2. 6-9 27-23 3. 9-14 22-18 4. 11-15 18x11 5. 8x15 23-18 6. 14x23 
+{The wrong jump, 15-22, 25-9, 5-14, 19-16, 12-19, 24-6, 1-10 etc. ends in a draw.} 
+19-16 7. 12x19 21-17 8. 13x22 25x11 9. 7x16 24x6 10. 1x10 26x12 {White wins.} 0-1
+
+
+
+[Event "TTS Game 17 Interesting Cross Loss"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-18 2. 8-11 26-23 {The Cresent Cross} 3. 10-14 30-26 4. 7-10 24-19 5. 15x24 
+28x19 6. 11-16 22-17 7. 4-8 26-22 8. 9-13 
+{Tempting, but fatal,  16-20, 17-13, 8-11, 22-17, 12-16* etc. results in a draw.  Wm. F. Ryan} 
+18x9 9. 5x14 19-15 10. 10x26 17x10 11. 6x15 22-17 12. 13x22 25x4 13. 26-30 4-8 14. 16-20 
+8-11 15. 3-7 11-8 16. 1-6 8-3 17. 7-10 3-8 18. 6-9 8-11 19. 9-13 29-25 20. 12-16 27-24 21. 
+20x27 11x20 {White wins.  } 0-1
+
+
+
+[Event "TTS Game 18 Beeswax Block Buster"]
+[Date ""]
+[Black "Black"]
+[White "W. F. Ryan"]
+[Result "0-1"]
+1. 11-15 24-20 2. 8-11 27-24 3. 3-8 23-19 4. 9-13 26-23 5. 6-9 
+{Black goes wrong here, 15-18* will draw.} 23-18 6. 1-6 31-27 7. 9-14 18x9 8. 5x14 22-17 
+9. 13x22 25x9 10. 6x13 30-25 11. 15-18 19-16 {New target: square 18.} 12. 12x19 24x6 13. 
+2x9 20-16 14. 11x20 27-24 15. 20x27 32x5 {white wins} 0-1
+
+
+
+[Event "TTS Game 19 Pied Piper's Fife"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 23-19 2. 9-14 22-17 3. 5-9 26-23 4. 9-13 30-26 5. 13x22 25x9 6. 6x13 21-17 
+{The losing move. 29-25 will produce a draw.} 7. 13x22 26x17 8. 2-6 29-25 9. 15-18 
+23x14 10. 6-9 14x5 11. 10-15 19x10 12. 7x30 31-26 13. 30x23 27x18 14. 12-16 18-15 15. 8-11 
+15x8 16. 4x11 32-27 17. 11-15 24-20 18. 16-19 20-16 19. 15-18 16-11 20. 19-23 27-24 21. 
+23-27 24-19 22. 27-32 19-15 23. 32-27 15-10 24. 18-22 11-7 25. 22-26 
+{Ryan leaves this as a Black win.} 7-2 26. 26-31 2-7 27. 31-26 7-11 28. 26-23 11-16 
+{White can't let Black swap immediately as it would result in the capture of the man on 10.} 
+29. 23-18 16-11 30. 18-14 11-7 31. 14-9 7-2 32. 27-23 
+{Now the white king is tied down to defense, so Black can walk in and take the extra piece.} 
+28-24 33. 23-18 24-20 34. 18-15 {Black wins.  } 1-0
+
+[Event "TTS Game 20 Tombstones for Tyros"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-18 2. 8-11 27-23 3. 4-8 23-19 4. 9-14 {for 9-13 see game 21}18x9 5. 5x14 22-17 6. 15-18 26-22 7. 
+11-15 {11-15 and 18-23 are both tenable,  11-15 is safer.} 17-13 8. 7-11 13-9 9. 6x13 
+24-20 10. 15x24 22x6 11. 1x10 28x19 12. 11-15 31-26 13. 15x24 26-22 14. 13-17 
+{A very weak move, but drawable.  14-17 is the accepted draw move at this point.} 
+22x13 15. 2-6 
+{This is the real loser since it allows the shot.  Black can still draw with 14-18.  Wm. F. Ryan} 
+32-27 16. 24x31 30-26 17. 31x22 25x2 {White wins.} 0-1
+
+[Event "TTS Game 21 Tombstones for Tyros note A"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-18 2. 8-11 27-23 3. 4-8 23-19 4. 9-13 
+{Another early demise, no hope after this move.} 26-23 5. 6-9 30-26 6. 9-14 18x9 7. 
+5x14 32-27 8. 1-5 19-16 9. 12x19 23x16 10. 11x20 22-17 11. 13x22 25x4 {White wins.} 0-1
+
+[Event "TTS Game 22 Reid's Rocker"]
+[Date ""]
+[Black "Black"]
+[White "William Reid"]
+[Result "0-1"]
+1. 11-15 23-19 2. 8-11 22-17 3. 9-13 17-14 4. 10x17 21x14 5. 15-18 19-15 6. 4-8 24-19 7. 
+6-10 {for 11-16 see game 23} 15x6 8. 1x17 25-22 9. 18x25 30x14 10. 2-6 29-25 11. 13-17 
+{the loser, 11-16 is correct} 25-21 12. 11-16 14-10 13. 16x30 21x14 14. 6x15 31-26 15. 
+30x23 27x2 16. 8-11 2-6 17. 12-16 28-24 18. 3-8 24-20 19. 16-19 14-10 20. 11-15 10-7 21. 
+15-18 6-10 22. 18-22 10-15 23. 19-24 7-3 24. 8-12 15-19 25. 24-28 19-23 26. 5-9 23-18 27. 
+22-26 18-22 28. 26-31 3-7 29. 9-13 7-10 {White wins.} 0-1
+
+[Event "TTS Game 23 Laird and Lady Suicide"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-19 2. 8-11 22-17 3. 9-13 17-14 4. 10x17 21x14 5. 15-18 19-15 6. 4-8 24-19 7. 
+11-16 {This is suicide.  6-10 is the easiest line to handle.} 26-22 8. 16x23 15-10 9. 
+6x15 25-21 10. 18x25 27x4 {White wins.} 0-1
+
+[Event "TTS Game 24 Horsefall's Stroke"]
+[Date ""]
+[Black "Black"]
+[White "W. W. Horsefall"]
+[Result "1/2-1/2"]
+1. 11-15 23-18 2. 8-11 27-23 3. 11-16 18x11 4. 16-20 24-19 5. 7x16 22-18 6. 4-8 25-22 7. 
+8-11 29-25 8. 10-14 31-27 9. 6-10 
+{A weak move, against the strongest play Horsefall's stroke is the only way out.  3-8 makes for an easier draw.} 
+19-15 10. 10x19 21-17 11. 14x21 18-14 12. 9x18 22x8 13. 1-6 8-4 14. 6-10 4-8 15. 3-7 8-11 
+{25-22 is a probable win although Willie gave 7-11*, 8-6 to a draw, but White jumps 8-24 instead and wins.} 
+16. 20-24 27x20 17. 10-15 11x18 18. 7-10 20x11 19. 10-15 23x16 20. 15x31 25-22 21. 12x19 
+22-17 22. 19-23 11-8 23. 31-26 8-3 24. 26-22 17-13 25. 22-18 3-8 26. 5-9 13x6 27. 2x9 8-11 
+28. 9-14 1/2-1/2
+
+
+[Event "TTS Game 25 Barker's Bounce"]
+[Date ""]
+[Black "James P. Reed"]
+[White "C. F. Barker"]
+[Result "0-1"]
+1. 12-16 24-20 2. 8-12 28-24 3. 9-14 22-17 4. 3-8 26-22 5. 11-15 20x11 6. 7x16 24-20 7. 
+15-19 {Loses, the only draw is 5-9*, 20-11, 15-18, 22-15, 10-26, 30-23, 8-15, 17-10, 
+15-19, 23-16, 12-19, 10-7, 2-11, 25-22, 11-15, 31-26, 4-8 etc.  Willie Gardner } 
+20x11 8. 8x15 23x16 9. 12x19 17-13 10. 5-9 30-26 11. 4-8 27-23 12. 8-12 23x16 13. 12x19 
+31-27 14. 1-5 27-23 15. 19-24 32-27 16. 24x31 22-17 17. 31x22 25x11 0-1
+
+[Event "TTS Game 26 Wylie's Switcher Swindle"]
+[Date ""]
+[Black "Many"]
+[White "James Wylie"]
+[Result "0-1"]
+1. 11-15 21-17 2. 9-13 25-21 3. 8-11 17-14 4. 10x17 21x14 5. 6-10 22-17 6. 13x22 26x17 7. 
+15-18 24-20 8. 2-6 28-24 9. 4-8 29-25 10. 11-15 30-26 11. 6-9 
+{loses, 15-19, 24-15,10-19, 23-16, 12-19, 27-23, 18-27, 32-16, 8-12, 16-11, 7-16, 20-11, 3-7 draw} 
+24-19 12. 15x24 20-16 13. 12x19 27x20 14. 18x27 31x6 15. 1x10 26-22 16. 9x18 22x6 0-1
+
+[Event "TTS Game 27 Thirkell's Folly"]
+[Date ""]
+[Black "Peter Thirkell"]
+[White "White"]
+[Result "0-1"]
+1. 10-15 23-19 2. 6-10 22-17 3. 1-6 25-22 4. 11-16 29-25 5. 16x23 26x19 6. 8-11 17-13 7. 
+3-8 22-17 8. 11-16 25-22 9. 16x23 27x11 10. 7x16 32-27 11. 10-15 
+{Loses, given by Thirkell to draw--8-11 or 16-20 will draw easily} 22-18 12. 15x22 
+31-26 13. 22x31 24-20 14. 31x24 20x11 15. 8x15 28x1 16. 12-16 13x6 17. 2x9 1-6 18. 9-13 
+17-14 19. 16-19 6-10 20. 19-24 10-15 21. 24-27 14-10 22. 27-32 10-7 0-1
+
+[Event "TTS Game 28 A Little Deceiver"]
+[Date ""]
+[Black "John Drummond"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 23-19 2. 9-14 27-23 3. 8-11 22-18 4. 15x22 25x9 5. 5x14 29-25 6. 11-15 25-22 7. 
+7-11 {22-18 is better 15-22, 26-17, 11-15, 24-20 etc.} 24-20 8. 15x24 28x19 9. 11-15 
+32-28 10. 15x24 28x19 11. 4-8 22-18 12. 6-9 18-15 {Loses, 31-27 draws} 13. 1-6 26-22 14. 
+9-13 22-18 15. 3-7 18x9 16. 13-17 21x14 17. 6x13 15x6 18. 2x27 31x24 19. 7-10 1-0
+
+[Event "TTS Game 29 A Souter six shooter"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-15 23-19 2. 9-14 22-17 3. 6-9 17-13 4. 2-6 25-22 5. 8-11 29-25 6. 4-8 24-20 7. 15x24 
+28x19 8. 11-15 27-24 9. 14-17 21x14 10. 9x18 26-23 11. 18x27 32x23 12. 10-14 19x10 13. 
+6x15 13-9 14. 14-18 23x14 15. 7-11 31-26 16. 12-16 
+{the correct movesare 3-7*, 25-21, 15-19, 24-15, 11-25, 9-6, 1-17, 21-14, 8-11* to a draw} 
+24-19 17. 15x24 14-10 18. 5x14 10-7 19. 3x10 22-18 20. 14x23 26x3 0-1
+
+[Event "TTS Game 30 A Paisley Shocker"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "0-1"]
+1. 11-16 24-19 2. 8-11 22-18 3. 4-8 18-14 4. 9x18 23x14 5. 10x17 21x14 6. 16x23 27x18 7. 
+12-16 28-24 8. 8-12 31-27 9. 6-9 26-23 10. 1-6 25-21 11. 16-20 30-26 12. 11-16 32-28 13. 
+6-10 29-25 14. 10x17 21x14 15. 2-6 18-15 16. 9x18 23x14 17. 3-8 25-22 18. 16-19 22-18 19. 
+12-16 {A goner, 19-23, 26-19, 7-11, 12-19, 14-10, 6-9, 10-7, 19-23, 7-3 draws} 
+15-10 20. 6x31 24x15 21. 31x24 28x3 0-1
+
+[Event "TTS Game 31 Overlooked by Mail"]
+[Date ""]
+[Black "Victor Davis"]
+[White "George Bass"]
+[Result "1-0"]
+1. 10-15 24-19 2. 15x24 28x19 3. 9-14 22-18 4. 5-9 25-22 5. 6-10 22-17 6. 11-15 18x11 7. 
+8x24 27x20 8. 4-8 17-13 9. 2-6 31-27 10. 8-11 29-25 11. 10-15 25-22 12. 15-19 23x16 13. 
+12x19 32-28 14. 1-5 30-25 15. 3-8 22-17 16. 14-18 17-14 17. 11-15 20-16 
+{a better way is 21-17, 6-10, 13-6, 19-24, 28-19, 15-31, 26-22, 8-12, 22-15, 10-19 draws} 
+18. 8-12 21-17 
+{The loser 16-11*, 7-16, 26-22, 19-23, 14-10, 23-32, 10-1, 9-14, 22-17 draws} 19. 
+18-23 27x2 20. 9x18 2x9 21. 5x30 1-0
+
+[Event "TTS Game 32 McIndoe's Slingshot"]
+[Date ""]
+[Black "Black"]
+[White "Jim McIndoe"]
+[Result "1/2-1/2"]
+1. 11-15 23-19 2. 9-14 22-17 3. 6-9 17-13 4. 2-6 25-22 5. 8-11 29-25 6. 4-8 22-17 7. 14-18 
+26-23 8. 18-22 25x18 9. 15x22 23-18 10. 11-16 19-15 11. 10x19 24x15 12. 16-20 17-14 13. 
+22-25 21-17 14. 25-29 31-26 15. 12-16 27-23 16. 16-19 23x16 17. 7-11 16x7 18. 3x19 32-27 
+19. 8-12 27-23 20. 12-16 26-22 21. 19x26 30x23 22. 29-25 28-24 23. 20x27 14-10 24. 6x15 
+13x6 25. 1x10 18x11 26. 25x18 23x7 1/2-1/2
+
+[Event "TTS Game 33 Andy's Annihilator"]
+[Date ""]
+[Black "Andrew Anderson"]
+[White "White"]
+[Result "1-0"]
+1. 9-14 22-17 2. 11-15 25-22 3. 8-11 29-25 4. 4-8 23-19 5. 6-9 17-13 6. 2-6 22-17 7. 14-18 
+26-22 {Untenable move, for the correct 26-23 see McIndoe's Slingshot} 8. 11-16 17-14 
+9. 16x23 31-26 10. 10x17 21x14 11. 12-16 26x12 12. 6-10 13x6 13. 10x26 30x14 14. 1x17 
+27-23 15. 17-21 1-0
+
+[Event "TTS Game 34 Andy's Annihilator note A"]
+[Date ""]
+[Black "Robertson"]
+[White "Wylie"]
+[Result "1/2-1/2"]
+1. 9-14 22-17 2. 11-15 25-22 3. 8-11 29-25 4. 11-16 24-20 5. 16-19 23x16 6. 12x19 17-13 7. 
+4-8 27-23 8. 19-24 28x19 9. 15x24 32-28 10. 8-11 28x19 11. 11-15 19-16 12. 7-11 16x7 13. 
+2x11 22-17 14. 3-8 31-27 15. 5-9 27-24 16. 15-18 23-19 17. 8-12 20-16 18. 11x27 19-15 19. 
+10x19 17x10 20. 6x15 13x6 21. 1x10 26-23 22. 19x26 30x7 1/2-1/2
+
+[Event "TTS Game 35 Reed's Rattler"]
+[Date ""]
+[Black "James Reed"]
+[White "Harvey Hopkins"]
+[Result "1-0"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 9-13 18-15 5. 5-9 25-22 6. 9-14 29-25 7. 
+14-18 20-16 8. 10-14 27-24 9. 18-23 22-18 {Allows the shot, 24-20 draws} 10. 13-17 18x9 
+11. 6x13 21x14 12. 8-11 15x8 13. 4x27 31x15 14. 23-27 32x23 15. 7-10 14x7 16. 2x27 1-0
+
+[Event "TTS Game 36 Study in Structure"]
+[Date ""]
+[Black "Leonard Rosenfield"]
+[White "W.F. Ryan"]
+[Result "0-1"]
+1. 9-13 24-20 2. 6-9 22-18 3. 10-15 18-14 4. 9x18 23x14 5. 15-18 28-24 6. 11-15 26-23 7. 
+8-11 23-19 8. 2-6 19x10 9. 6x15 32-28 10. 12-16 30-26 11. 16-19 {loses, 4-8 to a draw} 
+27-23 12. 18x27 20-16 13. 11x20 21-17 14. 13x22 25x2 15. 19-23 26x19 16. 27-32 29-25 17. 
+20x27 31x24 18. 32-27 24-20 19. 27-24 19-15 20. 24-19 25-21 21. 19x17 21x14 22. 4-8 28-24 
+23. 8-11 24-19 0-1
+
+[Event "TTS Game 37 The Steele Stroke"]
+[Date ""]
+[Black "James Steele"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 23-19 2. 8-11 22-17 3. 9-13 17-14 4. 10x17 21x14 5. 15-18 19-15 6. 4-8 24-19 7. 
+13-17 28-24 8. 11-16 26-23 9. 16-20 31-26 {Allows the stroke, 15-10 draws} 10. 18-22 
+25x18 11. 12-16 19x12 12. 7-10 14x7 13. 3x28 12x3 14. 2-7 3x10 15. 6x31 1-0
+
+[Event "TTS Game 37B The Laird and Lady"]
+[Date ""]
+[Black "Walter Hellman"]
+[White "Walter Hellman"]
+[Result "1/2-1/2"]
+1. 11-15 23-19 2. 8-11 22-17 3. 9-13 17-14 4. 10x17 21x14 5. 15-18 19-15 6. 4-8 24-19 7. 
+13-17 28-24 8. 11-16 26-23 9. 16-20 15-10 {Allows the stroke, 15-10 draws} 10. 6x15 19x10 
+11. 17-22 25-21 12. 12-16 32-28 13. 16-19 24x15 14. 22-25 29x22 15. 18x25 21-17 16. 7-11 
+30x21 17. 11x18 23-19 18. 18-22 19-16 19. 2-7 17-13 20. 22-25 13-9 21. 25-30 9-6 22. 5-9 
+14x5 23. 7x14 27-24 24. 20x27 31x24 25. 1x10 5-1 26. 14-18 1-6 27. 10-14 6-10 28. 18-22 
+10x26 29. 30x23 {Black can draw with care} 1/2-1/2
+
+[Event "TTS Game 38 The Paisley Pickle Barrel"]
+[Date ""]
+[Black "W. F. Ryan"]
+[White "many exhibitions"]
+[Result "1-0"]
+1. 11-16 24-19 2. 8-11 22-18 3. 10-14 25-22 4. 16-20 29-25 
+{Probably loses, 22-17 or 19-15 draws} 5. 11-16 18-15 6. 4-8 28-24 7. 7-10 22-18 8. 3-7 
+26-22 9. 7-11 31-26 10. 9-13 18x9 11. 5x14 22-18 12. 1-5 18x9 13. 5x14 26-22 14. 11x18 
+22x15 15. 2-7 25-22 16. 14-18 23x14 17. 16x23 27x18 18. 20x27 32x23 19. 10x26 18-14 20. 
+26-31 1-0
+
+[Event "TTS Game 39 Bailey's Blackjack"]
+[Date ""]
+[Black ""]
+[White "N. A. Bailey"]
+[Result "0-1"]
+1. 9-13 22-18 2. 10-15 18-14 3. 15-18 24-20 4. 6-9 28-24 5. 12-16 {loses, 1-6 draws} 24-19 
+6. 8-12 19-15 7. 4-8 26-22 8. 16-19 23x16 9. 12x19 30-26 10. 2-6 14-10 11. 7x14 15-10 12. 
+6x15 27-23 13. 18x27 32x7 14. 3x10 22-17 15. 13x22 25x4 0-1
+
+[Event "TTS Game 40 The Henderson Shot"]
+[Date ""]
+[Black "Hugh Henderson"]
+[White "Hugh Henderson"]
+[Result "1/2-1/2"]
+1. 10-15 23-18 2. 12-16 26-23 3. 8-12 30-26 4. 16-20 21-17 5. 9-13 17-14 6. 6-9 24-19 
+{if 23-19 then 13-17! wins at once} 7. 15x24 28x19 8. 11-16 25-21 9. 1-6 19-15 10. 7-10 
+14x7 11. 3x19 32-28 12. 2-7 21-17 13. 7-10 29-25 14. 10-15 18x11 15. 20-24 27x20 16. 4-8 
+11x4 17. 6-10 20x11 18. 9-14 23x16 19. 14x30 11-7 20. 12x19 7-2 21. 30x23 4-8 22. 10-14 
+8-11 23. 23-26 22-18 24. 14x23 31x22 25. 23-26 11-15 26. 19-23 15-18 27. 26-30 18x27 28. 
+30-26 22-18 29. 26-23 1/2-1/2
+
+[Event "TTS Game 41 Workman's Whizzbang"]
+[Date ""]
+[Black "Herman Rudolph"]
+[White "E. E. Workman"]
+[Result "0-1"]
+1. 10-15 24-20 2. 15-19 23x16 3. 12x19 27-24 4. 7-10 24x15 5. 10x19 21-17 6. 11-15 22-18 
+7. 15x22 25x18 8. 8-11 17-13 9. 3-8 26-22 10. 9-14 18x9 11. 5x14 32-27 12. 11-15 20-16 13. 
+8-12 30-26 14. 6-10 27-23 15. 1-6 29-25 16. 14-17 28-24 17. 19x28 25-21 18. 12x19 21x7 19. 
+2x11 23x7 0-1
+
+
+
+[Event "TTS Game 42 Shearer's Cleaver"]
+[Date ""]
+[Black "Black"]
+[White "H.F. Shearer"]
+[Result "0-1"]
+1. 11-16 23-18 2. 16-20 24-19 3. 10-14 18-15 4. 7-10 22-17 5. 9-13 27-23 6. 13x22 25x9 7. 
+5x14 29-25 8. 3-7 31-27 9. 7-11 
+{loses, 1-5*, 25-22, 20-24*, 27-20, 7-11, 22-17, (not 22-18, 6-9, 15-6, 11-16 BW) 11-27, 32-23, 6-9, 17-13, 10-15, 
+19-10, 14-17, 13-6, 2-9, 21-14, 9-27 draw } 21-17 10. 11x18 26-22 11. 14x21 23x7 12. 2x11 19-16 13. 12x19 27-24 
+14. 20x27 32x7 {Willie said " and White has a winning end game."  there is too much play left to chalk up a win 
+at this point imho} 0-1
+
+[Event "TTS Game 43 Strickland's Draw"]
+[Date ""]
+[Black "William Strickland"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 9-14 22-17 2. 11-16 25-22 3. 8-11 17-13 4. 11-15 24-19 5. 15x24 28x19 6. 4-8 22-17 7. 
+8-11 29-25 8. 11-15 25-22 9. 15x24 27x11 10. 7x16 23-19 11. 16x23 26x19 12. 3-8 30-26 13. 
+8-11 26-23 14. 5-9 32-28 15. 11-15 31-26 16. 15x24 28x19 17. 10-15 19x10 18. 6x15 17x10 
+19. 9-14 13-9 20. 12-16 9-5 21. 16-20 22-17 22. 2-6 26-22 23. 14-18 23x14 24. 6-9 1/2-1/2
+
+[Event "TTS Game 44 Head's Draw"]
+[Date ""]
+[Black "L. S. Head"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 10-15 23-18 2. 11-16 18x11 3. 8x15 22-18 4. 15x22 25x18 5. 16-20 29-25 6. 4-8 24-19 7. 
+6-10 25-22 8. 9-14 18x9 9. 5x14 27-23 10. 8-11 19-16 11. 12x19 23x16 12. 11-15 32-27 13. 
+1-5 22-17 14. 5-9 17-13 15. 15-18 13x6 16. 2x9 30-25 17. 9-13 26-22 18. 10-15 28-24 19. 
+14-17 21x14 20. 13-17 22x13 21. 7-11 16x7 22. 3x17 25-21 23. 17-22 13-9 24. 22-26 31x22 
+25. 18x25 9-6 26. 25-30 6-2 27. 30-26 2-7 28. 15-18 7-10 29. 26-23 1/2-1/2
+
+[Event "TTS Game 45 Ferrie's Flourish"]
+[Date ""]
+[Black "Black"]
+[White "James Ferrie"]
+[Result "0-1"]
+1. 11-15 23-18 2. 9-14 18x11 3. 8x15 22-18 4. 15x22 25x9 5. 5x14 29-25 6. 4-8 25-22 7. 8-11 
+27-23 8. 11-15 31-27 9. 7-11 24-20 10. 6-9 28-24 11. 9-13 23-18 12. 14x23 27x18 13. 2-7 
+21-17 14. 1-5 {The only draw is 1-6*, 26-23, (18-14, 15-18 BW) 6-9, 32-28, etc.} 
+18-14 15. 12-16 26-23 16. 3-8 24-19 17. 15x24 22-18 18. 13x22 32-28 19. 10x17 28x3 0-1
+
+
+
+[Event "TTS Game 47 Freeman's Flashback"]
+[Date ""]
+[Black "Barker"]
+[White "Clarence Freeman"]
+[Result "0-1"]
+1. 10-15 21-17 2. 11-16 22-18 3. 15x22 25x18 4. 16-20 17-13 5. 8-11 24-19 6. 11-16 29-25 
+7. 7-10 26-22 8. 9-14 18x9 9. 5x14 31-26 10. 4-8 22-18 11. 14-17 25-21 12. 3-7 21x14 13. 
+10x17 28-24 14. 1-5 18-15 15. 7-10 23-18 16. 16x23 26x19 17. 5-9 {the net, 2-7* draws} 
+27-23 18. 20x27 18-14 19. 9x18 23x7 20. 2x18 32x14 21. 8-11 30-26 22. 17-21 26-22 23. 
+11-16 19-15 24. 21-25 22-18 25. 25-30 14-9 0-1
+
+
+
+[Event "TTS Game 47 Freeman's Flashback"]
+[Date ""]
+[Black "Barker"]
+[White "Clarence Freeman"]
+[Result "0-1"]
+1. 10-15 21-17 2. 11-16 22-18 3. 15x22 25x18 4. 16-20 17-13 5. 8-11 24-19 6. 11-16 29-25 
+7. 7-10 26-22 8. 9-14 18x9 9. 5x14 31-26 10. 4-8 22-18 11. 14-17 25-21 12. 3-7 21x14 13. 
+10x17 28-24 14. 1-5 18-15 15. 7-10 23-18 16. 16x23 26x19 17. 5-9 27-23 18. 20x27 18-14 19. 
+9x18 23x7 20. 2x18 32x14 21. 8-11 30-26 22. 17-21 26-22 23. 11-16 19-15 24. 21-25 22-18 
+25. 25-30 14-9 0-1[Event "TTS Game 48 Christie's Shot"]
+[Date ""]
+[Black "Henry Christie"]
+[White "J. L. Richmond"]
+[Result "1-0"]
+1. 11-15 22-18 2. 15x22 25x18 3. 12-16 29-25 4. 9-13 18-14 5. 10x17 21x14 6. 16-20 23-18 
+7. 6-10 25-21 8. 10x17 21x14 9. 2-6 26-23 10. 13-17 31-26 11. 8-11 24-19 12. 4-8 19-15 13. 
+6-9 23-19 14. 17-22 26x17 15. 9-13 15-10 {Wrong move, 19-16, 13-22, 16-12 draws} 16. 
+13x22 19-15 17. 22-26 30x23 18. 11-16 28-24 19. 16-19 23x16 20. 5-9 14x5 21. 7x23 27x18 
+22. 20x27 32x23 23. 8-11 15x8 24. 3x26 1-0
+
+[Event "TTS Game 49 Monty's King Pitch"]
+[Date ""]
+[Black "Black"]
+[White "Monty Schleifer"]
+[Result "1/2-1/2"]
+1. 11-15 24-19 2. 15x24 28x19 3. 8-11 22-18 4. 11-16 25-22 5. 10-14 27-24 6. 16-20 31-27 
+7. 7-11 19-15 8. 2-7 15x8 9. 4x11 24-19 10. 6-10 29-25 11. 12-16 19x12 12. 10-15 12-8 13. 
+3x12 22-17 14. 15x31 17x3 15. 31x24 32-28 16. 1-6 28x19 17. 6-10 30-26 18. 20-24 3-8 19. 
+10-14 8x15 20. 14-17 21x14 21. 9x27 1/2-1/2
+
+[Event "TTS Game 50 A Double Boomerang"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 9-13 23-19 2. 11-15 22-18 3. 15x22 25x18 4. 5-9 {A.} 29-25 5. 10-14 27-23 6. 8-11 24-20 7. 
+6-10 28-24 8. 1-5 32-28 9. 3-8 19-16 10. 12x19 24x6 11. 11-16 20x11 12. 8x29 30-25 13. 
+29x22 26x3 14. 13-17 21x14 15. 9x27 31x24 16. 2x9 3-7 17. 9-14 7-10 18. 14-18 10-14 19. 
+18-23 14-18 20. 23-27 18-23 21. 27-32 24-20 22. 4-8 20-16 23. 8-12 16-11 24. 5-9 11-7 25. 
+9-14 1/2-1/2
+
+
+[Event "TTS Game 50A  A Double Boomerang"]
+[Date ""]
+[Black "Black"]
+[White "Alfred Jordan"]
+[Result "0-1"]
+1. 9-13 23-19 2. 11-15 22-18 3. 15x22 25x18 4. 7-11 {A.} 19-15 5. 10x19 24x15 6. 6-9 26-23 7. 
+1-6 29-25 8. 12-16 31-26 9. 3-7 28-24 10. 16-19 {the loser, 8-12 or 16-20 will draw} 
+23x16 11. 11x20 25-22 12. 9-14 
+{Willie said "nothing better", but 7-11, 21-17, 8-12 etc. appears much better to me} 
+18x9 13. 5x14 27-23 14. 20x27 15-10 15. 6x15 23-18 16. 14x23 26x3 0-1
+
+[Event "TTS Game 51 A Pretty Slip-shot"]
+[Date ""]
+[Black "Black"]
+[White "Wm. F. Ryan"]
+[Result "0-1"]
+1. 9-13 22-18 2. 11-15 18x11 3. 8x15 21-17 4. 13x22 25x11 5. 7x16 24-20 6. 3-8 20x11 7. 
+8x15 28-24 8. 4-8 24-20 9. 8-11 29-25 10. 5-9 25-22 11. 1-5 23-18 12. 15-19 
+{a loser, 9-13* is correct} 27-23 13. 12-16 30-25 14. 10-15 25-21 15. 6-10 32-28 16. 2-7 
+22-17 17. 15x22 17-14 18. 10x17 21x14 19. 9x27 31x8 20. 22x31 20x2 0-1
+
+[Event "TTS Game 52 Basil's Bonanza"]
+[Date ""]
+[Black "Black"]
+[White "Case, B.G."]
+[Result "1/2-1/2"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 9-14 18x9 5. 5x14 25-22 6. 10-15 22-17 7. 
+6-10 29-25 8. 8-11 25-22 9. 14-18 27-23 10. 18x25 23x16 11. 25-29 17-14 12. 10x17 21x14 
+13. 15-18 32-27 14. 1-5 28-24 15. 2-6 24-19 16. 6-10 14-9 17. 5x14 19-15 18. 10x19 30-25 
+19. 29x22 26x10 20. 7x14 16x7 21. 3x10 27-23 22. 19x26 31x6 23. 14-17 1/2-1/2
+
+[Event "TTS Game 53 Ryan's Bell Ringer"]
+[Date ""]
+[Black "Black"]
+[White "Wm. F. Ryan"]
+[Result "0-1"]
+1. 11-15 24-20 2. 8-11 28-24 3. 3-8 23-19 4. 9-14 22-17 5. 5-9 17-13 6. 11-16 20x11 7. 7x23 
+27x11 8. 8x15 24-20 9. 14-18 
+{weak, 4-8, 25-22 15-18, 22-15,10-19,29-25, 1-5, 25-22, 14-17, 21-14, 9-25, 30-21, 8-11, 26-22 draw, is better} 
+32-27 10. 9-14 26-22 11. 4-8 31-26 12. 15-19 22x15 13. 19-24 26-22 14. 24x31 22-17 15. 
+10x19 17x10 16. 6x15 30-26 17. 31x22 25x4 0-1
+
+[Event "TTS Game 54 Scott's Scorcher"]
+[Date ""]
+[Black "W. Scott"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 22-17 2. 15-19 24x15 3. 10x19 23x16 4. 12x19 25-22 5. 8-11 27-23 6. 4-8 23x16 7. 
+11x20 29-25 8. 7-10 17-13 9. 8-11 26-23 10. 9-14 23-19 11. 11-15 19-16 12. 15-19 31-27 {A.} 
+13. 3-8 16-12 {30-26* will draw} 14. 2-7 12x3 15. 14-18 22x15 16. 19-23 27x18 17. 10x19 
+3x10 18. 6x29 1-0
+
+[Event "TTS Game 54A Scott's Scorcher"]
+[Date ""]
+[Black "Wm. F. Ryan"]
+[White "White"]
+[Result "1-0"]
+1. 11-15 22-17 2. 15-19 24x15 3. 10x19 23x16 4. 12x19 25-22 5. 8-11 27-23 6. 4-8 23x16 7. 
+11x20 29-25 8. 7-10 17-13 9. 8-11 26-23 10. 9-14 23-19 11. 11-15 19-16 12. 15-19 16-11 13. 
+10-15 31-27 14. 14-17 21x14 15. 19-23 27x18 16. 6-9 13x6 17. 1x26 30x23 18. 15x29 1-0
+
+[Event "TTS Game 55 Martins' Masterpiece"]
+[Date ""]
+[Black "Black"]
+[White "Robert Martins"]
+[Result "0-1"]
+1. 11-15 23-19 2. 9-14 22-17 3. 7-11 25-22 4. 11-16 26-23 5. 5-9 17-13 6. 3-7 29-25 7. 1-5 
+22-17 8. 8-11 31-26 9. 16-20 19-16 10. 12x19 23x16 11. 14-18 26-23 12. 18-22 25x18 13. 
+15x22 23-18 14. 22-25 17-14 15. 10x17 21x14 16. 11-15 18x11 17. 9x18 30x21 18. 18-22 24-19 
+19. 22-26 28-24 20. 26-30 21-17 21. 30-26 {30-25, draws} 27-23 22. 20x27 16-12 23. 7x16 
+12-8 24. 4x11 19x12 25. 26x19 32x7 26. 2x11 17-14 27. 11-16 12-8 28. 16-19 8-3 29. 19-23 
+3-8 30. 23-27 8-11 31. 27-31 11-15 32. 31-27 14-10 0-1
+
+[Event "TTS Game 56 The Big Squeeze"]
+[Date ""]
+[Black "Wm. F. Ryan"]
+[White "John T. Bradford"]
+[Result "1-0"]
+1. 10-14 23-18 2. 14x23 27x18 3. 12-16 32-27 4. 16-20 26-23 5. 6-10 30-26 6. 11-15 18x11 
+7. 8x15 23-18 8. 9-14 18x11 9. 7x16 26-23 10. 4-8 22-17 11. 8-12 25-22 12. 3-7 24-19 13. 
+7-11 17-13 14. 11-15 29-25 15. 15x24 28x19 16. 2-7 31-26 17. 1-6 22-18 18. 14-17 21x14 19. 
+10x17 25-21 20. 6-10 21x14 21. 10x17 19-15 
+{18-14* draws, cont. 7-11, 13-9, 17-21, 9-6, 21-25, 6-2, 25-30, 2-7, 11-15, 19-10, 16-19} 
+22. 5-9 13x6 23. 7-10 15-11 24. 10-15 18-14 25. 15-18 14-9 26. 18-22 23-18 27. 22x31 27-23 
+28. 31-26 1-0
+
+[Event "TTS Game 57 Russells Crocodile"]
+[Date ""]
+[Black "Black"]
+[White "F. B. Fishburne"]
+[Result "0-1"]
+1. 9-13 22-17 2. 13x22 25x18 3. 11-16 29-25 4. 5-9 18-14 5. 9x18 23x14 6. 10x17 21x14 7. 
+8-11 24-19 8. 16x23 26x19 9. 6-10 25-21 10. 10x17 21x14 11. 11-16 28-24 12. 16x23 27x18 
+13. 7-11 30-26 14. 11-16 26-23 15. 16-20 31-27 16. 2-7 24-19 17. 7-11 14-10 18. 11-16 
+18-15 19. 4-8 {1-5 will draw, this move forms a problem composed by W. H. Russell} 
+10-6 20. 1x10 15x6 21. 3-7 6-2 22. 7-10 2-6 23. 10-14 6-9 24. 14-17 9-14 25. 17-22 14-17 
+26. 22-26 32-28 27. 26-31 19-15 28. 31x24 28x19 29. 20-24 23-18 30. 16x23 15-11 31. 8x22 
+17x28 0-1
+
+[Event "TTS Game 58 Willie's Windmill"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 11-16 22-18 2. 16-20 25-22 3. 10-14 29-25 4. 8-11 18-15 5. 11x18 22x15 6. 9-13 24-19 7. 
+4-8 19-16 8. 12x19 23x16 9. 5-9 16-12 10. 7-10 27-23 11. 10x19 23x16 12. 1-5 25-22 13. 6-10 
+26-23 14. 2-7 22-18 15. 8-11 32-27 16. 14-17 21x14 17. 10x17 23-19 18. 9-14 18x9 19. 5x14 
+31-26 20. 3-8 12x3 21. 17-21 3x17 22. 13x31 16x7 23. 31x15 
+{Willie said "Black wins", according to the endgame database, 7-3 at this point draws} 
+7-3 24. 15-19 1/2-1/2
+
+[Event "TTS Game 59 Martins' Meatchopper"]
+[Date ""]
+[Black "Robert Martins"]
+[White "White"]
+[Result "1-0"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 8-11 27-23 5. 11-16 20x11 6. 7x16 25-22 7. 
+4-8 18-15 8. 9-14 29-25 9. 5-9 22-18 {this loses, 31-27 will draw} 10. 3-7 31-27 
+{if 25-22, then 16-20*, 23-16, 14-23, 26-19, 7-11,16-7, 2-25, 19-16, 8-12, 16-11, 25-29, 11-7, 29-25 etc.  Black win} 
+11. 7-11 27-24 12. 16-20 23x7 13. 14x23 26x19 14. 20x27 32x23 15. 2x27 1-0
+
+[Event "TTS Game 60 Golddsboro's Guillotine"]
+[Date ""]
+[Black "Tom Goldsboro"]
+[White "White"]
+[Result "1-0"]
+1. 12-16 24-20 2. 8-12 28-24 3. 3-8 23-18 4. 9-13 21-17 5. 16-19 24x15 6. 10x19 18-15 7. 
+11x18 22x15 8. 13x22 25x18 9. 7-10 26-22 10. 10-14 18x9 11. 5x14 29-25 12. 14-18 20-16 
+{30-26 draws} 13. 19-23 16-11 14. 6-10 15x6 15. 1x10 22x6 16. 2x9 27x18 17. 8x29 1-0
+
+[Event "TTS Game 61 Fuller's Brushdown"]
+[Date ""]
+[Black "Everett Fuller"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 9-14 18x9 5. 5x14 25-22 6. 10-15 22-17 7. 
+6-10 17-13 8. 8-11 26-22 9. 14-18 21-17 10. 18x25 29x22 11. 19-24 28x19 12. 15x24 27-23 
+13. 3-8 23-18 14. 8-12 30-26 15. 12-16 13-9 16. 4-8 17-13 17. 10-15 32-28 18. 24-27 31x24 
+19. 15-19 24x15 20. 8-12 15x8 21. 1-5 20x11 22. 5x30 8-3 23. 7x16 1/2-1/2
+
+[Event "TTS Game 62 Searight's Escape"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 11-16 22-17 2. 16-20 17-14 3. 10x17 21x14 4. 9x18 23x14 5. 8-11 25-22 6. 11-15 29-25 7. 
+6-9 26-23 8. 9x18 23x14 9. 1-6 24-19 10. 15x24 28x19 11. 6-10 30-26 12. 10x17 22x13 13. 4-8 
+25-22 14. 8-11 26-23 15. 7-10 22-18 16. 3-7 13-9 17. 5x14 18x9 18. 11-15 32-28 19. 15x24 
+28x19 20. 7-11 27-24 21. 20x27 31x24 22. 2-7 {*   --11-15?  loses} 9-6 23. 11-16 {*} 6-2 24. 
+7-11 {*      not 16-20, 2-11, 20-27, 23-18 white wins} 2-6 
+{if 2-7, then 10-15, 19-10, 16-20 draws} 25. 10-15 {*!} 19x10 26. 16-20 24-19 27. 11-15 
+1/2-1/2
+
+[Event "TTS Game 63 Buchanan's Block"]
+[Date ""]
+[Black "Wm. F. Ryan"]
+[White "Basil Case"]
+[Result "1/2-1/2"]
+1. 9-14 22-18 2. 5-9 24-19 3. 11-15 18x11 4. 8x24 28x19 5. 4-8 25-22 6. 9-13 22-18 7. 14-17 
+21x14 8. 10x17 18-15 9. 7-11 29-25 10. 11x18 23x14 11. 8-11 25-22 12. 11-16 14-10 13. 6x24 
+27x11 14. 12-16 31-27 15. 1-6 27-24 16. 6-10 24-20 17. 16-19 20-16 18. 19-24 16-12 19. 
+10-15 11-8 20. 2-7 8-4 21. 24-28 4-8 22. 7-11 8-4 23. 15-18 22x8 24. 17-22 26x17 25. 13x22 
+32-27 26. 22-26 
+{*!   crowning 28-32 loses to 27-23, 32-27, 23-18, 27-23, 18-14 to a white win} 
+30x23 27. 28-32 27-24 28. 32-27 23-18 29. 27x20 18-15 30. 20-16 {a draw} 1/2-1/2
+
+[Event "TTS Game 64 Lee's Loophole"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 10-15 22-18 2. 15x22 25x18 3. 9-13 18-14 4. 11-15 24-19 5. 15x24 28x19 6. 8-11 29-25 7. 
+11-16 25-22 8. 6-9 22-18 9. 1-6 21-17 10. 13x22 26x17 11. 6-10 27-24 12. 16-20 31-26 13. 
+20x27 18-15 14. 9x18 15x6 15. 2x9 23x14 16. 9x18 32x14 1/2-1/2
+
+[Event "TTS Game 65 Heffner's Hurricane"]
+[Date ""]
+[Black "A. J. Heffner"]
+[White "White"]
+[Result "1-0"]
+1. 9-14 24-20 2. 10-15 22-18 3. 15x22 25x9 4. 5x14 29-25 5. 7-10 25-22 6. 6-9 27-24 7. 3-7 
+24-19 8. 11-16 20x11 9. 8x24 28x19 10. 4-8 22-18 11. 8-11 26-22 12. 1-5 31-26 13. 11-16 
+18-15 14. 14-18 15x6 15. 18x25 26-22 16. 25-29 21-17 17. 9-13 19-15 
+{appears to win, but loses.  6-1 will draw} 18. 2x9 32-27 19. 16-19 23x16 20. 12x19 
+30-25 21. 7-11 15x8 22. 19-23 27x18 23. 9-14 17x10 24. 13-17 22x13 25. 29x6 1-0
+
+[Event "TTS Game 66 Another Heffner Win"]
+[Date ""]
+[Black "Black"]
+[White "A. J. Heffner"]
+[Result "0-1"]
+1. 10-14 22-17 2. 6-10 17-13 3. 1-6 25-22 4. 14-17 21x14 5. 9x25 29x22 6. 10-14 24-20 7. 
+7-10 27-24 8. 3-7 24-19 9. 11-16 20x11 10. 8x24 28x19 11. 4-8 22-18 12. 14-17 32-27 13. 
+8-11 27-24 14. 11-16 24-20 15. 17-21 20x11 16. 7x16 26-22 17. 16-20 
+{this loses, 10-14 draws} 22-17 18. 20-24 18-14 19. 2-7 23-18 20. 24-28 31-27 21. 28-32 
+27-24 22. 32-27 24-20 23. 27-24 18-15 24. 24-27 20-16 25. 27-24 13-9 26. 6x22 15x6 27. 
+24x15 6-2 28. 12x19 2x25 29. 19-23 25-22 0-1
+
+[Event "TTS Game 67 When Wylie Wavered"]
+[Date ""]
+[Black "James Mugridge"]
+[White "James Wylie"]
+[Result "1-0"]
+1. 11-16 24-20 2. 16-19 23x16 3. 12x19 22-18 4. 9-14 18x9 5. 5x14 25-22 6. 8-11 22-17 7. 
+4-8 29-25 8. 11-15 27-24 9. 8-11 32-27 {loses, 17-13 is correct} 10. 19-23 26x19 11. 14-18 
+17-14 {25-22, 18-25, 17-14, 10-17, 21-14, 15-18, 30-21, 18-22, etc. Black wins} 
+12. 10x17 19x10 13. 6x15 21x14 14. 18-23 27x18 15. 15x29 24-19 16. 2-6 31-26 17. 1-5 26-22 
+18. 6-10 22-17 19. 3-8 30-26 20. 29-25 26-23 21. 8-12 28-24 22. 25-21 17-13 23. 10x17 
+23-18 24. 21-25 1-0
+
+[Event "TTS Game 68 Priest's Pulverizer"]
+[Date ""]
+[Black "James P. Reed"]
+[White "Matty Priest"]
+[Result "0-1"]
+1. 10-15 21-17 2. 6-10 17-13 3. 1-6 23-18 4. 12-16 24-20 5. 16-19 25-21 6. 8-12 27-24 7. 
+3-8 31-27 8. 12-16 {loses, 9-14 draws} 27-23 9. 9-14 18x9 10. 5x14 13-9 11. 6x13 22-18 12. 
+15x31 24x6 13. 2x9 32-27 14. 31x24 28x3 15. 7-10 3-7 16. 11-15 23-18 17. 15x22 21-17 18. 
+14x21 7x5 0-1
+
+[Event "TTS Game 69 Clayton's Clipper"]
+[Date ""]
+[Black "Black"]
+[White "Jeff Clayton"]
+[Result "0-1"]
+1. 11-16 23-18 2. 16-20 24-19 3. 7-11 18-15 4. 11x18 22x15 5. 9-13 25-22 6. 5-9 22-18 7. 
+3-7 29-25 8. 7-11 {into the trap, 1-5 draws narrowly} 19-16 9. 12x19 18-14 10. 9x18 27-24 
+11. 20x27 32x7 12. 11x18 7-3 13. 8-12 3-8 14. 4x11 26-23 15. 18x27 31x8 16. 6-10 8-4 17. 
+10-14 4-8 18. 2-7 25-22 19. 1-6 8-3 20. 6-10 3-8 21. 14-17 21x14 22. 10x26 30x23 23. 13-17 
+28-24 24. 17-22 24-20 25. 22-26 8-3 26. 7-10 23-18 0-1
+
+[Event "TTS Game 70 Cowan's Coup"]
+[Date ""]
+[Black "Black"]
+[White "White"]
+[Result "1/2-1/2"]
+1. 9-14 22-18 2. 5-9 24-19 3. 11-15 18x11 4. 8x24 28x19 5. 4-8 25-22 6. 8-11 22-18 7. 11-16 
+29-25 8. 7-11 25-22 9. 10-15 19x10 10. 6x15 27-24 11. 16-20 23-19 12. 20x27 19x10 13. 
+14x23 26x19 14. 9-13 31x24 15. 2-7 30-26 16. 7x14 26-23 17. 3-7 24-20 18. 7-10 32-28 19. 
+1-5 22-18 20. 5-9 28-24 21. 13-17 19-16 22. 12x28 23-19 23. 14x23 21x7 24. 28-32 7-3 25. 
+32-28 3-8 26. 28-24 8x15 1/2-1/2

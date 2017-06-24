@@ -1,0 +1,17 @@
+project pdn ;
+
+lib dparse : : <name>dparse <search>/usr/local/lib ; 
+
+exe fen : fen.cpp fen_table.cpp : <library>dparse : ;
+exe timecontrol : timecontrol.cpp timecontrol_table.cpp : <library>dparse : ;
+exe pdn : pdn.cpp pdn_reading_table.cpp pdn_writing_table.cpp : <library>dparse : ;
+
+install dist
+    :
+      timecontrol
+      fen
+      pdn
+    :
+      <location>.
+    ;
+

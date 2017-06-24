@@ -1,0 +1,1650 @@
+[Event "Boland's Border Classics #A-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,19,K13:BK30,12,5."]
+0-1
+
+[Event "Boland's Border Classics #A-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,20,K10:BK29,12,1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #A-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W20,15,K10:BK23,12,1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #A-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,20,7:B27,5."]
+0-1
+
+[Event "Boland's Border Classics #A-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,20,K14:BK26,12,5."]
+0-1
+
+[Event "Boland's Border Classics #A-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W29,20,K10:B22,12,2."]
+0-1
+
+[Event "Boland's Border Classics #B-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K18,12:BK25,20,5."]
+0-1
+
+[Event "Boland's Border Classics #B-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK19,K14,10:BK21,17,12."]
+0-1
+
+[Event "Boland's Border Classics #B-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,30,K14:BK22,4,1."]
+0-1
+
+[Event "Boland's Border Classics #B-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK26,K7,K2:BK21,18,4."]
+0-1
+
+[Event "Boland's Border Classics #B-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK16,K10,5:BK18,4,1."]
+0-1
+
+[Event "Boland's Border Classics #B-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K15,7:B26,K25,4."]
+0-1
+
+[Event "Boland's Border Classics #C-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,K19,10:B18,13,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #C-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,20,K14:BK25,13,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #C-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,K18,K8:BK30,20,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #C-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K15,K4:BK25,20,5."]
+0-1
+
+[Event "Boland's Border Classics #C-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K23,K1:BK30,20,9."]
+0-1
+
+[Event "Boland's Border Classics #C-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K14,K11:BK25,20,13."]
+0-1
+
+[Event "Boland's Border Classics #D-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,7,K2:B15,13,12."]
+0-1
+
+[Event "Boland's Border Classics #D-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W15,K14,K3:BK29,13,4."]
+0-1
+
+[Event "Boland's Border Classics #D-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK19,K10,K4:B25,20,9."]
+0-1
+
+[Event "Boland's Border Classics #D-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK19,14,7:BK31,8,5."]
+0-1
+
+[Event "Boland's Border Classics #D-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK11,K6,K2:BK17,12,5."]
+0-1
+
+[Event "Boland's Border Classics #D-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK19,14,K13:B12,5,K2."]
+0-1
+
+[Event "Boland's Border Classics #E-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+1. 11-16 24-20 2. 9-13 20x11 3. 7x16 22-18 4. 16-19 23x16 5. 12x19 18-14 6. 10x17 21x14 7. 
+6-9 27-24 8. 9x18 24x15 9. 5-9 28-24 10. 1-6 24-19 11. 9-14 32-27 12. 8-11 15x8 13. 4x11 
+26-22 14. 3-8 22x15 15. 11x18 25-22 16. 18x25 29x22 17. 6-10 27-23 18. 14-17 22-18 19. 
+8-11 18-14 20. 11-15 14x7 21. 15x24 7-3 22. 24-28 3-8 23. 17-22 8-11 24. 13-17 11-15 25. 
+17-21 15-18 26. 22-25 23-19 27. 28-32 19-16 28. 32-28 16-11 29. 28-24 18-15 30. 25-29 11-8 
+31. 29-25 15-18 0-1
+
+[Event "Boland's Border Classics #E-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,K15,14:BK24,12,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #E-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK14,11,K6:BK26,12,5."]
+0-1
+
+[Event "Boland's Border Classics #E-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W23,K15,K11:BK27,13,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #E-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,19,K7:BK31,12,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #E-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W14,K11,K9:B23,13,12."]
+0-1
+
+[Event "Boland's Border Classics #E-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,K6:B12,K8,5."]
+0-1
+
+[Event "Boland's Border Classics #E-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K18,K2:BK27,13,12."]
+0-1
+
+[Event "Boland's Border Classics #E-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,K18,14:BK27,5,4."]
+1/2-1/2
+
+[Event "Boland's Border Classics #E-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,19:BK20,13,12."]
+0-1
+
+[Event "Boland's Border Classics #E-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W26,K11,K9:BK19,13,12."]
+0-1
+
+[Event "Boland's Border Classics #E-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W25,K19,K10:B13,12,K11."]
+0-1
+
+[Event "Boland's Border Classics #E-13"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W23,K4,K2:B16,5,3."]
+0-1
+
+[Event "Boland's Border Classics #E-14"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK15,10,K6:BK23,5,3."]
+1/2-1/2
+
+[Event "Boland's Border Classics #E-15"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W19,K14,K11:B28,12,5."]
+0-1
+
+[Event "Boland's Border Classics #E-16"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,5,K2:B20,14,13."]
+0-1
+
+[Event "Boland's Border Classics #F-1A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,K22,K19:BK27,21,12."]
+0-1
+
+[Event "Boland's Border Classics #F-1B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K22,K19:BK27,21,12."]
+0-1
+
+[Event "Boland's Border Classics #F-2A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,K19,K11:BK29,K27,12."]
+0-1
+
+[Event "Boland's Border Classics #F-2B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K19,K11:BK29,K27,12."]
+0-1
+
+[Event "Boland's Border Classics #F-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K28,27:BK22,21,20."]
+0-1
+
+[Event "Boland's Border Classics #F-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,19,10:B21,14,12."]
+0-1
+
+[Event "Boland's Border Classics #F-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,30,28,K23:B21,20,K17,16."]
+1/2-1/2
+
+[Event "Boland's Border Classics #F-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK30,K20,K15:BK23,13,12,8."]
+1/2-1/2
+
+[Event "Boland's Border Classics #F-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,30,20:B21,14,12."]
+0-1
+
+[Event "Boland's Border Classics #F-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K24,20:B21,15,12."]
+0-1
+
+[Event "Boland's Border Classics #F-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K17,K10:BK32,21,12."]
+0-1
+
+[Event "Boland's Border Classics #F-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,K22,K13:B21,K15,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #F-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK24,20,14:B15,12,5."]
+0-1
+
+[Event "Boland's Border Classics #F-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,K22,K14:BK23,20,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,27,19,K17,K11:BK29,21,20,K18,12."]
+0-1
+
+[Event "Boland's Border Classics #G-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,30,19,K11:BK31,25,21,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,24,19,K10:B23,22,21,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,20,15,K14:BK29,28,21,12."]
+0-1
+
+[Event "Boland's Border Classics #G-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,20,K19,K15:BK32,K22,21,4."]
+0-1
+
+[Event "Boland's Border Classics #G-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,30,K23,K22:BK29,K28,21,20."]
+0-1
+
+[Event "Boland's Border Classics #G-7A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K22,K19,K14:BK28,21,12,K6."]
+0-1
+
+[Event "Boland's Border Classics #G-7B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK23,K22,K19,K14:BK28,21,12,K6."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,K19,K11,K10:BK31,21,12,K1."]
+0-1
+
+[Event "Boland's Border Classics #G-9A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K19,K15,K14:BK32,13,12,K5."]
+0-1
+
+[Event "Boland's Border Classics #G-9B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K19,K15,K14:BK32,13,12,K5."]
+0-1
+
+[Event "Boland's Border Classics #G-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,20,K15,K14:BK22,13,12,K1."]
+0-1
+
+[Event "Boland's Border Classics #G-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,20,K9:BK31,21,4,K2."]
+0-1
+
+[Event "Boland's Border Classics #G-12A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK22,K19,K14,K11:BK27,21,K6,4."]
+0-1
+
+[Event "Boland's Border Classics #G-12B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,K19,K14,K11:BK27,21,K6,4."]
+0-1
+
+[Event "Boland's Border Classics #G-13A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K19,K15,K14:BK32,20,13,K5."]
+0-1
+
+[Event "Boland's Border Classics #G-13B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K19,K15,K14:BK32,20,13,K5."]
+0-1
+
+[Event "Boland's Border Classics #G-14A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K22,K15,K14:BK32,21,20,K5."]
+0-1
+
+[Event "Boland's Border Classics #G-14B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK23,K22,K15,K14:BK32,21,20,K5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-15"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,K20,K9,K7:B21,K15,12,K1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-16"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,20,K15,K14:BK28,13,12,K1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #G-17"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,20,K19,K18:BK31,13,12,K9."]
+0-1
+
+[Event "Boland's Border Classics #G-18"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W23,K21,K19,K18:BK27,20,13,K10."]
+1/2-1/2
+
+[Event "Boland's Border Classics #H-1A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK17,K14,K11,K6:BK24,K19,5,3."]
+0-1
+
+[Event "Boland's Border Classics #H-1B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK17,K14,K11,K6:BK24,K19,5,3."]
+0-1
+
+[Event "Boland's Border Classics #H-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,K18,K15,K11:BK28,21,K20,3."]
+1/2-1/2
+
+[Event "Boland's Border Classics #H-3A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK18,K15,K11,K10:BK32,K24,5,4."]
+0-1
+
+[Event "Boland's Border Classics #H-3B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK18,K15,K11,K10:BK32,K24,5,4."]
+0-1
+
+[Event "Boland's Border Classics #H-4A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK31,K23,K14,K11:BK28,K24,5,4."]
+0-1
+
+[Event "Boland's Border Classics #H-4B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK31,K23,K14,K11:BK28,K24,5,4."]
+0-1
+
+[Event "Boland's Border Classics #H-5A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK22,K19,K15,K14:BK28,K20,12,5."]
+0-1
+
+[Event "Boland's Border Classics #H-5B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,K19,K15,K14:BK28,K20,12,5."]
+0-1
+
+[Event "Boland's Border Classics #H-6A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K22,K19,K14:BK28,K20,13,12."]
+0-1
+
+[Event "Boland's Border Classics #H-6B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,K19,K14:BK28,K20,13,12."]
+0-1
+
+[Event "Boland's Border Classics #H-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,K20,K19:BK32,K27,21,4."]
+0-1
+
+[Event "Boland's Border Classics #H-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K19,K18,K15:BK31,K29,K27,4."]
+0-1
+
+[Event "Boland's Border Classics #H-9A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK30,K22,K19,K15:BK28,21,K20,12."]
+0-1
+
+[Event "Boland's Border Classics #H-9B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK30,K22,K19,K15:BK28,21,K20,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #H-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK22,K19,K18,K11:BK28,21,K20,12."]
+0-1
+
+[Event "Boland's Border Classics #H-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,K18,K15,K6:BK25,K17,12,5."]
+0-1
+
+[Event "Boland's Border Classics #H-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK22,K19,K18,K14:BK21,20,K13,5."]
+0-1
+
+[Event "Boland's Border Classics #I-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,K27,24:BK29,K21,20."]
+0-1
+
+[Event "Boland's Border Classics #I-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K27,K22:BK29,K21,20."]
+0-1
+
+[Event "Boland's Border Classics #I-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K14,K10:B22,K21,3."]
+0-1
+
+[Event "Boland's Border Classics #I-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K24,K18:BK25,21,16."]
+0-1
+
+[Event "Boland's Border Classics #I-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK20,K18,K14:BK25,K13,12."]
+0-1
+
+[Event "Boland's Border Classics #I-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,30,K20:BK25,21,19."]
+0-1
+
+[Event "Boland's Border Classics #J-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,23,20,13:BK30,K29,21,12."]
+0-1
+
+[Event "Boland's Border Classics #J-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,K18:BK29,K25,21."]
+0-1
+
+[Event "Boland's Border Classics #J-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K23,14,K7:B21,13,K10,K4."]
+0-1
+
+[Event "Boland's Border Classics #J-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,K15,K12:BK25,24,21,K4."]
+0-1
+
+[Event "Boland's Border Classics #K-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,K26,K18:B21,17,K9."]
+1/2-1/2
+
+[Event "Boland's Border Classics #K-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,22,K14:BK27,21,13."]
+0-1
+
+[Event "Boland's Border Classics #K-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,30,K9:B17,13,K11."]
+1/2-1/2
+
+[Event "Boland's Border Classics #K-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,19,K18:B21,13,K11."]
+1/2-1/2
+
+[Event "Boland's Border Classics #K-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K15,K11:B21,13,K2."]
+0-1
+
+[Event "Boland's Border Classics #K-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W29,K23,K7:BK32,17,13."]
+1/2-1/2
+
+[Event "Boland's Border Classics #K-7A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK31,30,22:BK32,21,13."]
+0-1
+
+[Event "Boland's Border Classics #K-7B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK31,30,22:BK32,21,13."]
+0-1
+
+[Event "Boland's Border Classics #K-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK31,30,K10:B21,K18,13."]
+0-1
+
+[Event "Boland's Border Classics #K-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK30,18,K1:B21,13,K10."]
+1/2-1/2
+
+[Event "Boland's Border Classics #K-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,K26,22:B21,13,K11."]
+0-1
+
+[Event "Boland's Border Classics #K-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K15,K6:B21,K14,5."]
+0-1
+
+[Event "Boland's Border Classics #K-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,K17,K3:B21,K10,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W14,13,K2:B12,5,1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,14,K2:B8,5,1."]
+0-1
+
+[Event "Boland's Border Classics #L-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W22,20,K10:B28,9,1."]
+0-1
+
+[Event "Boland's Border Classics #L-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,K15,7:BK14,9,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,21:BK32,13,5."]
+0-1
+
+[Event "Boland's Border Classics #L-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,K15,K12:BK31,14,13."]
+0-1
+
+[Event "Boland's Border Classics #L-7A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W23,15,K6:B13,9,5."]
+0-1
+
+[Event "Boland's Border Classics #L-7B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W23,15,K6:B13,9,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W22,21,12,K7:BK23,13,9,5."]
+0-1
+
+[Event "Boland's Border Classics #L-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,21,20:B13,K9,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W28,K26,21,K15:B20,13,9,K1."]
+0-1
+
+[Event "Boland's Border Classics #L-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,27,K22:BK30,12,9."]
+1/2-1/2
+
+[Event "Boland's Border Classics #L-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,14,6:BK32,K29,5."]
+0-1
+
+[Event "Boland's Border Classics #M-1A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,K22,K19:BK32,K30,1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-1B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,K19:BK32,K30,1."]
+0-1
+
+[Event "Boland's Border Classics #M-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK26,K24,K23:BK32,K25,21."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK25,23,19:B17,13,K10."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK27,K10,K1:B21,K19,17."]
+0-1
+
+[Event "Boland's Border Classics #M-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,K28,K19:BK29,K14,1."]
+0-1
+
+[Event "Boland's Border Classics #M-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,K18,K8:BK30,K24,2."]
+0-1
+
+[Event "Boland's Border Classics #M-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,K26,K14:BK25,K11,5."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,K18,K10:BK27,K21,1."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-9A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,K19,K17:B21,18,K10."]
+0-1
+
+[Event "Boland's Border Classics #M-9B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,K19,K17:B21,18,K10."]
+1/2-1/2
+
+[Event "Boland's Border Classics #M-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,15,K3:B24,14,13."]
+0-1
+
+[Event "Boland's Border Classics #M-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK27,K23,K22:BK30,K14,13."]
+0-1
+
+[Event "Boland's Border Classics #M-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK24,K23,K22,K18:BK32,K31,K30,21."]
+0-1
+
+[Event "Boland's Border Classics #N-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK18,K11,K3:BK31,K30,4."]
+0-1
+
+[Event "Boland's Border Classics #N-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK19,K18,K11:BK27,K26,4."]
+0-1
+
+[Event "Boland's Border Classics #N-3A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,K22,K19:BK32,K21,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-3B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,K19:BK32,K21,12."]
+0-1
+
+[Event "Boland's Border Classics #N-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK11,K10,K3:BK19,4,K2."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,19,11:BK31,21,4."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK19,K18,K11:BK27,K26,3."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK15,K11,K9:BK26,K25,4."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-8A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK23,K22,K19:BK32,K30,3."]
+0-1
+
+[Event "Boland's Border Classics #N-8B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,K19:BK32,K30,3."]
+0-1
+
+[Event "Boland's Border Classics #N-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K27,K14:BK28,16,K13."]
+0-1
+
+[Event "Boland's Border Classics #N-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK27,K19,K14:BK28,K13,12."]
+0-1
+
+[Event "Boland's Border Classics #N-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K22,K20:BK23,K21,12."]
+0-1
+
+[Event "Boland's Border Classics #N-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,K22,K15:BK21,K16,12."]
+0-1
+
+[Event "Boland's Border Classics #N-13"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK21,K15,K11:BK29,K24,12."]
+0-1
+
+[Event "Boland's Border Classics #N-14"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K26,K23:BK30,K24,12."]
+0-1
+
+[Event "Boland's Border Classics #N-15"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK22,K20,K2:BK30,K28,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #N-16"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,K18,K14:BK30,K20,16."]
+0-1
+
+[Event "Boland's Border Classics #N-17"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W25,12,K6:B17,5,4."]
+0-1
+
+[Event "Boland's Border Classics #N-18"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W13,K11,K10:BK17,5,4."]
+0-1
+
+[Event "Boland's Border Classics #O-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,30,K11:BK32,21,10."]
+1/2-1/2
+
+[Event "Boland's Border Classics #O-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK30,15,K11:BK29,20,19."]
+0-1
+
+[Event "Boland's Border Classics #O-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK17,K15,K7:BK27,21,16."]
+1/2-1/2
+
+[Event "Boland's Border Classics #O-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK26,13,6:B21,18,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #O-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,26,K18:B24,21,19."]
+1/2-1/2
+
+[Event "Boland's Border Classics #O-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,K26,K19:BK27,21,12."]
+0-1
+
+[Event "Boland's Border Classics #P-1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,19,K10:BK32,12,8."]
+0-1
+
+[Event "Boland's Border Classics #P-2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,K11:BK31,12,K4."]
+0-1
+
+[Event "Boland's Border Classics #P-3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,20,K15:BK28,12,K8."]
+0-1
+
+[Event "Boland's Border Classics #P-4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,K19,12:BK26,20,4."]
+0-1
+
+[Event "Boland's Border Classics #P-5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,27,K23:BK25,20,4."]
+1/2-1/2
+
+[Event "Boland's Border Classics #P-6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,28,K16:B20,K18,4."]
+0-1
+
+[Event "Boland's Border Classics #P-7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,19,K15:B26,20,8."]
+1/2-1/2
+
+[Event "Boland's Border Classics #P-8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,K15,K8:B27,16,12."]
+1/2-1/2
+
+[Event "Boland's Border Classics #P-9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,27,K10:B20,12,K8."]
+1/2-1/2
+
+[Event "Boland's Border Classics #P-10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K23,18,14:BK22,20,16."]
+0-1
+
+[Event "Boland's Border Classics #P-11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK18,12,K2:BK11,10,4."]
+0-1
+
+[Event "Boland's Border Classics #P-12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,16,K15:BK30,24,3."]
+0-1
+

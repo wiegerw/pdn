@@ -1,0 +1,2405 @@
+[Event "Boland's Bridges #1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W13,11,10,6:BK14,3,1."]
+0-1
+
+[Event "Boland's Bridges #2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W13,10,K7,6:BK14,3,1."]
+0-1
+
+[Event "Boland's Bridges #3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W13,11,10,6:BK18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #4"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W10,7,6:BK14,3,1."]
+1-0
+
+[Event "Boland's Bridges #5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W18,13,10,5:BK31,9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W16,13,10,K5:BK17,3,1."]
+0-1
+
+[Event "Boland's Bridges #7"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W21,13,10,K2:BK18,3,1."]
+0-1
+
+[Event "Boland's Bridges #8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,K16,10,5:BK18,3,1."]
+0-1
+
+[Event "Boland's Bridges #9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W14,13,10,K7,6:BK15,5,3,1."]
+0-1
+
+[Event "Boland's Bridges #10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W14,12,10,9,K7:BK19,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W26,21,17,16,9:B18,3,2,1."]
+0-1
+
+[Event "Boland's Bridges #12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W22,17,10,6,5:BK26,12,3,1."]
+0-1
+
+[Event "Boland's Bridges #13"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,10,K7,K6,5:B20,K18,3,1."]
+0-1
+
+[Event "Boland's Bridges #14"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W::."]
+1/2-1/2
+
+[Event "Boland's Bridges #15"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK14,10,7,K2:BK15,3,1."]
+0-1
+
+[Event "Boland's Bridges #16"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W18,10,9,7:BK17,3,1."]
+0-1
+
+[Event "Boland's Bridges #17"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,13,10,K9,5:B24,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #18"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,22,21,10:BK23,3,1."]
+0-1
+
+[Event "Boland's Bridges #19"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W14,11,10,6:BK32,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #20"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W13,11,10,K7:BK19,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #21"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W11,10,K7,6:BK9,3,1."]
+0-1
+
+[Event "Boland's Bridges #22"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,K15,14,10:BK28,12,3,1."]
+0-1
+
+[Event "Boland's Bridges #23"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W11,10,9,K2:BK18,3,1."]
+0-1
+
+[Event "Boland's Bridges #24"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W12,10,K7,K6:BK18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #25"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,20,12,10:BK32,3,1."]
+0-1
+
+[Event "Boland's Bridges #26"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W16,K14,10,K2:BK24,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #27"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W12,11,10,6:BK16,3,1."]
+0-1
+
+[Event "Boland's Bridges #28"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W16,10,5,K2:BK24,3,1."]
+0-1
+
+[Event "Boland's Bridges #29"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W24,K11,10,6:BK14,3,1."]
+0-1
+
+[Event "Boland's Bridges #30"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,27,10,5:BK31,3,1."]
+0-1
+
+[Event "Boland's Bridges #31"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,20,13,10:B23,12,11,3,1."]
+0-1
+
+[Event "Boland's Bridges #32"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W28,21,11,5:B23,3,1."]
+0-1
+
+[Event "Boland's Bridges #33"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W30,21,10,7,K6:BK18,16,3,1."]
+0-1
+
+[Event "Boland's Bridges #34"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,21,12,9,K2:B23,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #35"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,24,10,K2:BK18,16,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #36"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,10,K7,K2:BK14,8,3,1."]
+0-1
+
+[Event "Boland's Bridges #37"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK18,15,10,9:BK16,8,3,1."]
+1-0
+
+[Event "Boland's Bridges #38"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W10,K9,7,K2:BK19,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #39"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK11,10,K9,5:BK13,3,1."]
+0-1
+
+[Event "Boland's Bridges #40"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK15,14,10,K5:BK9,3,1."]
+0-1
+
+[Event "Boland's Bridges #41"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,20,10,K2:BK11,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #42"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK13,10,6,K2:BK26,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #43"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W22,12,K10,K2:BK16,K9,3,1."]
+1-0
+
+[Event "Boland's Bridges #44"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W14,11,10,K9,5:BK15,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #45"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W17,11,9,K2:BK10,3,1."]
+0-1
+
+[Event "Boland's Bridges #46"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,20,12,K11,10:BK18,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #47"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,K11,10,K6,5:BK15,K9,3,1."]
+1-0
+
+[Event "Boland's Bridges #48"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK30,10,K7,5,K2:B22,K19,14,3,1."]
+1-0
+
+[Event "Boland's Bridges #49A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W13,10,K6,K2:BK15,K11,3,1."]
+1-0
+
+[Event "Boland's Bridges #49B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W13,10,K6,K2:BK15,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #50"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,10,K7,K6:B21,K5,3,1."]
+1-0
+
+[Event "Boland's Bridges #51"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W13,10,K6,K2:BK11,K9,3,1."]
+1-0
+
+[Event "Boland's Bridges #52"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,10,K7,K6:BK24,K14,3,1."]
+1-0
+
+[Event "Boland's Bridges #53A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,11,10,K2:BK18,14,3,1."]
+1-0
+
+[Event "Boland's Bridges #53B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W13,11,10,K2:BK18,14,3,1."]
+1-0
+
+[Event "Boland's Bridges #54"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,16,10,K9:B23,K22,3,1."]
+1-0
+
+[Event "Boland's Bridges #55"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W13,10,K7,K2:BK18,K8,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #56"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W18,13,10,K6:BK30,9,3,1."]
+1-0
+
+[Event "Boland's Bridges #57"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,10,K7,K6:B19,K15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #58"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,10,K6,K2:B11,K5,3,1."]
+1-0
+
+[Event "Boland's Bridges #59"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,17,13,10,9:BK26,3,2,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #60"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,21,19,11,9:B23,22,14,3,1."]
+1-0
+
+
+[Event "Boland's Bridges #61"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,10,K5,K2:BK18,K13,3,1."]
+1-0
+
+[Event "Boland's Bridges #62"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,10,K6,K2:BK15,K13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #63A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,10,K6,K2:BK15,K11,3,1."]
+1-0
+
+[Event "Boland's Bridges #63B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,10,K6,K2:BK15,K11,3,1."]
+1-0
+
+[Event "Boland's Bridges #64"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,10,K7,K2:BK23,K14,3,1."]
+1-0
+
+[Event "Boland's Bridges #65"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W29,10,K7,K2:B22,K14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #66"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,10,K6,K2:B22,K15,3,1."]
+1-0
+
+[Event "Boland's Bridges #67"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W27,21,K11,10,K9:BK25,K22,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #68"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,21,K11,10,K9:BK22,K18,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #69"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,21,10,K7,K6:BK20,K14,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #70"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W25,21,10,K6,K4:BK18,13,9,3,1."]
+1-0
+
+[Event "Boland's Bridges #71"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W25,21,16,10,K6:BK18,14,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #72"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,13,10,5,K2:BK18,K15,14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #73"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,K11,10,K9:BK18,K17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #74"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,K11,10,K9:BK18,K17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #75"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,10,9,K7:B20,K15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #76"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,12,K11,10,K9:BK23,K22,3,1."]
+0-1
+
+[Event "Boland's Bridges #77"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W12,K11,10,K6,5:BK27,K22,3,1."]
+0-1
+
+[Event "Boland's Bridges #78"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,10,7,K6,5:B19,K18,3,1."]
+0-1
+
+[Event "Boland's Bridges #79A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W12,10,K7,K6:BK18,K14,3,1."]
+1-0
+
+[Event "Boland's Bridges #79B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W12,10,K7,K6:BK18,K14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #80"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,16,12,10,K2:BK23,20,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #81"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W12,10,K8,K2:BK22,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #82"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W24,12,10,7:B25,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #83"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W27,17,12,9:B20,7,3,1."]
+1-0
+
+[Event "Boland's Bridges #84"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W32,12,10,K2:B28,K26,3,1."]
+1-0
+
+[Event "Boland's Bridges #85"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,20,14,9:B25,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #86"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W24,15,14,12:B27,23,3,1."]
+1-0
+
+[Event "Boland's Bridges #87"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,20,14,K2:BK27,8,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #88"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,20,K15,10:BK17,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #89"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,11,10,K2:BK18,16,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #90"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W16,K11,10,K2:BK13,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #91 "]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W26,24,23,22,10:B15,14,12,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #92"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W19,16,12,K11:BK26,17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #93"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,26,25,22,13,11:B18,15,14,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #94"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,13,10,K7:B19,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #95"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,24,15,9:B25,16,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #96"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,27,24,20,19:B18,15,14,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #97"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W17,12,K8,K2:B28,K15,3,1."]
+1-0
+
+[Event "Boland's Bridges #98"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,12,10,K2:BK18,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #99"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,30,14,13,12:B28,18,3,2,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #100"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W20,13,10,K2:BK19,18,3,1."]
+1-0
+
+[Event "Boland's Bridges #101"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,18,14,11,10:BK25,21,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #102"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,21,12,10:BK29,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #103"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,12,10,K4,K2:BK31,28,K26,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #104"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,K15,K14,12,10:B28,K16,K13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #105"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W12,K11,10,K2:BK19,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #106"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W12,11,10,K2:B26,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #107"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W18,12,10,K2:BK26,22,3,1."]
+1-0
+
+[Event "Boland's Bridges #108"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,31,17,12,10:B23,18,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #109"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,24,10,K2:BK30,22,3,1."]
+1-0
+
+[Event "Boland's Bridges #110"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W19,14,12,K2:BK31,23,3,1."]
+1-0
+
+[Event "Boland's Bridges #111"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,14,12,K2:B27,18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #112"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W23,19,18,14:B11,3,2,1."]
+1-0
+
+[Event "Boland's Bridges #113"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W27,15,11,10:B28,6,3,1."]
+1-0
+
+[Event "Boland's Bridges #114"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK16,12,10,K7:BK32,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #115"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,12,10,K7,K2:B23,20,K17,3,1."]
+1-0
+
+[Event "Boland's Bridges #116"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,12,10,K7,K6:BK31,28,K14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #117"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,29,10,7,K6:B18,K17,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #118"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W24,18,10,K4:B27,22,3,1."]
+1-0
+
+[Event "Boland's Bridges #119"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,12,11,10,K2:BK24,23,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #120"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W12,10,K7,K6,5:BK15,K14,K4,3,1."]
+1-0
+
+
+[Event "Boland's Bridges #121"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,20,10,K6,5:B23,21,K17,3,1."]
+1-0
+
+[Event "Boland's Bridges #122"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,20,12,10,K7:BK23,21,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #123"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,13,12,10,K2:BK22,21,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #124"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,12,10,K4,K2:BK23,22,21,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #125"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,25,19,13,12,9:B21,18,17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #126"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,20,13,12,10:B24,21,18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #127"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,10,K6,5,K2:BK27,21,K15,3,1."]
+1-0
+
+[Event "Boland's Bridges #128"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,20,10,5,K2:B21,K18,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #129"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,22,12,10,K6:BK23,21,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #130"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,22,12,10,K7:BK23,21,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #131"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,12,K11,10,K2:BK23,21,K17,3,1."]
+1-0
+
+[Event "Boland's Bridges #132"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,12,11,10,K6:B21,K19,18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #133"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,11,10,5,K2:B21,19,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #134"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,15,12,5,K2:B21,K17,8,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #135"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,12,K11,10,5:BK23,21,17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #136"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,30,10,K7,5:B24,21,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #137"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,26,20,10,K7,5:BK29,21,18,15,3,1."]
+1-0
+
+[Event "Boland's Bridges #138"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,K11,10,5:B21,K17,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #139"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,16,12,10,K7:BK23,22,21,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #140"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,10,K4,K2:B27,21,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #141"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,20,12,10,K4,K2:B22,21,K11,3,1."]
+0-1
+
+[Event "Boland's Bridges #142"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,30,12,10,K2:B21,13,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #143"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,20,10,7,K6:B21,K15,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #144"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,12,10,K2:BK31,21,3,1."]
+1-0
+
+[Event "Boland's Bridges #145"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,13,10,K6:BK27,K22,3,1."]
+1-0
+
+[Event "Boland's Bridges #146"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,17,14,11:BK22,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #147"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,17,10,K9:BK31,K23,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #148"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,17,10,K7:B27,K23,3,1."]
+1-0
+
+[Event "Boland's Bridges #149A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,13,10,K7:BK31,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #149B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,13,10,K7:BK31,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #150"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W22,21,10,K2:BK30,K23,3,1."]
+1-0
+
+[Event "Boland's Bridges #151"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,K18,10,K2:BK13,K11,3,1."]
+1-0
+
+[Event "Boland's Bridges #152"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,K14,10,6:BK22,K11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #153"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK18,10,5,K2:BK11,K9,3,1."]
+1-0
+
+[Event "Boland's Bridges #154"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,19,17,16,7:BK30,12,10,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #155"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,21,11,10:BK23,12,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #156"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W25,17,K14,10:BK26,K23,3,1."]
+1-0
+
+[Event "Boland's Bridges #157"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,13,10,K2:B27,K23,3,1."]
+1-0
+
+[Event "Boland's Bridges #158"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,21,10,K6:BK23,18,3,1."]
+1-0
+
+[Event "Boland's Bridges #159"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,10,9,7:BK17,14,3,1."]
+1-0
+
+[Event "Boland's Bridges #160"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,10,7,5:B15,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #161"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W21,17,13,11,10:BK29,14,3,2,1."]
+1-0
+
+[Event "Boland's Bridges #162"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,10,6,5:B24,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #163"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W24,21,10,K7:BK13,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #164"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W29,24,21,14:B18,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #165"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,13,10,K2:BK11,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #166"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W23,21,16,13,10:B27,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #167"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W27,22,10,K7:B19,K16,3,1."]
+1-0
+
+[Event "Boland's Bridges #168"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,21,10,9,K2:B20,K19,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #169"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,30,17,10,7:B24,K23,20,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #170"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,26,21,17,13,11:B24,18,9,6,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #171"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W17,K15,10,9:BK23,K20,3,1."]
+1-0
+
+[Event "Boland's Bridges #172"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,23,17,13,11:BK32,15,3,1."]
+1-0
+
+[Event "Boland's Bridges #173"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,30,13,12,10:B28,23,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #174"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,30,21,12,10,6:BK31,23,13,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #175"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W13,10,K7,5:BK32,K18,3,1."]
+1-0
+
+[Event "Boland's Bridges #176"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK15,10,5,K2:BK23,K13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #177"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK19,K10,K7,5:BK9,3,1."]
+0-1
+
+[Event "Boland's Bridges #178"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK27,10,5,K2:BK15,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #179"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK11,10,5,K2:B18,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #180"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK19,K11,10,5,K2:BK13,K9,3,1."]
+0-1
+
+[Event "Boland's Bridges #181"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W13,10,9,5,K2:BK18,K11,3,1."]
+1-0
+
+[Event "Boland's Bridges #182"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,10,5,K2:B12,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #183"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W18,10,5,K2:BK31,K13,3,1."]
+1-0
+
+[Event "Boland's Bridges #184"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W17,13,11,5:B16,15,3,1."]
+1-0
+
+[Event "Boland's Bridges #185"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,K11,10,6,5:B28,K26,K18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #186"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W12,10,K8,5,K2:BK15,K9,3,1."]
+0-1
+
+[Event "Boland's Bridges #187A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,20,10,9:BK26,18,3,1."]
+1-0
+
+[Event "Boland's Bridges #187B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,20,10,9:BK26,18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #188A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,20,19,14:B23,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #188B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,20,19,14:B23,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #189"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,21,10,K6:BK27,8,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #190"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,21,10,9:BK23,20,3,1."]
+1-0
+
+[Event "Boland's Bridges #191"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,21,10,9:BK32,25,3,1."]
+1-0
+
+[Event "Boland's Bridges #192"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,21,10,6:BK32,K30,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #193"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,21,10,K6:BK32,25,3,1."]
+1-0
+
+[Event "Boland's Bridges #194"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,21,K13,10:BK32,K22,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #195"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,21,10,6:BK28,18,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #196"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,21,10,9:BK32,20,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #197"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,21,10,6:BK32,24,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #198"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,13,11,10:B28,24,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #199"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,24,14,13:B22,15,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #200"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,21,20,9:B19,14,3,1."]
+1-0
+
+[Event "Boland's Bridges #201"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,13,10,7:BK22,19,3,1."]
+1-0
+
+[Event "Boland's Bridges #202"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,17,10,K2:BK26,19,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #203"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W26,21,20,K2:B27,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #204"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,28,21,19:B24,12,9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #205"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,21,17,10:BK31,24,3,1."]
+1-0
+
+[Event "Boland's Bridges #206"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,21,11,10:BK31,23,3,1."]
+1-0
+
+[Event "Boland's Bridges #207"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,23,14,13:BK29,12,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #208"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,23,10,K7:BK22,20,3,1."]
+1-0
+
+[Event "Boland's Bridges #209"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,28,10,K2:BK23,20,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #210"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,15,13,10:BK27,20,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #211"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,29,21,19,10:B22,14,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #212"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,29,28,10,K9:BK32,22,K20,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #213"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,26,24,22,21:B19,15,14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #214"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W24,21,11,10:BK23,15,3,1."]
+1-0
+
+[Event "Boland's Bridges #215"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,22,21,10,K2:BK31,24,5,3,1."]
+1-0
+
+[Event "Boland's Bridges #216"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,K11,10,K6:BK27,K13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #217"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,20,13,10:BK22,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #218"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W21,18,12,9:BK25,11,3,1."]
+1-0
+
+[Event "Boland's Bridges #219"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,12,10,6:BK14,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #220"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W29,20,19,10,6:BK23,16,11,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #221"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK22,21,12,10:BK30,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #222"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,21,19,16:B14,6,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #223"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,22,21,11:B19,13,3,1."]
+1-0
+
+[Event "Boland's Bridges #224"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,21,10,7:BK31,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #225"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,27,26,22,21,17:B19,13,9,3,2,1."]
+1-0
+
+[Event "Boland's Bridges #226"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W28,26,22,21,15,11:B18,13,6,3,1."]
+1-0
+
+[Event "Boland's Bridges #227"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W25,24,10,7:B26,13,3,1."]
+1-0
+
+[Event "Boland's Bridges #228"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,15,12,K11:BK18,13,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #229A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W31,30,28,26,24,21,17,13:B19,15,14,12,10,6,3,1."]
+0-1
+
+[Event "Boland's Bridges #229B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,30,28,26,24,21,17,13:B19,15,14,12,10,6,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #230"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,28,13,10,K2:BK27,22,19,3,1."]
+1-0
+
+[Event "Boland's Bridges #231"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,28,13,10,K2:BK27,22,15,3,1."]
+1-0
+
+[Event "Boland's Bridges #232"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,29,9,K2:BK32,19,3,1."]
+1-0
+
+[Event "Boland's Bridges #233"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,28,18,15,10:B26,11,9,3,1."]
+1-0
+
+[Event "Boland's Bridges #234"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W23,22,21,20,19:B14,11,6,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #235"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W20,K12,10,K7,K2:BK22,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #236"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W16,12,K11,10,K2:BK18,K9,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #237"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,12,10,8,K2:B27,K19,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #238"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,16,12,K11,10,K2:BK18,K9,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #239"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W24,20,12,K11,10,K2:BK18,K9,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #240"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W24,16,12,K11,10,K2:BK18,K17,5,3,1."]
+0-1
+
+[Event "Boland's Bridges #241"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W28,K16,12,10,K2:BK27,K9,3,1."]
+0-1
+
+[Event "Boland's Bridges #242"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,12,11,10,K2:BK30,K22,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #243"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W20,15,12,10,K2:BK32,K24,3,1."]
+0-1
+
+[Event "Boland's Bridges #244"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W12,K11,10,K8,K2:BK18,K9,3,1."]
+0-1
+
+[Event "Boland's Bridges #245"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W12,10,K8,K7,6:BK19,K18,3,1."]
+0-1
+
+[Event "Boland's Bridges #246"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK24,12,10,K7,K6:BK18,K17,3,1."]
+0-1
+
+[Event "Boland's Bridges #247"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,28,20,16,14,12,10,K4:BK32,K21,18,5,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #248"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,28,20,16,14,12,10,K4:BK32,22,K21,5,3,1."]
+0-1
+
+[Event "Boland's Bridges #249"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,28,20,16,12,K11,10:BK32,K25,22,14,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #250"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,K16,K15,12,10:BK32,K6,3,1."]
+0-1
+
+[Event "Boland's Bridges #251A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W20,K14,11,10,K2:BK27,K19,3,1."]
+0-1
+
+[Event "Boland's Bridges #251B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,K14,11,10,K2:BK27,K19,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #252"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W25,12,10,K8,K2:BK22,K18,3,1."]
+0-1
+
+[Event "Boland's Bridges #253"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,21,20,K11,10:BK18,13,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #254"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,20,K11,10,5:B21,K18,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #255"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,24,20,K11,10:B22,K18,12,3,1."]
+1-0
+
+[Event "Boland's Bridges #256"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,20,K11,10,5:B21,K18,16,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #257"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,K11,10,5:BK18,16,3,1."]
+1/2-1/2
+
+[Event "Boland's Bridges #258"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,20,13,K11,10:BK18,12,5,3,1."]
+1/2-1/2
+

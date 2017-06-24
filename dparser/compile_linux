@@ -1,0 +1,5 @@
+make_dparser -i fen -o fen_table.cpp ../grammars/fen.g
+make_dparser -i timecontrol -o timecontrol_table.cpp ../grammars/timecontrol.g
+make_dparser -i pdn_reading -o pdn_reading_table.cpp ../grammars/pdn_reading.g
+make_dparser -i pdn_writing -o pdn_writing_table.cpp ../grammars/pdn_writing.g
+bjam release link=static

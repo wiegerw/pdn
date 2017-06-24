@@ -1,0 +1,614 @@
+[Event "T.van Prooijen"]
+[Site "De Haagsche Courant , 26-2-1983"]
+[Date ""]
+[Round "C2"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,17,23,28,38,40,49:B1,3,8,9,16,18."]
+
+1. 40-34 18x40 2. 49-44 40x49 3. 17-11 49x7 4. 11x4 1-0
+
+
+
+[Event "G.de Geus"]
+[Site "1001 miniaturen"]
+[Date ""]
+[Round "C7"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W13,14,18,19,33,42:B21,22,27,31,38."]
+
+1. 33-29 38x47 2. 13-8 47x23 3. 19x37 1-0
+
+
+[Event "made by Sauvaire"]
+[Site "Le Provencal, 17-4-1955"]
+[Date ""]
+[Round "C8"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W10,13,19,23,29,39,41:B2,7,12,22,25,35,36."]
+
+1. 39-33 36x47 2. 33-28 47x18 3. 28x8 2x24 4. 23x1 1-0
+
+
+[Event "Leen de Rooij"]
+[Site "Het Limburgs dagblad , 5-8-1972"]
+[Date ""]
+[Round "C8"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W11,13,14,19,23,33,34,42:B2,5,7,10,12,16,22,38."]
+
+1. 34-29 38x47 2. 33-28 47x18 3. 28x8 2x24 4. 23x1 16x7 5. 1x4 1-0
+
+
+
+[Event "NN"]
+[Site "concours 1955/56; Het Damspel , nov.1955"]
+[Date ""]
+[Round "C8"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W13,14,19,23,29,38,41:B2,7,12,22,25,35,36."]
+
+1. 38-32 36x47 2. 32-28 47x18 3. 28x8 2x24 4. 23x1 1-0
+
+
+[Event "A.Jovaisas"]
+[Site "Lietuva 2006 , A 33"]
+[Date ""]
+[Round "C13"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,24,25,27,31,32,43:B9,18,35,36,38,41,42."]
+
+1. 21-17 38x49 2. 27-22 49x30 3. 22x4 36x27 4. 4x29 1-0
+
+
+[Event "S.Reznikov"]
+[Site "Lietuva 2006, A7"]
+[Date ""]
+[Round "C14"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W19,20,24,30,33,44:B10,29,35,38,42,45."]
+
+1. 20-15 29x20 2. 15x4 35x13 3. 4x48 38x29 4. 44-40 45x34 1-0
+
+
+
+[Event "J.Nesme"]
+[Site "Effort, 1976"]
+[Date ""]
+[Round "C15"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W28,29,34,37,43,45,47:B7,9,19,20,27,40."]
+
+1. 28-22 27x18 2. 29-23 19x28 3. 37-32 28x37 4. 47-42 37x30 5. 45x3 1-0
+
+
+[Event "A.Delgeve"]
+[Site "Revivre , 5/1954"]
+[Date ""]
+[Round "C17"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,27,28,31,32,38,46,48:B3,12,13,14,16,17,18,36."]
+
+1. 38-33 17x37 2. 32x41 36x47 3. 46-41 47x22 4. 28x10 1-0
+
+
+[Event "D.Vuurboom"]
+[Site "500 eigen ,1978"]
+[Date ""]
+[Round "C17"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,16,25,27,28,33,38,46,47,50:B1,5,7,9,11,13,14,36,45."]
+
+1. 38-32 7x18 2. 16x7 1x12 3. 47-41 36x47 4. 46-41 47x22 5. 28x10 5x14 6.
+32-28 9-13 7. 33-29 13-19 8. 29-24 19x30 9. 25x34 14-19 10. 34-29 1-0
+
+
+[Event "M.Lepsic"]
+[Site "Damnieuws, 13-6-1998"]
+[Date ""]
+[Round "C17"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W27,28,32,33,37,39,46:B3,12,13,18,26,30,36."]
+
+1. 37-31 26x37 2. 32x41 36x47 3. 46-41 47x22 4. 28x19 3-9 5. 39-34 30x28 6.
+19-13 1-0
+
+
+[Event "M.van Rooij"]
+[Site "DP, 2/1985"]
+[Date ""]
+[Round "C18"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W6,20,32,37,38,42,43:B1,4,12,19,22,23,34."]
+
+1. 32-28 23x41 2. 42-37 41x32 3. 38x7 1x12 4. 6-1 1-0
+
+
+
+[Event "A.Miedema"]
+[Site "DE , 1/1990"]
+[Date ""]
+[Round "C19"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W24,25,26,29,36,43,48:B10,16,18,32,37,38."]
+
+1. 29-23 18x20 2. 25x5 38x49 3. 48-42 37x48 4. 5x37 48x31 5. 36x27 49x21 6.
+26x17 1-0
+
+
+
+[Event "A.Uvarov"]
+[Site "De, 7/1978"]
+[Date ""]
+[Round "C21"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W15,20,21,24,31,41:B9,12,16,28,32,34,44."]
+
+1. 20-14 16x47 2. 14x3 47x20 3. 3x23 28x19 4. 15x13 1-0
+
+
+[Event "P.Jongeneelen"]
+[Site "Turbodambase n.98912"]
+[Date ""]
+[Round "C21"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W14,15,24,31,34,42,44:B3,18,21,23,28,33,38."]
+
+1. 14-10 38x47 2. 31-27 21x32 3. 44-39 33x44 4. 34-29 23x34 5. 10-4 47x20 6.
+4x23 28x19 7. 15x13 1-0
+
+
+
+[Event "E.Zubov"]
+[Site "site Shashki v Rossii , 8-8-2005"]
+[Date ""]
+[Round "C22"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,19,22,25,27,28,29:B9,10,11,15,17,34,40."]
+
+1. 18-12 34x21 2. 12-8 17x28 3. 19-13 9x18 4. 25-20 15x24 5. 8-2 1-0
+
+
+[Event "L.Faber"]
+[Site "turbodambase n.79044"]
+[Date ""]
+[Round "C23"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W17,21,22,30,32,33,34:B7,8,13,18,25,26,31."]
+
+1. 17-12 18x40 2. 12x3 26x17 3. 3x48 25x34 4. 48x11 40-45 5. 11-50 1-0
+
+
+
+[Event "S.M.van Eijk"]
+[Site "Teletekst , 3-12-1999"]
+[Date ""]
+[Round "C-27"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W20,32,38,39,40,41,50:B10,11,13,21,22,29,36."]
+
+1. 32-28 22x35 2. 20-15 36x47 3. 15x4 47x33 4. 4x40 35x44 5. 50x28 1-0
+
+
+[Event "W.Zonneveld"]
+[Site "KvD,10/1945"]
+[Date ""]
+[Round "C28"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W27,32,37,40,44,45,46,50:B29,33,35,39,41,43."]
+
+1. 40-34 29x49 2. 45-40 35x44 3. 32-28 33x42 4. 46x48 1-0
+
+
+
+[Event "E.Zubov"]
+[Site "Shashki forum, 8-8.2006"]
+[Date ""]
+[Round "C30"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W8,13,15,18,20,23,38:B2,4,9,29,33,34,37."]
+
+1. 15-10 4x24 2. 13x4 2x22 3. 4x13 29x9 4. 38x29 1-0
+
+[Event "I.Ivatsko"]
+[Site " conc.Novopolotsk , Patent 2002"]
+[Date ""]
+[Round "C36"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,13,17,24,30,31,41:B6,10,26,35,40,43."]
+
+1. 24-19 26x46 2. 17-11 6x8 3. 13x2 35x13 4. 2x5 1-0
+
+
+
+[Event "L.Viergever"]
+[Site "J.C.Vink , Verzamelde , 1975"]
+[Date ""]
+[Round "C41"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W20,24,27,37,38,45,46,49:B13,15,16,18,34,36,39,40."]
+
+1. 49-43 39x48 2. 24-19 48x22 3. 19x8 15x24 4. 46-41 36x47 5. 8-2 47x29 6.
+2x30x11 16x7 7. 45x1 1-0
+
+
+[Event "S.M.van Eijk"]
+[Site "Turbodambase n.81048"]
+[Date ""]
+[Round "C43"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W23,25,26,29,38,46,50:B10,14,20,27,31,37,40."]
+
+1. 50-44 40x49 2. 23-19 14x34 3. 25x5 49x32 4. 46-41 37x46 5. 26x28 1-0
+
+
+
+[Event "S.Juskevic"]
+[Site "DP, 8/2004"]
+[Date ""]
+[Round "C52"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W13,16,18,27,29,40:B6,20,22,28,38,39."]
+
+1. 40-34 39x30 2. 16-11 6x17 3. 29-23 28x8 4. 18-12 22x31 5. 12x3 1-0
+
+
+[Event "L.Dalman"]
+[Site "Du haut du pont du Gard , 1978"]
+[Date ""]
+[Round "C54"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W19,23,24,32,39,40,48:B3,8,10,11,13,21,27."]
+
+1. 39-34 27x38 2. 48-43 38x49 3. 34-30 49x35 4. 23-18 13x22 5. 19-14 10x19 6.
+24x2 1-0
+
+[Event "S.M.van Eijk"]
+[Site "Eigen Werk, part 5, 2002"]
+[Date ""]
+[Round "C54"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W19,30,32,35,40,48,50:B8,10,11,15,21,27,33."]
+
+1. 30-24 27x38 2. 48-43 38x49 3. 35-30 49x35 4. 19-14 10x19 5. 24x2 35x24 6.
+2x20 15x24 7. 50-44 1-0
+
+
+[Event "J.Leisys"]
+[Site "Ch.de Lituanie , 1996"]
+[Date ""]
+[Round "C56"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W7,17,18,19,23,37,43:B10,27,29,34,35,39."]
+
+1. 7-2 39x48 2. 18-12 29x7 3. 2x30 48x24 4. 30x5 35-40 5. 5-28 40-45 6. 28-50
+1-0
+
+
+
+[Event "J.Siozinys"]
+[Site "Ch.de Lituanie, 2000"]
+[Date ""]
+[Round "C59"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W25,28,34,38,40,43,45:B17,18,27,30,36,37."]
+
+1. 28-23 30x48 2. 23x41 36x47 3. 40-34 47x40 4. 45x34 48x30 5. 25x34 1-0
+
+
+[Event "S.M.van Eijk "]
+[Site "Turbodambase n.86753"]
+[Date ""]
+[Round "C62"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W14,20,30,32,37,44,46:B8,18,19,23,33,36,43."]
+
+1. 44-39 43x25 2. 32-28 23x41 3. 14x3 25x14 4. 3x47 1-0
+
+
+[Event "S.M.van Eijk"]
+[Site "Eijk zesjes , 9/1999"]
+[Date ""]
+[Round "C75"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W23,24,32,37,38,49:B7,16,17,26,28,39."]
+
+1. 37-31 28x30 2. 49-44 26x28 3. 44x2 1-0
+
+
+[Event "S.M.van Eijk"]
+[Site "Turbodambase , n.106683"]
+[Date ""]
+[Round "C76"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,26,30,39,43,44,45:B10,11,12,19,20,28,29."]
+
+1. 30-24 19x30 2. 39-33 29x40 3. 45x5 1-0
+
+
+[Event "A. van den Elzen"]
+[Site "De A.D.Ger , 12/1968"]
+[Date ""]
+[Round "C77"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W22,25,27,28,33,39,41,44,47:B10,11,13,14,17,19,20,23,36."]
+
+1. 47-42 36x29 2. 39-33 23x21 3. 33x4 17x28 4. 4x2 1-0
+
+
+[Event "J.Bastiaannet"]
+[Site "HD, 12/1995"]
+[Date ""]
+[Round "C80"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "B:WK4,13,18:B7,25,31."]
+
+1. ... 7-11 2. 13-8 25-30 3. 8-2 31-36 4. 2x16 36-41 5. 16-32 41-47 6. 32-41
+47x9 7. 4x35 1-0
+
+
+[Event "J.Bus"]
+[Site "DP, 1/1963"]
+[Date ""]
+[Round "C81"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W13,19,23,32,39,40,41,42,44,47,50:B4,6,9,12,21,24,25,30,31,35,36."]
+
+1. 19-14 9x29 2. 14-9 4x13 3. 39-34 30x39 4. 44x33 29x27 5. 41-37 35x44 6.
+37x30 25x34 7. 50x30 1-0
+
+
+[Event "D.Vuurboom "]
+[Site "VW, deel 16, 1983"]
+[Date ""]
+[Round "C82"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W24,31,34,35,36,37,38,40,45,49:B1,9,10,12,13,14,15,21,22,25,28."]
+
+1. 24-20 15x24 2. 34-30 25x34 3. 40x20 14x25 4. 38-33 28x39 5. 49-43 39x48 6.
+31-26 48x31 7. 36x7 1x12 8. 26x19 1-0
+
+
+[Event "A.Hlasny"]
+[Site "book 250 problems , n.113"]
+[Date ""]
+[Round "C83"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,20,22,31,38,41,46,48,49:B2,8,9,19,27,29,30,34,40."]
+
+1. 38-33 27x47 2. 33x4 47x15 3. 48-42 15x47 4. 46-41 47x36 5. 18-13 36x9 6.
+4x44 8-13 1-0
+
+
+[Event "NN"]
+[Site "VIII conc.Novopolotsk , cat.miniatures , n.59"]
+[Date ""]
+[Round "C84"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W8,20,22,24,30,38,49:B2,4,10,11,15,21,40."]
+
+1. 30-25 2x13 2. 22-17 21x12 3. 49-44 40x49 4. 24-19 49x14 5. 20x16 1-0
+
+
+[Event "NN"]
+[Site "VIII conc.Novopolotsk , cat.miniatures , n.57"]
+[Date ""]
+[Round "C85"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W22,27,33,34,37,39,43:B7,11,13,17,23,25,28."]
+
+1. 34-29 23x34 2. 39x30 28x48 3. 27-21 48x18 4. 21x1 25x34 5. 1x40 1-0
+
+
+[Event "J.Visser"]
+[Site "DP , 6/1975"]
+[Date ""]
+[Round "C 86"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W22,27,28,32,37,38:B8,11,13,18,26,36."]
+
+1. 37-31 26x37 2. 32x41 36x47 3. 28-23 47x17 4. 23x3 1-0
+
+
+[Event "M.J.Kuipers"]
+[Site "HD, 11/1961"]
+[Date ""]
+[Round "C87"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W23,25,26,30,32,41,45,50:B13,16,34,37,39,40,44."]
+
+1. 23-19 13x35 2. 26-21 16x38 3. 41x43 39x48 4. 50x30 35x24 5. 45x34 48x30 6.
+25x34 1-0
+
+
+[Event "J.C.Vink"]
+[Site "Spectrum, 2004"]
+[Date ""]
+[Round "C91"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,23,29,32,33,39,41:B8,10,16,20,30,35,37."]
+
+1. 32-28 37x46 2. 29-24 20x38 3. 18-13 8x19 4. 23x5 46x23 5. 5x49 1-0
+
+
+[Event "J.Siozinys"]
+[Site "Novopolock , 2000"]
+[Date ""]
+[Round "C92"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W23,25,31,32,34,41,45:B12,13,14,20,22,26,30."]
+
+1. 32-28 26x46 2. 28x10 46x5 3. 25x14 5x40 4. 45x25 1-0
+
+
+[Event "J.Leisys"]
+[Site "Turbodambase , n.74580"]
+[Date ""]
+[Round "C94"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W14,15,27,28,36,41,50:B5,24,26,34,39,42,43."]
+
+1. 14-10 5x14 2. 50-44 39x50 3. 15-10 50x31 4. 10x37 31x48 5. 41-37 48x31 6.
+
+
+[Event "A.Maslov"]
+[Site "DP,12/1997"]
+[Date ""]
+[Round "C95"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W9,13,22,23,46,49,50:B25,32,33,37,39,40,41."]
+
+1. 49-44 40x49 2. 50-44 49x27 3. 9-4 27x9 4. 4x31x30 25x34 5. 46x30 1-0
+
+[Event "S.M.van Eijk "]
+[Site "1995, Eigen Werk, part 1, 2002"]
+[Date ""]
+[Round "C96"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,22,23,24,25,29,34:B1,3,9,13,14,40,45."]
+
+1. 22-18 13x22 2. 12-8 3x12 3. 23-19 14x23 4. 29x7 40x20 5. 25x3 1x12 6. 3x50
+1-0
+
+
+
+
+
+36x27 1-0
+
+
+

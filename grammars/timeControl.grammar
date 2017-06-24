@@ -1,0 +1,34 @@
+%header%
+
+GRAMMARTYPE = "LL"
+
+DESCRIPTION = "A grammar for TimeControl tags, as used in PDN/PGN."
+
+AUTHOR      = "Wieger Wesselink, <wieger at 10x10 dot org>"
+VERSION     = "1.0"
+DATE        = "21 May 2009"
+
+LICENSE     = "Distributed under the Boost Software License, Version 1.0.
+               See http://www.boost.org/LICENSE_1_0.txt."
+
+COPYRIGHT   = "Copyright (c) 2009 Wieger Wesselink. All rights reserved."
+
+%tokens%
+
+UNKNOWN           = "?"
+NOTIME            = "-"
+MOVES_SECONDS     = <<[\d]+/[\d]+>>
+INCREMENTAL       = <<[\d]+\+[\d]+>>
+SUDDENDEATH       = <<[\d]+>>
+SANDCLOCK         = <<\*[\d]+>>
+COLON             = ":"
+WHITESPACE        = <<[ \t\n\r]+>> %ignore%
+
+%productions%
+
+TimeControl   = UNKNOWN | NOTIME | CompositeTime ;
+TimeElement   = MOVES_SECONDS | INCREMENTAL | SUDDENDEATH | SANDCLOCK ;
+CompositeTime = TimeElement (COLON TimeElement)* ;
+
+// Additional checks need to be done to make sure that SUDDENDEATH,
+// SANDCLOCK and INCREMENTAL are the last values of the range.

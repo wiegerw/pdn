@@ -1,0 +1,800 @@
+[Event "LPC Problem #1"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W29,13,11:B22,4,2."]
+1/2-1/2
+
+[Event "LPC Problem #2"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,29,K15:B14,13,12,9."]
+1/2-1/2
+
+[Event "LPC Problem #3"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W22,13,K12,8,K4:BK14,K3."]
+0-1
+
+[Event "LPC Problem #4"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK26,16,12,11,8:BK30,28,27,23,K14."]
+1-0
+
+[Event "LPC Problem #5"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W22,K18,12:B21,13,5."]
+0-1
+
+[Event "LPC Problem #6"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,13:B28,21,4."]
+0-1
+
+[Event "LPC Problem #7"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,28,23,22,17,14:BK26,20,13,K8,6,5."]
+0-1
+
+[Event "LPC Problem #8"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,27,25,24,19,9:BK32,21,13,6,2."]
+0-1
+
+[Event "LPC Problem #9"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,26,23,18,K1:B20,15,12,11,5."]
+1/2-1/2
+
+[Event "LPC Problem #10"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,30,K9:B28,23,20,13,12."]
+0-1
+
+[Event "LPC Problem #11"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,23,21,17,16,15,14,12:B28,K22,7,4,3,2."]
+0-1
+
+[Event "LPC Problem #12"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK30,23,21,18,17,11,10,9:BK26,K25,8,4,3,2,1."]
+1/2-1/2
+
+[Event "LPC Problem #13"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK26,K25,15,12:B28,K27,20,K14."]
+1-0
+
+[Event "LPC Problem #14"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,14,K9,K1:BK23,15,7,5."]
+0-1
+
+[Event "LPC Problem #15"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W14,13,11,K8:BK19,K18,4,2."]
+1/2-1/2
+
+[Event "LPC Problem #16"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK32,K10:B24,K12."]
+1/2-1/2
+
+[Event "LPC Problem #17"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,23,21,19,K6:BK31,14,13,8."]
+1/2-1/2
+
+[Event "LPC Problem #18"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,K17,K15,9,5:BK25,K23,22,18,1."]
+1/2-1/2
+
+[Event "LPC Problem #19"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,9,K7,5:B19,K14,12,1."]
+1/2-1/2
+
+[Event "LPC Problem #20"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W23,21,19,13:B14,6,3,1."]
+1-0
+
+[Event "LPC Problem #21"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,24,K10,K6:BK30,K22,18,16."]
+0-1
+
+[Event "LPC Problem #22"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W26,K10,K7,5:B28,K21,17,1."]
+0-1
+
+[Event "LPC Problem #23"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,28,13,K1:B16,5,3,2."]
+0-1
+
+[Event "LPC Problem #24"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W22,21,K14,K7:BK26,K23,13,5."]
+1/2-1/2
+
+[Event "LPC Problem #25"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,K15,K5,K3:BK29,K16,14,K13."]
+0-1
+
+[Event "LPC Problem #26"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K22,18,K15:BK32,K28,24,9."]
+0-1
+
+[Event "LPC Problem #27"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK14,K11,K10:B20,12,K2."]
+0-1
+
+[Event "LPC Problem #28"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,K6,K3,K1:BK23,K21,14,11."]
+0-1
+
+[Event "LPC Problem #29"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,27,24,21,K10:BK26,20,16,12,8."]
+1/2-1/2
+
+[Event "LPC Problem #30"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,17,14,10:B22,K15,8,5."]
+1/2-1/2
+
+[Event "LPC Problem #31"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,19,14,13:B25,12,11,5."]
+1/2-1/2
+
+[Event "LPC Problem #32"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,13,8:BK22,K19,6."]
+1/2-1/2
+
+[Event "LPC Problem #33"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,24,K5:BK27,21,3."]
+1/2-1/2
+
+[Event "LPC Problem #34"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,26,22,14,8:BK31,20,19,13,2."]
+1/2-1/2
+
+[Event "LPC Problem #35"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,27,24,17,K3:BK31,20,16,12,8."]
+1/2-1/2
+
+[Event "LPC Problem #36"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK31,27,23,K20:B32,30,K22,K7."]
+1/2-1/2
+
+[Event "LPC Problem #37"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,K22,K2:B23,16,K9,4."]
+1/2-1/2
+
+[Event "LPC Problem #38"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,24,8,7:B20,K18,12,11."]
+1/2-1/2
+
+[Event "LPC Problem #39"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,26,K8:BK29,24,16."]
+0-1
+
+[Event "LPC Problem #40"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W23,19,18,K13:BK31,K28,5."]
+0-1
+
+[Event "LPC Problem #41"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK29,23,19:BK30,5,1."]
+1/2-1/2
+
+[Event "LPC Problem #42"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK22,20,12:B14,K6,K3."]
+1/2-1/2
+
+[Event "LPC Problem #43"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,20,18:BK32,K31,10,K4,2."]
+1/2-1/2
+
+[Event "LPC Problem #44"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,10,5,K4:BK28,13,K12,1."]
+1/2-1/2
+
+[Event "LPC Problem #45"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,17,16,12,K10:B28,19,K15,3,1."]
+1/2-1/2
+
+[Event "LPC Problem #46"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,26,K24,K19,17,15:B28,K22,6,K3,K2."]
+0-1
+
+[Event "LPC Problem #47"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,28,23,14:B20,19,16,8,6."]
+0-1
+
+[Event "LPC Problem #48"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,K10,K1:BK29,28,21,K2."]
+0-1
+
+[Event "LPC Problem #49"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W22,20,18,K13:BK21,K12,10,8."]
+1/2-1/2
+
+[Event "LPC Problem #50"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,23,K19,K16:BK31,K26,14."]
+0-1
+
+[Event "LPC Problem #51"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W25,21,17,11:BK31,18,6,5."]
+1/2-1/2
+
+[Event "LPC Problem #52"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,30,25,22,21,19,16:B20,14,12,11,10,7,2."]
+1/2-1/2
+
+[Event "LPC Problem #53"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,25,17,13:B19,18,12,10."]
+1/2-1/2
+
+[Event "LPC Problem #54"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,31,26,23,K14,13:BK30,28,24,20,19,16,15."]
+1/2-1/2
+
+[Event "LPC Problem #55"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W28,27,25,23,22,18,17,14:B20,16,13,11,9,5,3,1."]
+1/2-1/2
+
+[Event "LPC Problem #56"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,26,21,13,11:B24,18,15,3,1."]
+1/2-1/2
+
+[Event "LPC Problem #57"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,28,27,24,22,K1:B20,14,13,12,10,7,2."]
+1/2-1/2
+
+[Event "LPC Problem #58"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,23,19,K2:B22,21,17,14,12."]
+1/2-1/2
+
+[Event "LPC Problem #59"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,K10,K3,K2:BK21,K20,16,K11."]
+0-1
+
+[Event "LPC Problem #60"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W25,24,K20,K2,K1:BK32,18,K15,K13,9."]
+0-1
+
+[Event "LPC Problem #61"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W17,K13,9,5:BK22,K20,1."]
+0-1
+
+[Event "LPC Problem #62"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,28,K22:BK32,19,12."]
+0-1
+
+[Event "LPC Problem #63"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W19,16,15,14,13,10:B32,28,27,26,22,21."]
+1-0
+
+[Event "LPC Problem #64"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W20,14,13,12:B27,23,21,7."]
+1-0
+
+[Event "LPC Problem #65"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK30,11,9:B31,K28,18."]
+1/2-1/2
+
+[Event "LPC Problem #66"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,28,24,22,17,16:B15,14,13,10,7."]
+0-1
+
+[Event "LPC Problem #67"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,23,21,20,13,6:BK31,15,12,7,5,2."]
+1/2-1/2
+
+[Event "LPC Problem #68"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,27,24,21,17,13,12:B18,15,10,6,4,2,1."]
+1/2-1/2
+
+[Event "LPC Problem #69"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,21,12:B25,22,3."]
+0-1
+
+[Event "LPC Problem #70"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W26,17,16,9:B25,20,15,8."]
+1/2-1/2
+
+[Event "LPC Problem #71"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,11,6,K3:BK28,14,12,10,5."]
+1/2-1/2
+
+[Event "LPC Problem #72"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,19,13:B12,K9,6."]
+0-1
+
+[Event "LPC Problem #73"]
+[Black "Red"]
+[White "White"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK22,K20,13,4:BK31,27,21,K14."]
+1-0
+
+[Event "LPC Problem #74"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:W15,14,6,K2:B23,22,K8."]
+0-1
+
+[Event "LPC Problem #75"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W22,9,8:B25,19,15,7."]
+1/2-1/2
+
+[Event "LPC Problem #76"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,25,20,18:B13,12,9,6."]
+0-1
+
+[Event "LPC Problem #77"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,14,9:B21,19,15,5."]
+0-1
+
+[Event "LPC Problem #78"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,K23,21,15:BK28,24,K17,14."]
+0-1
+
+[Event "LPC Problem #79"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W26,22,K1:BK25,21,14."]
+1/2-1/2
+
+[Event "LPC Problem #80"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W13,9,K7:BK14,10,K1."]
+0-1
+
+[Event "LPC Problem #81"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,26,21,K20:BK32,15,K13,9."]
+1/2-1/2
+
+[Event "LPC Problem #82"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,27,K24,22,7:B28,K25,18,10,3."]
+1/2-1/2
+
+[Event "LPC Problem #83"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W30,28,26,23,21:B19,17,14,8,7."]
+1/2-1/2
+
+[Event "LPC Problem #84"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W16,14,12,11:B13,6,5,4."]
+1/2-1/2
+
+[Event "LPC Problem #85"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W29,19,16,K2:BK31,14,10,5."]
+1/2-1/2
+
+[Event "LPC Problem #86"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK24,K6,K2:BK20,12,5."]
+0-1
+
+[Event "LPC Problem #87"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,29,K27,24,12,K10:BK31,26,K21,20,K17,4."]
+0-1
+
+[Event "LPC Problem #88"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,30,26,22,19,11,9:B24,20,13,12,10,4,2."]
+1/2-1/2
+
+[Event "LPC Problem #89"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,K24,18,15,13:B26,21,9,K7,6."]
+0-1
+
+[Event "LPC Problem #90"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,30,26,20,19,16:BK29,K28,21,14,12."]
+0-1
+
+[Event "LPC Problem #91"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,31,30,K1:B23,15,12,11,10."]
+1/2-1/2
+
+[Event "LPC Problem #92"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK19,K11,5:BK32,28,K24,12."]
+1/2-1/2
+
+[Event "LPC Problem #93"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W15,14,9,K8:BK23,K21,2."]
+0-1
+
+[Event "LPC Problem #94"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,K11:BK31,K20,17."]
+0-1
+
+[Event "LPC Problem #95"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,27,24,23,22,21,19:B20,16,13,12,10,8,7."]
+0-1
+
+[Event "LPC Problem #96"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,29,28,27,K9,K3:B23,22,20,18,17,12."]
+0-1
+
+[Event "LPC Problem #97"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,26,21,15:BK29,18,5,4."]
+0-1
+
+[Event "LPC Problem #98"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W14,9,7:B21,K15,1."]
+1/2-1/2
+
+[Event "LPC Problem #99"]
+[Black "Red"]
+[White "White"]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,20,19,13:B23,21,12,11."]
+1/2-1/2
+
+[Event "LPC Problem #100"]
+[Black "Red"]
+[White "White"]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,28,27,26,22,21,20,18:B16,15,13,11,10,9,7,5."]
+0-1
+

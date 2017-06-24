@@ -1,0 +1,1460 @@
+[Event "Gem Problems #1"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,K5:BK17,K14."]
+1-0
+
+[Event "Gem Problems #2"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK32,13,12:BK6,4,3."]
+1-0
+
+[Event "Gem Problems #3"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK22,K14:BK21,K13,5."]
+1-0
+
+[Event "Gem Problems #4A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK32,K31,30:BK28,K23,K22,21."]
+1-0
+
+[Event "Gem Problems #4B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK32,K31,30:BK28,K23,K22,21."]
+1/2-1/2
+
+[Event "Gem Problems #5"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W23,22,21,20,19:B14,13,12,11,6."]
+1/2-1/2
+
+[Event "Gem Problems #6"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK24,16,12:BK15,K7,3."]
+1/2-1/2
+
+[Event "Gem Problems #7A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK27,K26:BK25,21."]
+0-1
+
+[Event "Gem Problems #7B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "B:WK27,K26:BK25,21."]
+0-1
+
+[Event "Gem Problems #8"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK16,K1:BK4,K3."]
+0-1
+
+[Event "Gem Problems #9"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,20,K1:B12,K11,K10."]
+1-0
+
+[Event "Gem Problems #10"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,K7,K6:BK22,K15,K14."]
+1-0
+
+[Event "Gem Problems #11"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK17,K11,K7:BK20,K19,K16,5."]
+1-0
+
+[Event "Gem Problems #12"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W21,K15,K12:BK31,14,13."]
+0-1
+
+[Event "Gem Problems #13"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK26,K22:BK15,K14,13."]
+1/2-1/2
+
+[Event "Gem Problems #14"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK23,K19:BK32,K22,12."]
+1/2-1/2
+
+[Event "Gem Problems #15"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK19,8:B12,6,5."]
+1/2-1/2
+
+[Event "Gem Problems #16"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK23,K19:BK32,20,12."]
+1/2-1/2
+
+[Event "Gem Problems #17"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,20,10,9:BK26,18,3,1."]
+1/2-1/2
+
+[Event "Gem Problems #18A"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W20,12,K2,K1:BK27,K19,K11,3."]
+1/2-1/2
+
+[Event "Gem Problems #18B"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W20,12,K2,K1:BK27,K19,K11,3."]
+1-0
+
+[Event "Gem Problems #19"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK23,K18,K14:BK32,K31,K30,20."]
+1/2-1/2
+
+[Event "Gem Problems #20"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,K10,K1:BK29,28,21,K2."]
+0-1
+
+[Event "Gem Problems #21"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W20,K17,K14,K10:BK28,16,12,11,8."]
+0-1
+
+[Event "Gem Problems #22"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK14,K12,K2:BK23,K22,5,K4."]
+1/2-1/2
+
+[Event "Gem Problems #23"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,23,21,20,19,18:B17,14,12,11,10,9."]
+1/2-1/2
+
+[Event "Gem Problems #24"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W19,K17,14:B7,6,5."]
+1-0
+
+[Event "Gem Problems #25"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK17,K15:B7,K6."]
+0-1
+
+[Event "Gem Problems #26"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK32,K2:BK28,8."]
+1/2-1/2
+
+[Event "Gem Problems #27"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,K12:BK32,K10."]
+1/2-1/2
+
+[Event "Gem Problems #28"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,27:BK30,28."]
+1-0
+
+[Event "Gem Problems #29"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK23,K2:B12,K11."]
+0-1
+
+[Event "Gem Problems #30"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK29,22:B6,4."]
+0-1
+
+[Event "Gem Problems #31"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,18:BK11,6."]
+1-0
+
+[Event "Gem Problems #32"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W19,18:BK20,K17."]
+1-0
+
+[Event "Gem Problems #33"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K19:B18,1."]
+0-1
+
+[Event "Gem Problems #34"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,K11:BK3,1."]
+0-1
+
+[Event "Gem Problems #35"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K14:B21,13."]
+0-1
+
+[Event "Gem Problems #36"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK31,29:BK24,21."]
+1/2-1/2
+
+[Event "Gem Problems #37"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W32,K22:B20,2."]
+1/2-1/2
+
+[Event "Gem Problems #38"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K10:B5,K2."]
+0-1
+
+[Event "Gem Problems #39"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK27,K18:BK28,11."]
+0-1
+
+[Event "Gem Problems #40"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,K25:BK15,3."]
+1-0
+
+[Event "Gem Problems #41"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,K10:BK31,K8."]
+1-0
+
+[Event "Gem Problems #42"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,10:BK13,5."]
+1-0
+
+[Event "Gem Problems #43"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W26,25:BK9,5."]
+1-0
+
+[Event "Gem Problems #44"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W27,21:B6,K3."]
+1-0
+
+[Event "Gem Problems #45"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK32,K7:B20,9."]
+1/2-1/2
+
+[Event "Gem Problems #46"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,K20:B11,K5."]
+1/2-1/2
+
+[Event "Gem Problems #47"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,24:BK32,10."]
+1-0
+
+[Event "Gem Problems #48"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,K4:B6,K5."]
+1-0
+
+[Event "Gem Problems #49"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W15,K13:B12,7."]
+0-1
+
+[Event "Gem Problems #50"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,15:B12,8."]
+1/2-1/2
+
+[Event "Gem Problems #51"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,K1:BK18,2."]
+1-0
+
+[Event "Gem Problems #52"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,19:BK4,2."]
+1-0
+
+[Event "Gem Problems #53"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W30,14:BK5,2."]
+1-0
+
+[Event "Gem Problems #54"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,20:B4,K2."]
+1-0
+
+[Event "Gem Problems #55"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,23:BK22,2."]
+1/2-1/2
+
+[Event "Gem Problems #56"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W23,K4:BK31,K22."]
+1-0
+
+[Event "Gem Problems #57"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W27,24:B22,2."]
+1-0
+
+[Event "Gem Problems #58"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,15,K4:BK6,K3."]
+0-1
+
+[Event "Gem Problems #59"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W22,19,18:BK11,K9."]
+1/2-1/2
+
+[Event "Gem Problems #60"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK28,K6:B17,11,K5."]
+1-0
+
+[Event "Gem Problems #61"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK26,K13:B18,14,11."]
+1/2-1/2
+
+[Event "Gem Problems #62"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,24,21:BK16,13."]
+1/2-1/2
+
+[Event "Gem Problems #63"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W23,K21,15:BK32,K16."]
+0-1
+
+[Event "Gem Problems #64"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK25,K17:BK20,10,9."]
+1/2-1/2
+
+[Event "Gem Problems #65"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK31,K15:B28,24,18."]
+1-0
+
+[Event "Gem Problems #66"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W19,17,K1:BK11,K9."]
+0-1
+
+[Event "Gem Problems #67"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W26,24,10:BK18,13."]
+0-1
+
+[Event "Gem Problems #68"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,K11:B5,4,K3."]
+1-0
+
+[Event "Gem Problems #69"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK15,K10:B25,13,5."]
+1/2-1/2
+
+[Event "Gem Problems #70"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK17,K8:B27,18,6."]
+1-0
+
+[Event "Gem Problems #71"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,26,17:BK27,K6."]
+0-1
+
+[Event "Gem Problems #72"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK24,K8:B15,7,K5."]
+1-0
+
+[Event "Gem Problems #73"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W31,K9:BK30,23,14."]
+1-0
+
+[Event "Gem Problems #74"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,12,10:BK28,2."]
+0-1
+
+[Event "Gem Problems #75"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK31,K1:B21,13,6."]
+1-0
+
+[Event "Gem Problems #76"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,16,K13:BK22,K8."]
+0-1
+
+[Event "Gem Problems #77"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W23,16,12:BK17,15."]
+0-1
+
+[Event "Gem Problems #78"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,25,23:BK21,4."]
+0-1
+
+[Event "Gem Problems #79"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK30,K15:BK21,17,12."]
+1-0
+
+[Event "Gem Problems #80"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK30,K28:BK29,21,19."]
+1/2-1/2
+
+[Event "Gem Problems #81"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,21,K10:BK31,K18."]
+0-1
+
+[Event "Gem Problems #82"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,20,19:BK11,K3."]
+1/2-1/2
+
+[Event "Gem Problems #83"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,K7:BK31,19,15."]
+1-0
+
+[Event "Gem Problems #84"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W19,11,7:BK24,K12."]
+0-1
+
+[Event "Gem Problems #85"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK32,K26:B20,K19,K15."]
+1-0
+
+[Event "Gem Problems #86"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W18,15,11:BK26,K3."]
+0-1
+
+[Event "Gem Problems #87"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W14,12,K8:BK15,K7."]
+1/2-1/2
+
+[Event "Gem Problems #88"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W26,20,K7:BK32,K14."]
+1/2-1/2
+
+[Event "Gem Problems #89"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "W:W31,K12:B23,K5,K4."]
+1-0
+
+[Event "Gem Problems #90"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W25,15,5:BK9,7,2."]
+1-0
+
+[Event "Gem Problems #91"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,28,K17:B24,19,K7."]
+1/2-1/2
+
+[Event "Gem Problems #92"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W17,10,5:B9,K8,2."]
+1-0
+
+[Event "Gem Problems #93"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,27,19:B13,11,7."]
+0-1
+
+[Event "Gem Problems #94"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K22,K11:BK32,21,19."]
+0-1
+
+[Event "Gem Problems #95"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK22,19,18:B21,11,10."]
+0-1
+
+[Event "Gem Problems #96"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W24,K23,12:BK32,K20,10."]
+1/2-1/2
+
+[Event "Gem Problems #97"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,K14,K12:BK22,19,15."]
+0-1
+
+[Event "Gem Problems #98"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W25,22,K9:BK31,K23,13."]
+1/2-1/2
+
+[Event "Gem Problems #99"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W28,K15,K8:B27,16,12."]
+1/2-1/2
+
+[Event "Gem Problems #100"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K27,K14:BK28,16,K13."]
+0-1
+
+[Event "Gem Problems #101"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,21,K7:B28,23,6."]
+0-1
+
+[Event "Gem Problems #102"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K13,11:B27,24,22."]
+0-1
+
+[Event "Gem Problems #103"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W21,19,12:BK10,6,5."]
+1/2-1/2
+
+[Event "Gem Problems #104"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,K22,K14:B23,13,K11."]
+0-1
+
+[Event "Gem Problems #105"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,31,30:B18,15,7."]
+0-1
+
+[Event "Gem Problems #106"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W28,K12,8:B26,K23,K3."]
+1-0
+
+[Event "Gem Problems #107"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W26,23,12,K6:BK24,13."]
+1/2-1/2
+
+[Event "Gem Problems #108"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,K30,K3:BK23,21,K11."]
+1/2-1/2
+
+[Event "Gem Problems #109"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W31,28,24:B12,7,6."]
+1/2-1/2
+
+[Event "Gem Problems #110"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,K30,K4:B28,23,K1."]
+0-1
+
+[Event "Gem Problems #111"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,11,K6:BK21,15,3."]
+0-1
+
+[Event "Gem Problems #112"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W20,K18,16:B26,K11,7."]
+1/2-1/2
+
+
+
+[Event "Gem Problems #113"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:WK23,K15,7:BK30,K24,16."]
+1/2-1/2
+
+[Event "Gem Problems #114"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK14,12,K6:B24,20,4."]
+0-1
+
+[Event "Gem Problems #115"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,28,K14:BK23,16,11."]
+1/2-1/2
+
+[Event "Gem Problems #116"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W18,K11,6:BK27,K12,3."]
+1/2-1/2
+
+[Event "Gem Problems #117"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W31,K25,19:BK32,23,12."]
+1/2-1/2
+
+[Event "Gem Problems #118"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W22,20,7:B26,14,8."]
+1/2-1/2
+
+[Event "Gem Problems #119"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK32,K22,K11:BK28,K21,12."]
+0-1
+
+[Event "Gem Problems #120"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,14,K2:B8,5,1."]
+0-1
+
+[Event "Gem Problems #121"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,20,K19:B22,18,5."]
+0-1
+
+[Event "Gem Problems #122"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK17,6,K2:BK29,K15,5."]
+0-1
+
+[Event "Gem Problems #123"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,9,K6:B16,13,8."]
+0-1
+
+[Event "Gem Problems #124"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,22,K8:B23,6,K5."]
+0-1
+
+[Event "Gem Problems #125"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W30,17,7:BK15,6,1."]
+1/2-1/2
+
+[Event "Gem Problems #126"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,17,16:B10,9,6."]
+0-1
+
+[Event "Gem Problems #127"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK26,19,9:BK28,K17,K8."]
+1/2-1/2
+
+[Event "Gem Problems #128"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W27,23,K1:BK20,9,7."]
+0-1
+
+[Event "Gem Problems #129"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W32,28,9:B19,K14,10."]
+1/2-1/2
+
+[Event "Gem Problems #130"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W25,8,6:BK27,K11,7."]
+0-1
+
+[Event "Gem Problems #131"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,30,K2:B28,22,3."]
+0-1
+
+[Event "Gem Problems #132"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK20,K16,K1:B27,K18,8."]
+0-1
+
+[Event "Gem Problems #133"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W25,K12,11:BK20,K19,3."]
+1-0
+
+[Event "Gem Problems #134"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W32,29,K11:BK19,3,K1."]
+1-0
+
+[Event "Gem Problems #135"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,30,K20:BK25,21,19."]
+0-1
+
+[Event "Gem Problems #136"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,K13,K6:BK29,K16,14."]
+0-1
+
+[Event "Gem Problems #137"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK25,24,20:BK18,12,7."]
+1-0
+
+[Event "Gem Problems #138"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK29,27,12:B22,K19,3."]
+1-0
+
+[Event "Gem Problems #139"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "B:W21,K11,K3:BK31,13,4."]
+1/2-1/2
+
+[Event "Gem Problems #140"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W26,K11,K1:BK18,10,K6."]
+0-1
+
+[Event "Gem Problems #141"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W21,18,12:B13,K9,3."]
+1-0
+
+[Event "Gem Problems #142"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W31,30,24:B17,13,12."]
+0-1
+
+[Event "Gem Problems #143"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK26,K18,K10:BK25,K20,12."]
+0-1
+
+[Event "Gem Problems #144"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:W27,K13,11:BK14,6."]
+1/2-1/2
+
+[Event "Gem Problems #145"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK28,21,K15:BK29,20,9."]
+0-1
+
+[Event "Gem Problems #146"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W29,K19,K9:BK26,18,17."]
+0-1
+
+[Event "Gem Problems #147"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1/2-1/2"]
+[Setup "1"]
+[FEN "W:WK25,21,19:B18,13,K11."]
+1/2-1/2
+
+[Event "Gem Problems #148"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K25,22:B21,15,14."]
+0-1
+
+[Event "Gem Problems #149"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,25,21:B19,14,9."]
+0-1
+
+[Event "Gem Problems #150"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,21,K1:BK25,22,2."]
+0-1
+
+[Event "Gem Problems #151"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,28,K23:B21,16,14."]
+0-1
+
+[Event "Gem Problems #152"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK29,22,K3:BK30,K15,K11."]
+1-0
+
+[Event "Gem Problems #153"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:WK30,26,K3:B28,K12,10."]
+0-1
+
+[Event "Gem Problems #154"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:WK17,13,6:BK15,K10,1."]
+1-0
+
+[Event "Gem Problems #155"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W28,K18,K16:BK31,K25,8."]
+0-1
+
+[Event "Gem Problems #156"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W30,K29,K12:B22,17,K4."]
+0-1
+
+[Event "Gem Problems #157"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "0-1"]
+[Setup "1"]
+[FEN "W:W32,K24,K1:BK31,28,10."]
+0-1
+
+[Event "Gem Problems #158"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W29,14,K3:B16,K15,5."]
+1-0
+
+[Event "Gem Problems #159"]
+[Date ""]
+[Black ""]
+[White ""]
+[Result "1-0"]
+[Setup "1"]
+[FEN "B:W23,K14,K4:BK30,K16,K3."]
+1-0
+

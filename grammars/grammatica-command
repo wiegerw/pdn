@@ -1,0 +1,4 @@
+java -jar ../../../java/projects/core/lib/grammatica-1.5.jar pdn_reading.grammar --javaoutput ../../../java/projects/PDNChecker/src --javapackage pdnchecker.pdn --javapublic
+java -jar ../../../java/projects/core/lib/grammatica-1.5.jar pdn_writing.grammar --javaoutput ../../../java/projects/PDNChecker/src --javapackage pdnchecker.pdn --javapublic
+java -jar ../../../java/projects/core/lib/grammatica-1.5.jar fen.grammar         --javaoutput ../../../java/projects/PDNChecker/src --javapackage pdnchecker.pdn --javapublic
+java -jar ../../../java/projects/core/lib/grammatica-1.5.jar timeControl.grammar --javaoutput ../../../java/projects/PDNChecker/src --javapackage pdnchecker.pdn --javapublic

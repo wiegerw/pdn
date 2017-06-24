@@ -1,0 +1,61 @@
+%header%
+
+GRAMMARTYPE = "LL"
+
+DESCRIPTION = "Portable Draughts Notation (PDN) 3.0 Reading Grammar"
+
+AUTHOR      = "Wieger Wesselink, <wieger at 10x10 dot org>"
+VERSION     = "1.5"
+DATE        = "12 March 2012"
+
+LICENSE     = "Distributed under the Boost Software License, Version 1.0.
+               See http://www.boost.org/LICENSE_1_0.txt."
+
+COPYRIGHT   = "Copyright (c) 2009-2012 Wieger Wesselink."
+
+%tokens%
+
+WIN1             = "1-0"
+DRAW1            = "1/2-1/2"
+LOSS1            = "0-1"
+WIN2             = "2-0"
+DRAW2            = "1-1"
+LOSS2            = "0-2"
+DOUBLEFORFEIT    = "0-0"
+ELLIPSES         = "..."
+MOVENUMBER       = <<[0-9]+\.(\.\.)?>>
+NUMERICMOVE      = <<[0-9][0-9]?(\s*[-x:]\s*[0-9][0-9]?)+>>
+ALPHANUMERICMOVE = <<([a-h][1-8](\s*[x:]\s*[a-h][1-8])+)|([a-h][1-8]\s*[-]?\s*[a-h][1-8])>>
+MOVESTRENGTH1    = <<[!?]+>>
+MOVESTRENGTH2    = <<\([!?]+\)>>
+NAG              = <<\$[0-9]+>>
+LPAREN           = "("
+RPAREN           = ")"
+LBRACKET         = "["
+RBRACKET         = "]"
+ASTERISK         = "*"
+SETUP            = <</[^\/]*/>>
+STRING           = <<"([^"]|\\")*">>
+COMMENT          = <<\{([^}]|(\\\}))*\}>>
+IDENTIFIER       = <<[A-Z][a-zA-Z0-9_]*>>
+WHITESPACE       = <<[ \t\n\r]+>> %ignore%
+LINECOMMENT      = <<%.*>> %ignore%
+
+%productions%
+
+// Game independent productions
+PdnFile          = Game (GameSeparator Game)* GameSeparator?                        ;
+GameSeparator    = ASTERISK | Result1 | Result2                                     ;
+Game             = (GameHeader GameBody?) | GameBody                                ;
+GameHeader       = PdnTag+                                                          ;
+GameBody         = (GameMove | Variation | COMMENT | SETUP | NAG)+                  ;
+PdnTag           = LBRACKET IDENTIFIER STRING RBRACKET                              ;
+GameMove         = MOVENUMBER? Move MoveStrength?                                   ;
+Variation        = LPAREN GameBody RPAREN                                           ;
+ 
+// Game dependent productions
+Move             = NUMERICMOVE | ALPHANUMERICMOVE | ELLIPSES                        ;
+GameResult       = Result1 | Result2                                                ;
+Result1          = WIN1 | DRAW1 | LOSS1                                             ;
+Result2          = WIN2 | DRAW2 | LOSS2 | DOUBLEFORFEIT                             ;
+MoveStrength     = MOVESTRENGTH1 | MOVESTRENGTH2                                    ;

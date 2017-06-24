@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="draughts, PDN">
+  <title>PDN GameType tag tester</title>
+  <script type="application/javascript">
+    // global variables
+    var game_description;   // string
+    var type_number;        // int
+    var start_color;        // W/B
+    var rows;               // int
+    var columns;            // int
+    var notation_type;      // N/A
+    var notation_start;     // 0-3
+    var invert_flag;        // 0-1
+    var flipped = false;    // normal/flipped
+    var player_piece_color = "White";
+    var opponent_piece_color = "DimGray";
+    var light_field_color = "Wheat";
+    var dark_field_color  = "Peru";
+    var size = 50;
+    var table = [
+      // type number, description, gametype tag, player piece color, opponent piece color, light field color, dark field color, orientation
+      ['Turkish'                 , '-1,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Wheat', 'normal' ],
+      ['International draughts'  , '20,W,10,10,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal'],
+      ['English draughts'        , '21,B,8,8,N1,0'  , 'Crimson', 'White', 'LightYellow', 'LimeGreen', 'flipped'],
+      ['Italian draughts'        , '22,W,8,8,N2,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['American pool checkers'  , '23,B,8,8,N1,0'  , 'Crimson', 'White', 'LightYellow', 'LimeGreen', 'normal'],
+      ['Pool checkers (unified)' , '23,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Zimbabwean pool checkers', '23,W,8,8,A0,0'  , 'White', 'DimGray', 'Peru', 'Wheat', 'normal' ],
+      ['Jamaican draughts'       , '23,W,8,8,A1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Spanish draughts'        , '24,W,8,8,N1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Russian draughts'        , '25,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Brazilian draughts'      , '26,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Canadian draughts'       , '27,W,12,12,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Portuguese draughts'     , '28,W,8,8,N1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Czech draughts'          , '29,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Thai draughts'           , '31,B,8,8,N2,0'  , 'DimGray', 'White', 'Wheat', 'Peru', 'normal' ],
+      ['Frisian draughts'        , '40,W,10,10,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Spantsiretti draughts'   , '41,W,10,8,A0,0' , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Dumm (South Africa)'     , '-1,W,14,14,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Sri Lanka Draughts'      , '-1,W,12,12,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Ktar 10x11'              , '-1,W,10,11,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Ktar 10x12'              , '-1,W,10,12,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ]
+    ];
+
+    function drawsquare(ctx, x, y, color)
+    {
+      ctx.fillStyle = color;
+      ctx.fillRect (x, y, size, size);
+    }
+
+    function drawpiece(ctx, x, y, color)
+    {
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      var dx = 12;
+      var radius = (size - dx) / 2;
+      var startAngle = 0;
+      var endAngle = 2 * Math.PI;
+      var counterClockwise = false;
+      ctx.arc(x + size/2, y + size/2, radius, startAngle, endAngle, counterClockwise);
+      ctx.lineWidth = 2;
+      ctx.fillStyle = color;
+      ctx.strokeStyle = 'black';
+      ctx.fill();
+    }
+
+    function rc2f(r, c, maxr, maxc)
+    {
+      if ((r < 0) || (c < 0) || (r >= maxr) || (c >= maxc))
+      {
+        return -1; // out of board
+      }
+      return 1 + (r * ~~(maxc / 2)) + ~~(c / 2);
+    }
+
+    // 0 = Bottom left
+    // 1 = Bottom right
+    // 2 = Top left
+    // 3 = Top right
+    function notation(r, c)
+    {
+      if (flipped)
+      {
+        r = rows - r - 1;
+        c = columns - c - 1;
+      }
+
+      var left = notation_start == 0 || notation_start == 2;
+      var bottom = notation_start == 0 || notation_start == 1;
+
+      r = bottom ? rows - r - 1 : r;
+      c = left ? c : columns - c - 1;
+
+      if (notation_type == 'N')
+      {
+        var f = rc2f(r, c, rows, columns);
+        return "" + f;
+      }
+      else
+      {
+        return 'abcdefghijklmnop'[c] + [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16][r];
+      }
+    }
+
+    function drawnumber(ctx, x, y, r, c)
+    {
+      if (is_empty_field(r, c))
+      {
+        return;
+      }
+      var dx = 2;
+      ctx.fillStyle = "Black";
+      ctx.textAlign = "right";
+      ctx.textBaseline = "bottom";
+      ctx.fillText(notation(r, c), x + size - dx, y + size - dx);
+    }
+
+    function is_empty_field(r, c)
+    {
+      if (type_number == 30) // Turkish draughts
+      {
+        return false;
+      }
+      else
+      {
+        if (flipped)
+        {
+          return (invert_flag == 0) == (r % 2 == (columns - c) % 2);
+        }
+        else
+        {
+          return (invert_flag == 0) == ((rows - r) % 2 == c % 2);
+        }
+      }
+    }
+
+    function is_player_field(r, c)
+    {
+      if (is_empty_field(r, c))
+      {
+        return false;
+      }
+      var minrow = rows - ~~(rows / 2) + 1;
+      var maxrow = rows;
+      if (type_number == 31) // Thai
+      {
+        minrow++;
+      }
+      else if (type_number == 30) // Turkish
+      {
+        minrow = rows - 3;
+        maxrow = rows - 2;
+      }
+      return minrow <= r && r <= maxrow;
+    }
+
+    function is_opponent_field(r, c)
+    {
+      if (is_empty_field(r, c))
+      {
+        return false;
+      }
+      var minrow = 0;
+      var maxrow = ~~(rows / 2) - 2;
+      if (type_number == 31) // Thai
+      {
+        maxrow--;
+      }
+      else if (type_number == 30) // Turkish
+      {
+        minrow = 1;
+        maxrow = 2;
+      }
+      return minrow <= r && r <= maxrow;
+    }
+
+    function piece_color(is_player)
+    {
+      return (is_player != flipped) ? player_piece_color : opponent_piece_color;
+    }
+
+    function drawfield(ctx, r, c)
+    {
+      var y = r * size;
+      var x = c * size;
+      drawsquare(ctx, x, y, fieldcolor(r, c));
+      if (is_player_field(r, c))
+      {
+        drawpiece(ctx, x, y, piece_color(true));
+      }
+      else if (is_opponent_field(r, c))
+      {
+        drawpiece(ctx, x, y, piece_color(false));
+      }
+      drawnumber(ctx, x, y, r, c);
+    }
+
+    function fieldcolor(r, c)
+    {
+      if (is_empty_field(r, c))
+      {
+        return light_field_color;
+      }
+      else
+      {
+        return dark_field_color;
+      }
+    }
+
+    function drawboard(ctx)
+    {
+      for (var r = 0; r < rows; r++)
+      {
+        for (var c = 0; c < columns; c++)
+        {
+          drawfield(ctx, r, c);
+        }
+      }
+    }
+
+    function parse_gametype(gametype)
+    {
+      var values = gametype.split(',');
+      if (values.length != 6)
+      {
+        alert('a gametype tag should have 6 values!');
+        return false;
+      }
+      type_number = parseInt(values[0]);
+      start_color = values[1];
+      columns = parseInt(values[2]);
+      rows = parseInt(values[3]);
+      notation_type = values[4][0];
+      notation_start = parseInt(values[4][1]);
+      invert_flag = parseInt(values[5]);
+      return true;
+    }
+
+    function draw(gametype)
+    {
+      if (!parse_gametype(gametype))
+      {
+        return;
+      }
+      if (rows > 20 || columns > 20)
+      {
+        alert("Too many rows and columns!");
+        return;
+      }
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        canvas.width = columns * size
+        canvas.height = rows * size
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = "10px sans-serif";
+        drawboard(ctx);
+      }
+      draw_start_color();
+      explain();
+    }
+
+    function draw_start_color()
+    {
+      var canvas = document.getElementById("startcolor");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawsquare(ctx, 0, 0, dark_field_color);
+        drawpiece(ctx, 0, 0, piece_color(!flipped));
+      }
+    }
+
+    function copyItem(thelist)
+    {
+      var idx = thelist.selectedIndex;
+      var content = table[idx][1];
+      theinput = document.getElementById('theinput');
+      theinput.value = content;
+    }
+
+    function selectItem(thelist)
+    {
+      var idx = thelist.selectedIndex;
+      game_description = table[idx][0];
+      var content = table[idx][1];
+      player_piece_color = table[idx][2];
+      opponent_piece_color = table[idx][3];
+      light_field_color = table[idx][4];
+      dark_field_color = table[idx][5];
+      flipped = table[idx][6] == 'flipped';
+      theinput = document.getElementById('theinput');
+      theinput.value = content;
+      draw(content);
+    }
+
+    function onPressEnter(e)
+    {
+      var keycode;
+      if (e)
+      {
+        keycode = e.which;
+      }
+      else
+      {
+        return;
+      }
+      if (keycode == 13)
+      {
+        theinput = document.getElementById('theinput');
+        var content = theinput.value;
+        draw(content);
+      }
+    }
+
+    function fillcombobox()
+    {
+      for (var i = 0; i < table.length; i++)
+      {
+        document.write('<option>' + table[i][0] + '</option>');
+      }
+    }
+
+    function flip_board()
+    {
+      flipped = !flipped;
+      theinput = document.getElementById('theinput');
+      var content = theinput.value;
+      draw(content);
+    }
+
+    function load()
+    {
+      var content = table[0][1];
+      game_description = table[0][0];
+      theinput = document.getElementById('theinput');
+      theinput.value = content;
+      draw(content);
+    }
+
+    function notation_start_explanation()
+    {
+      switch (notation_start)
+      {
+        case 0: return 'bottom left';
+        case 1: return 'bottom right';
+        case 2: return 'top left';
+        case 3: return 'top right';
+      }
+      return 'unknown';
+    }
+
+    function explain()
+    {
+      textarea = document.getElementById("explanation");
+      textarea.value = 'game type = ' + type_number + ' (' + game_description + ')\n';
+      textarea.value += 'start color = ' + start_color + ' (unused)\n';
+      textarea.value += 'number of columns = ' + columns + '\n';
+      textarea.value += 'number of rows = ' + rows + '\n';
+      textarea.value += 'notation type = ' + notation_type + (notation_type == 'N' ? ' (numeric)' : ' (algebraic)') + '\n';
+      textarea.value += 'first square location = ' + notation_start + ' (' + notation_start_explanation() + ')\n';
+      textarea.value += 'invert flag = ' + invert_flag + ' (bottom left square is ' + (invert_flag == 0 ? 'not ' : '') + 'empty)\n';
+      textarea.value += 'default orientation = ' + (flipped ? 'flipped' : 'normal') + '\n';
+      textarea.value += 'player piece color = ' + player_piece_color + '\n';
+      textarea.value += 'opponent piece color = ' + opponent_piece_color + '\n';
+      textarea.value += 'light field color = ' + light_field_color + '\n';
+      textarea.value += 'dark field color = ' + dark_field_color;
+    }
+  </script>
+ </head>
+ <body>
+   <h1>PDN GameType tag tester</h1>
+   <p>This page displays the initial position af a draughts board corresponding to a
+      GameType tag, as specified in the <a href="http://pdn.fmjd.org/gametype.html">PDN Standard</a>.
+      Please send corrections to wieger &lt;at&gt; 10x10 &lt;dot&gt; org.
+   </p>
+   <div id="top" style="padding: 20px; height:50px;">
+     <div style="float: left; padding: 25px 20px 0 0;">
+       <input type="text" id="theinput" name="theinput" onKeyPress="onPressEnter(event)"/>
+       <select name="thelist" onChange="selectItem(this)" onMouseOut="copyItem(this)">
+         <script>fillcombobox();</script>
+       </select>
+       <input id="flip" type="button" value="flip" onclick="flip_board();" />
+     </div>
+     <div style="float: left; font: 12px sans-serif; text-align: center">
+       Start color:
+       <canvas id="startcolor" width="50" height="50"></canvas>
+     </div>
+   </div>
+   <br style="clear: left;" />
+   <div id="bottom" style="float: left">
+     <canvas id="canvas" width="700" height="700"></canvas>
+   </div>
+   <div style="float: left; padding-left: 20px">
+     <textarea id="explanation" rows="12" cols="47"></textarea>
+   </div>
+   <script>load();</script>
+ </body>
+</html>

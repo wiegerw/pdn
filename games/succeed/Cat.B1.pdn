@@ -1,0 +1,529 @@
+
+
+[Event "M. Fedorov"]
+[Site "conc. FMJD, 1998, A58"]
+[Date ""]
+[Round "B9"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W10,16,19,28,31,33,46:B7,8,12,17,26,37,42."]
+
+1. 46-41 37x46 2. 19-13 46x5 3. 13x22 26x37 4. 33-28 5x32 5. 22-17 12x21 6.
+16x47 1-0
+
+
+[Event "M.van Dijk "]
+[Site "Het Parol , 18-9-1971"]
+[Date ""]
+[Round "B11"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W29,30,33,39,40,42,49:B7,8,9,10,18,19,38."]
+
+1. 39-34 38x47 2. 29-23 47x44 3. 23x5 44-6 4. 5x1 6-28 5. 49-44 28x50 6. 1-6
+50-45 7. 6-1 1-0
+
+
+[Event "D.Vuurboom"]
+[Site "500 eigen , 1978"]
+[Date ""]
+[Round "B12"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W16,20,29,31,38,41,49,50:B3,7,8,9,10,18,40,45."]
+
+1. 49-44 40x49 2. 16-11 49x47 3. 11x15 47x24 4. 20x29 3-9 5. 15-10 9-14 6.
+10x19 18-22 7. 19-14 22-27 8. 14-10 27-32 9. 10-5 32-38 10. 50-44 1-0
+
+
+[Event "L.de Rooij"]
+[Site "J.C.Vink, veramelde 1968"]
+[Date ""]
+[Round "B12"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W17,28,31,33,35,38,41,44:B7,8,9,10,14,18,25,40."]
+
+1. 28-23 18x29 2. 33x24 40x49 3. 17-11 49x47 4. 11x15 47x20 5. 15x24 25-30 6.
+24-20 14x25 7. 35x24 1-0
+
+
+[Event "J.Scheijen"]
+[Site "Damweelde , 8/1968"]
+[Date ""]
+[Round "B12"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W17,20,29,31,38,41,50:B7,8,9,10,18,19,40."]
+
+1. 50-44 40x49 2. 17-11 49x47 3. 11x15 47x24 4. 20x29 19-23 5. 15-10 23x34 6.
+10-4 34-40 7. 4x22 40-45 8. 22-50 1-0
+
+
+[Event "D.de Ruiter"]
+[Site "GS-Nieuws, 2/1968"]
+[Date ""]
+[Round "B18"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,22,24,29,30,34,41,45,48:B8,9,13,14,19,32,37,38,40."]
+
+1. 22-17 13x11 2. 24x4 37x46 3. 48-42 38x47 4. 4-13 47x35 5. 13x49 40x29 6.
+45-40 35x44 7. 49x5 1-0
+
+
+[Event "M.Dalman"]
+[Site "Tresor ... , n.190"]
+[Date ""]
+[Round "B23"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,23,31,33,34,39,47:B8,11,20,24,25,26,32."]
+
+1. 33-29 24x44 2. 23-19 26x37 3. 47-42 37x48 4. 18-13 48x30 5. 13x2 30x13 6.
+2x8 1-0
+
+
+[Event "W.Duursma"]
+[Site "Tombola , 18-9-1961"]
+[Date ""]
+[Round "B27"]
+[White ""]
+[Black ""]
+[Result "*"]
+[SetUp "1"]
+[FEN "W:W16,23,29,32,38,41,44:B7,13,14,15,25,28,30."]
+
+1. 16-11 28x46 2. 11x2 46x19 3. 38-32 19x46 4. 2x5 *
+
+
+[Event "K.Grigorian"]
+[Site "Molodezh Azerbaijana, 7-1-1988"]
+[Date ""]
+[Round "B28"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,14,17,20,26,35,48:B3,9,13,23,27,29,39,41."]
+
+1. 48-43 39x48 2. 35-30 48x25 3. 12-8 3x21 4. 14x3 25x9 5. 3x18 1-0
+
+
+[Event "A.Kaciuska"]
+[Site "Ch.de Lituanie , 2004"]
+[Date ""]
+[Round "B29"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,19,20,23,30,46,50:B9,27,37,39,40,42."]
+
+1. 46-41 37x46 2. 19-13 46x34 3. 13x4 34x1 4. 4x45 1-0
+
+
+[Event "J.C.Vink"]
+[Site "De Leeuwarder Courant , 10-12-1971"]
+[Date ""]
+[Round "B34"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,18,22,29,33,39,47,48,49:B9,11,13,30,31,32,36,37,40."]
+
+1. 49-44 40x49 2. 48-43 49x38 3. 33x42 37x48 4. 22-17 48x23 5. 17x6 13x22 6.
+6-1 23x7 7. 1x3 31-37 8. 3-14 36-41 9. 47x36 37-42 10. 14-37 42x31 11. 36x27
+1-0
+
+[Event "P.Deguee"]
+[Site "A l ombre de mon clocher, 1980"]
+[Date ""]
+[Round "B34"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,18,22,29,31,42,44:B9,10,11,13,20,26,35."]
+
+1. 44-39 26x48 2. 22-17 48x23 3. 17x6 13x22 4. 6-1 23x7 5. 1x17 1-0
+
+
+[Event "J.Scheijen"]
+[Site "Knack Magazine , 30-3-1983"]
+[Date ""]
+[Round "B34"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,18,22,28,38,40,41:B2,9,10,13,24,30,36."]
+
+1. 12-7 2x11 2. 28-23 36x47 3. 22-17 47x45 4. 17x6 13x22 5. 6-1 45x18 6. 1x13
+1-0
+
+
+[Event "M.Cvetov"]
+[Site "Grani tvorchestva, nr.56, pag.49"]
+[Date ""]
+[Round "B35"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W6,11,24,25,30,41,48:B1,10,14,22,31,32,38."]
+
+1. 11-7 1x12 2. 41-37 32x41 3. 48-42 38x47 4. 6-1 47x15 5. 1x47 1-0
+
+[Event "NN"]
+[Site "Krymskaya Pravda , 14-6-1980"]
+[Date ""]
+[Round "B36"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W15,20,24,34,42,46:B21,22,23,31,36,37."]
+
+1. 15-10 37x48 2. 24-19 48x5 3. 19x37 5x41 4. 46x37 1-0
+
+
+[Event "J.vd Boogaard"]
+[Site "Verzamelde 8 , n.1763"]
+[Date ""]
+[Round "B38"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,22,26,27,30,43,50:B7,13,16,18,25,33,40."]
+
+1. 21-17 25x34 2. 43-38 33x42 3. 50-44 40x49 4. 17-11 49x21 5. 11x2 18x27 6.
+2x22 1-0
+
+
+[Event "J.J.van Tol"]
+[Site "HD, 10/1958"]
+[Date ""]
+[Round "B39"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W28,29,34,35,45,47:B7,17,18,19,25,37."]
+
+1. 47-41 37x46 2. 35-30 46x23 3. 29-24 23x40 4. 24x2 25x34 5. 2-30 34x25 6.
+45x34 1-0
+
+
+
+[Event "Wolff l aine"]
+[Site "Manuscript Dufour, 1803"]
+[Date ""]
+[Round "B40"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:WK3,25,34,45:B38,K47."]
+
+1. 3-21 1-0
+
+
+[Event "NN"]
+[Site "Menorial G.Dalidovitch, 2007"]
+[Date ""]
+[Round "B43"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W6,7,12,13,18,21,27,29,34,36,41,45,47:B2,16,20,22,24,25,28,31,32,33,35,38,43,44."]
+
+1. 12-8 2x11 2. 6x17 22x11 3. 45-40 31x22 4. 40x49 16x27 5. 29-23 28x19 6.
+34-30 25x34 7. 47-42 38x47 8. 49x40 35x44 9. 8-2 19x8 10. 2x49 22x13 11. 36-31
+27x36 12. 49x15 1-0
+
+
+[Event "J.Siozinys"]
+[Site "Ch.Lituanie , 2004"]
+[Date ""]
+[Round "B49"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,14,15,29,33,41,45:B13,22,30,32,35,36,44."]
+
+1. 29-24 30x10 2. 15x4 36x47 3. 4x40 47x1 4. 40-34 1x40 5. 45x34 1-0
+
+
+[Event "J.Scheijen"]
+[Site "Verzamelde 13 n.134."]
+[Date ""]
+[Round "B51"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W23,28,38,39,46,47,49,50:B8,17,20,24,27,30,36,37."]
+
+1. 23-19 24x13 2. 47-41 36x47 3. 46-41 47x22 4. 41x3 22x44 5. 3x34 1-0
+
+
+[Event "J.van den Boogaard"]
+[Site "Verzamelde 15 n.3538"]
+[Date ""]
+[Round "B52"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W16,17,27,37,38,39,40,46,48:B6,8,14,18,24,26,28,29,36."]
+
+1. 39-33 28x39 2. 48-43 39x48 3. 27-21 48x31 4. 46-41 36x47 5. 40-34 47x11 6.
+34x3 26x17 7. 3x12 1-0
+
+
+
+[Event "H.J.Simons"]
+[Site "Das Problemnlattchen 7/2000"]
+[Date ""]
+[Round "B55"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W16,24,32,33,43,45,50:B7,8,9,10,15,29,35."]
+
+1. 16-11 29x49 2. 11x4 49x16 3. 24-20 15x24 4. 4x38 1-0
+
+
+[Event "K.de Ligt"]
+[Site "Damweelde , 10/1967"]
+[Date ""]
+[Round "B59"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W15,28,35,37,38,44,46:B8,11,14,18,19,21,40."]
+
+1. 35-30 40x49 2. 30-24 49x23 3. 24x2 23x41 4. 2x20 41-36 5. 46-41 36x47 6.
+20-24 47x20 7. 15x24 1-0
+
+
+[Event "L.Dalman"]
+[Site "Du haut du pont du Gard , n.50"]
+[Date ""]
+[Round "B61"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W18,20,24,28,30,37,48:B4,7,9,13,17,21,26."]
+
+1. 37-31 13x33 2. 24-19 26x37 3. 48-42 37x48 4. 19-14 48x25 5. 14x3 25x9 6.
+3x2 1-0
+
+
+
+
+[Event "D.de Ruiter"]
+[Site "DE ,1/1988"]
+[Date ""]
+[Round "B65"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,20,25,30,31,42,47:B3,9,22,23,26,32."]
+
+1. 20-14 26x48 2. 25-20 48x25 3. 12-8 3x12 4. 14x3 25x14 5. 3x10 32-38 6.
+10-15 38-43 7. 15-38 43x32 8. 47-42 1-0
+
+
+
+[Event "M.Grigorian"]
+[Site "Molodezh Azerbaijana, 7-1-1988"]
+[Date ""]
+[Round "B65"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W12,14,17,20,26,35,48:B3,9,13,23,27,29,39,41."]
+
+1. 48-43 39x48 2. 35-30 48x25 3. 12-8 3x21 4. 14x3 25x9 5. 3x18 1-0
+
+
+[Event "P.Lauwen"]
+[Site "DE 11/1969"]
+[Date ""]
+[Round "B65"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W11,15,17,21,22,24,26,27,31,35:B2,6,7,8,9,14,20,29,33,36."]
+
+1. 35-30 7x16 2. 24-19 14x23 3. 15x24 29x20 4. 22-18 23x12 5. 27-22 16x18 6.
+30-25 36x27 7. 25x3 12x21 8. 3x38 1-0
+
+
+[Event "C.Schaap "]
+[Site "DE, 7/1976"]
+[Date ""]
+[Round "B68"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,22,24,30,37,41,49:B8,9,10,14,33,35,39,40."]
+
+1. 49-43 39x48 2. 24-20 48x28 3. 20-15 28x46 4. 15x2 35x24 5. 2x5 1-0
+
+
+[Event "M.Douwes"]
+[Site "Maximaal 90/91 , n.65"]
+[Date ""]
+[Round "B71"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W17,22,41,42,44,49:B8,25,28,30,33,36."]
+
+1. 17-12 36x38 2. 12x3 28x17 3. 3x43 1-0
+
+
+[Event "M.Douwes"]
+[Site "46/5, collection J.Pennings"]
+[Date ""]
+[Round "B73"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W11,32,33,41:B13,19,37."]
+
+1. 32-28 37x46 2. 11-6 46x23 3. 6-1 1-0
+
+
+[Event "J.vd Boogaard"]
+[Site "Brabants Damnieuws , 8/1948"]
+[Date ""]
+[Round "B75"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,22,26,27,28,32,35,44:B7,13,16,18,19,25,40."]
+
+1. 21-17 40x49 2. 35-30 25x34 3. 28-23 19x37 4. 17-11 49x21 5. 11x2 18x27 6.
+2x22 1-0
+
+
+[Event "J.vd Boogaard"]
+[Site "verzamelde 8 , n.1763"]
+[Date ""]
+[Round "B75"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W21,22,26,27,30,43,50:B7,13,16,18,25,33,40."]
+
+1. 21-17 25x34 2. 43-38 33x42 3. 50-44 40x49 4. 17-11 49x21 5. 11x2 18x27 6.
+2x22 1-0
+
+
+[Event "V.Matus"]
+[Site "Dambrete , 3/1972"]
+[Date ""]
+[Round "B80"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W11,23,28,33,38,41,50:B10,13,20,27,34,36,45."]
+
+1. 28-22 27x29 2. 33x4 36x47 3. 4x40 47x6 4. 40-1 6-28 5. 50-44 28x50 6. 1-6
+1-0
+
+
+[Event "R.Bergsma "]
+[Site "Book miniatures , 1988, page II"]
+[Date ""]
+[Round "B81"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W11,20,24,32,38,40,41:B1,8,10,18,22,37,39."]
+
+1. 40-34 39x19 2. 20-14 37x46 3. 14x3 46x28 4. 38-32 28x46 5. 11-7 1x12 6. 3x5
+1-0
+
+
+[Event "S.Zilevicius"]
+[Site "ch.Azerbaijdjan , 1982"]
+[Date ""]
+[Round "B83"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W17,21,22,27,33,37,43:B4,8,13,14,24,26,28."]
+
+1. 17-12 28x48 2. 12x3 26x28 3. 3x9 1-0
+
+
+[Event "E.Tkachenko"]
+[Site "Leninska Zmina, 16-5-1985"]
+[Date ""]
+[Round "B87"]
+[White ""]
+[Black ""]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "W:W20,24,25,33,37,41,44:B7,8,9,10,26,35,39."]
+
+1. 33-28 39x50 2. 37-31 50x47 3. 20-15 47x20 4. 25x1 1-0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
