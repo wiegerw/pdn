@@ -2,6 +2,14 @@
 Changelog
 =========
 
+24 June 2017
+
+* Put the standard in a github repository on https://github.com/wiegerw/pdn.
+
+9 June 2017
+
+* Added some time control tag examples provided by Igor Le Masson.
+
 1 January 2016
 
 * Made some corrections and improvements to the FEN grammar, noted by Rein Halbersma.

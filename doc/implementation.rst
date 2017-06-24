@@ -37,13 +37,13 @@ Toy Parser Generator
 
 [TPG]_ is a python parser generator.
 
-* :download:`pdn_reading_tpg.py <../pdn_reading_tpg.py>` A fairly liberal reading grammar.
-* :download:`pdn_writing_tpg.py <../pdn_writing_tpg.py>` A PDN 3.0 writing grammar.
+* :download:`pdn_reading_tpg.py <../python/pdn_reading_tpg.py>` A fairly liberal reading grammar.
+* :download:`pdn_writing_tpg.py <../python/pdn_writing_tpg.py>` A PDN 3.0 writing grammar.
 
 ----------
 Test files
 ----------
-* :download:`games.zip <../games.zip>` A collection of PDN games used for testing the grammars.
+* :download:`games.zip <../games/games.zip>` A collection of PDN games used for testing the grammars.
 
 .. [DParser] DParser, a GLR parser generator written in C http://dparser.sourceforge.net/
 .. [Grammatica] Grammatica, an LL parser generator written in java http://grammatica.percederberg.net/

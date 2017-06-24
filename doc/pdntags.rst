@@ -22,15 +22,15 @@ and additional details about the tags.
 ----------------
 
 ========  =====================================================  ===============
-  Tag       Description                                          Unknown value  
+  Tag       Description                                          Unknown value
 ========  =====================================================  ===============
-Event     Name of the tournament or match event, see [Nemesis]_   "?"           
-Site      Location of the event, see [Nemesis]_                   "?"           
-Date      Starting date of the game, see [Nemesis]_               "????.??.??"  
-Round     Playing round ordinal of the game, see [Nemesis]_       "?"           
-White     Player of the White pieces, see [Nemesis]_              "?"           
-Black     Player of the Black pieces, see [Nemesis]_              "?"           
-Result    Result of the game, see [Nemesis]_                      "*"           
+Event     Name of the tournament or match event, see [Nemesis]_   "?"
+Site      Location of the event, see [Nemesis]_                   "?"
+Date      Starting date of the game, see [Nemesis]_               "????.??.??"
+Round     Playing round ordinal of the game, see [Nemesis]_       "?"
+White     Player of the White pieces, see [Nemesis]_              "?"
+Black     Player of the Black pieces, see [Nemesis]_              "?"
+Result    Result of the game, see [Nemesis]_                      "*"
 ========  =====================================================  ===============
 
 N.B. The name *mandatory tags* is misleading, since these tags are not mandatory
@@ -41,7 +41,7 @@ Result tag
 ----------
   The ``Result`` tag is used to specify whether a game ended in a win, draw or a loss.
   Each game type has a specific set of allowed values for the ``Result`` tag.
-  
+
   ================  ====================================
     ResultType        Allowed result values
   ================  ====================================
@@ -67,7 +67,7 @@ Result tag
 
   Sometimes tournaments are being played with different result values. To this end the
   ``ResultFormat`` tag is defined. Below a table is given for some common result formats:
-  
+
   ================  ================================================================================
     ResultFormat      Allowed result values
   ================  ================================================================================
@@ -89,11 +89,11 @@ Player related tags
 -------------------
 
 ==========================   ============================================
-  Tag                          Description                               
+  Tag                          Description
 ==========================   ============================================
-WhiteTitle, BlackTitle       FMJD titles of the players                  
-WhiteRating, BlackRating     FMJD rating                                 
-WhiteNA, BlackNA             E-mail or network addresses of the players  
+WhiteTitle, BlackTitle       FMJD titles of the players
+WhiteRating, BlackRating     FMJD rating
+WhiteNA, BlackNA             E-mail or network addresses of the players
 WhiteType, BlackType         Player types ("human" or "program")
 ==========================   ============================================
 
@@ -116,7 +116,7 @@ Game related tags
 -----------------
 
 ===========  ==============================
-  Tag         Description               
+  Tag         Description
 ===========  ==============================
 GameType      Type of the game, see :ref:`gametype-section`
 FEN           The position at the start of the game, see :ref:`fen-section`
@@ -127,7 +127,7 @@ Termination   Describes the reason for conclusion of the game, see [PGN]_
 The ``GameType`` tag is specific for draughts, and is used to distinguish between
 the different draughts variants.
 
-Clock related tags 
+Clock related tags
 ------------------
 
 =================  ========================================================
@@ -136,8 +136,8 @@ Clock related tags
 TimeControl         Time control settings for both players, see [PGN]_
 TimeControlWhite    Time control settings for the white player
 TimeControlBlack    Time control settings for the black player
-WhiteTime           Time used by the White player at the end of the game  
-BlackTime           Time used by the Black player at the end of the game  
+WhiteTime           Time used by the White player at the end of the game
+BlackTime           Time used by the Black player at the end of the game
 =================  ========================================================
 
 The ``WhiteTime`` and ``BlackTime`` tags are new. It is common practice
@@ -210,9 +210,9 @@ Details and Examples
   marks may be used for unknown fields.
 
   A regular expression for Date values is:
-  
+
   ::
-  
+
     ([0-9]{4}|[?]{4})\.([0-9]{2}|[?]{2})\.([0-9]{2}|[?]{2})
 
   Examples:
@@ -259,9 +259,9 @@ Details and Examples
   time on the clock. A notation is needed to specify this.*
 
   Examples:
-  
+
   ::
-  
+
     [WhiteTime "1:59:20"]
     [BlackTime "1:17:28"]
 
@@ -270,25 +270,29 @@ Details and Examples
   The time controls are specified using the TimeControl tag.
 
   Time control values should match with the following grammar:
-  
+
   ::
-  
+
     // Productions
-    TimeControl   : UNKNOWN | NOTIME | CompositeTime                      
-    TimeElement   : MOVES_SECONDS | INCREMENTAL | SUDDENDEATH | SANDCLOCK 
-    CompositeTime : TimeElement (COLON TimeElement)*                      
-    
+    TimeControl   : UNKNOWN | NOTIME | CompositeTime
+    TimeElement   : MOVES_SECONDS | INCREMENTAL | SUDDENDEATH | SANDCLOCK
+    CompositeTime : TimeElement (COLON TimeElement)*
+
     // Tokens
-    MOVES_SECONDS : "[0-9]+\/[0-9]+"                                      
-    INCREMENTAL   : "[0-9]+\+[0-9]+"                                      
-    SUDDENDEATH   : "[0-9]+"                                              
-    SANDCLOCK     : "\*[0-9]+"                                            
-    UNKNOWN       : "\?"                                                  
-    NOTIME        : "\-"                                                  
-    COLON         : "\:"                                                  
+    MOVES_SECONDS : "[0-9]+\/[0-9]+"
+    INCREMENTAL   : "[0-9]+\+[0-9]+"
+    SUDDENDEATH   : "[0-9]+"
+    SANDCLOCK     : "\*[0-9]+"
+    UNKNOWN       : "\?"
+    NOTIME        : "\-"
+    COLON         : "\:"
 
   Examples:
 
   ::
 
-  [TimeControl "40/7200:3600"] { 40 moves in 7200 seconds, 3600 seconds for the rest of the game }
+  [TimeControl "40/7200:3600"]          { 40 moves in 7200 seconds, 3600 seconds for the rest of the game }
+  [TimeControl "4800+60"]               { 80 minutes with increment of 60 seconds/move }
+  [TimeControl "40/7200:3600+60"]       { 40 moves in 2 hours, 1 hour for the rest of the game with increment of 60 seconds/move }
+  [TimeControl "40/7200:20/2400:600+5"] { 40 moves in 2 hours, 20 moves in 40 minutes, 10 minutes for the rest of the game with increment of 5 seconds/move }
+  [TimeControl "*120"]                  { 2 minutes for a "sandclock" or "hourglass" control period, more suitable usage with physical sandclock }
