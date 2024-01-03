@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
-# Copyright 2009-2012 Wieger Wesselink, <wieger at 10x10 dot org>
+# Copyright 2009-2023 Wieger Wesselink, <wieger at 10x10 dot org>
 # Distributed under the Boost Software License, Version 1.0.
 # (See accompanying file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
 #
@@ -8,9 +8,8 @@
 #
 # 12 March 2012
 
-import re
-import sys
 import tpg
+
 # For tpg see http://cdsoft.fr/tpg/
 
 class PDNParser(tpg.Parser):
@@ -59,11 +58,12 @@ class PDNParser(tpg.Parser):
         Result2       -> WIN2 | DRAW2 | LOSS2 | DOUBLEFORFEIT                                          ;
     '''
 
+
 def pdn_parse(text):
     try:
         parser = PDNParser()
         parser(text)
         return True
-    except Exception, e:
-        print e
+    except Exception as e:
+        print(e)
         return False

@@ -1,6 +1,10 @@
-import os
-from path import *
+#!/usr/bin/env python3
 
-for file in path('../games').walkfiles('*.pdn'):
-    print file
-    os.system('java -jar grammatica-1.5.jar ../grammars/pdn_reading.grammar --parse "{}"'.format(file))
+import os
+from pathlib import Path
+
+
+if __name__ == "__main__":
+    for file in Path('../games').rglob('*.pdn'):
+        print(file)
+        os.system('java -jar grammatica-1.5.jar ../grammars/pdn_reading.grammar --parse "{}"'.format(file))
