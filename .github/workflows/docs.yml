@@ -46,15 +46,8 @@ jobs:
           # Debugging: List contents of the build/latex directory to check PDF generation
           ls -l build/latex
 
-      # Move PDF to HTML directory for deployment
-      - name: Move PDF to HTML directory
-        run: |
-          mv build/latex/*.pdf build/html/
-          # Debugging: Confirm that the PDF was moved successfully
-          ls -l build/html
-
-  deploy-html:
-    name: Deploy HTML Documentation
+deploy-docs:
+    name: Deploy Documentation
     runs-on: ubuntu-latest
     needs: build-docs
 
@@ -63,33 +56,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # List contents of doc/build/html to confirm it's ready for deployment
-      - name: List contents of publish directory
-        run: |
-          ls -l doc/build/html  # Ensure HTML files are ready for deployment
-
-      # Set up gh-pages branch
-      - name: Set up gh-pages branch
-        run: |
-          git fetch origin gh-pages || git checkout --orphan gh-pages
-          git reset --hard
-          git clean -fdx
-
-      # Commit the HTML and PDF files
-      - name: Commit HTML and PDF files to gh-pages
-        run: |
-          git add doc/build/html/*
-          git commit -m "Deploy Sphinx documentation" || echo "No changes to commit"
-
-      # Push the commit to gh-pages branch
-      - name: Push to gh-pages
-        run: |
-          git push origin gh-pages
-
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: doc/build/html
+          
+      # Copy PDF file from latex build folder to the gh-pages branch
+      - name: Copy PDF to GitHub Pages
+        run: |
+          mkdir -p doc/build/html/pdf
+          cp doc/build/latex/*.pdf doc/build/html/pdf/
+          # Commit and push the changes to gh-pages
+          git add -A
+          git commit -m "Deploy updated HTML and PDF documentation"
+          git push
 
