@@ -42,7 +42,7 @@ jobs:
 
       # Save PDF as an artifact
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sphinx-pdf
           path: doc/build/latex/*.pdf
