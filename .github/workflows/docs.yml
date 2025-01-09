@@ -3,7 +3,7 @@ name: Build and Deploy Sphinx Documentation
 on:
   push:
     branches:
-      - main  # Adjust the branch if necessary
+      - master
   pull_request:
 
 jobs:
