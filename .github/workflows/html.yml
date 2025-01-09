@@ -41,7 +41,7 @@ jobs:
     needs: build-html
 
     steps:
-      # Checkout the repository
+      # Checkout the repository again
       - name: Checkout repository
         uses: actions/checkout@v3
 
