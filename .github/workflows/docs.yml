@@ -33,16 +33,26 @@ jobs:
       # Build HTML documentation
       - name: Build HTML documentation
         working-directory: doc
-        run: make html
+        run: |
+          make html
+          # Debugging: List contents of doc/build to ensure HTML files are created
+          ls -l doc/build
+          ls -l doc/build/html
 
       # Build PDF documentation
       - name: Build PDF documentation
         working-directory: doc
-        run: make latexpdf
+        run: |
+          make latexpdf
+          # Debugging: List contents of doc/build/latex to check PDF generation
+          ls -l doc/build/latex
 
       # Move PDF to HTML directory for deployment
-      - name: Copy PDF to HTML directory
-        run: mv doc/build/latex/*.pdf doc/build/html/
+      - name: Move PDF to HTML directory
+        run: |
+          mv doc/build/latex/*.pdf doc/build/html/
+          # Debugging: Confirm that the PDF was moved successfully
+          ls -l doc/build/html
 
       # Save PDF as an artifact from the HTML directory
       - name: Upload PDF artifact
@@ -50,10 +60,6 @@ jobs:
         with:
           name: sphinx-pdf
           path: doc/build/html/*.pdf
-
-      # Debugging: Check contents of doc/build/html
-      - name: List contents of doc/build/html
-        run: ls -l doc/build/html
 
   deploy-html:
     name: Deploy HTML Documentation
@@ -65,16 +71,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Debugging: List contents of doc/build/html to confirm it's ready for deployment
+      - name: List contents of publish directory
+        run: |
+          ls -l doc/build/html  # Ensure HTML files are ready for deployment
+
       # Set up gh-pages branch
       - name: Set up gh-pages branch
         run: |
           git fetch origin gh-pages || git checkout --orphan gh-pages
           git reset --hard
-
-      # Debugging: Check if index.html exists in the publish directory
-      - name: Check if index.html exists in publish directory
-        run: |
-          ls doc/build/html
 
       # Force add and commit files (if any changes exist)
       - name: Force commit changes
