@@ -81,12 +81,18 @@ jobs:
         run: |
           git fetch origin gh-pages || git checkout --orphan gh-pages
           git reset --hard
+          git clean -fdx
 
-      # Force add and commit files (if any changes exist)
-      - name: Force commit changes
+      # Commit the HTML and PDF files
+      - name: Commit HTML and PDF files to gh-pages
         run: |
-          git add --all
+          git add doc/build/html/*
           git commit -m "Deploy Sphinx documentation" || echo "No changes to commit"
+
+      # Push the commit to gh-pages branch
+      - name: Push to gh-pages
+        run: |
+          git push origin gh-pages
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
