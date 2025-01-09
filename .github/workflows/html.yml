@@ -1,4 +1,4 @@
-name: Build and Deploy Sphinx Documentation
+name: Build and Deploy HTML Documentation
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
   pull_request:
 
 jobs:
-  build-docs:
-    name: Build HTML and PDF Documentation
+  build-html:
+    name: Build HTML Documentation
     runs-on: ubuntu-latest
 
     steps:
@@ -33,43 +33,22 @@ jobs:
       # Build HTML documentation
       - name: Build HTML documentation
         working-directory: doc
-        run: |
-          make html
-          # Debugging: List contents of the build/html directory to ensure HTML files are created
-          ls -l build/html
+        run: make html
 
-      # Build PDF documentation
-      - name: Build PDF documentation
-        working-directory: doc
-        run: |
-          make latexpdf
-          # Debugging: List contents of the build/latex directory to check PDF generation
-          ls -l build/latex
-
-  deploy-docs:
-    name: Deploy Documentation
+  deploy-html:
+    name: Deploy HTML Documentation to GitHub Pages
     runs-on: ubuntu-latest
-    needs: build-docs
+    needs: build-html
 
     steps:
       # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Deploy to GitHub Pages
+      # Deploy HTML to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: doc/build/html
-          
-      # Copy PDF file from latex build folder to the gh-pages branch
-      - name: Copy PDF to GitHub Pages
-        run: |
-          mkdir -p doc/build/html/pdf
-          cp doc/build/latex/*.pdf doc/build/html/pdf/
-          # Commit and push the changes to gh-pages
-          git add -A
-          git commit -m "Deploy updated HTML and PDF documentation"
-          git push
 
