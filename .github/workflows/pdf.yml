@@ -1,19 +1,19 @@
-name: Build and Upload PDF Documentation
+name: Deploy Sphinx PDF Documentation
 
 on:
   push:
     branches:
       - master
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   build-pdf:
-    name: Build PDF Documentation
+    name: Build and Deploy PDF Documentation
     runs-on: ubuntu-latest
 
     steps:
       # Checkout the repository
-      - name: Checkout repository
+      - name: Check out the repository
         uses: actions/checkout@v3
 
       # Set up Python
@@ -23,32 +23,23 @@ jobs:
           python-version: 3.12
 
       # Install dependencies
-      - name: Install dependencies
+      - name: Install Sphinx and LaTeX dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y latexmk texlive texlive-latex-extra texlive-fonts-recommended texlive-lang-all
           python -m pip install --upgrade pip
           pip install sphinx
 
-      # Build PDF documentation
+      # Build the PDF documentation
       - name: Build PDF documentation
         working-directory: doc
         run: make latexpdf
 
-  upload-pdf:
-    name: Upload PDF Artifact
-    runs-on: ubuntu-latest
-    needs: build-pdf
-
-    steps:
-      # Checkout the repository
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # Upload PDF file as an artifact
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+      # Deploy PDF to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: sphinx-pdf
-          path: doc/build/latex/*.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: doc/build/latex
+          destination_dir: pdf
 
