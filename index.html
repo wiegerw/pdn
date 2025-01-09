@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PDN 3.0 standard &#8212; Portable Draughts Notation (PDN) Standard 3.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=110ea713"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="introduction.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pdn-3-0-standard">
+<h1>PDN 3.0 standard<a class="headerlink" href="#pdn-3-0-standard" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#pdn-example">PDN Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reading-and-writing">Reading and writing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#acknowledgements">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#mandatory-tags">‘Mandatory’ tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#result-tag">Result tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#player-related-tags">Player related tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#event-related-tags">Event related tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#game-related-tags">Game related tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#clock-related-tags">Clock related tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#time-and-date-tags">Time and date tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#miscellaneous-tags">Miscellaneous tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdntags.html#problemism-related-tags">Problemism related tags</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">PDN Grammars</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="grammar.html#pdn-3-0-grammar">PDN 3.0 Grammar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grammar.html#pdn-3-0-restrictions">PDN 3.0 Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grammar.html#explanation">Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grammar.html#pdn-reading-grammar">PDN Reading Grammar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#embedded-commands">Embedded commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#setup-commands">Setup commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pdnnext.html">PDN 3.1 Proposals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pdnnext.html#alternative-move-disambiguation">Alternative move disambiguation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="implementation.html#dparser">DParser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementation.html#grammatica">Grammatica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementation.html#toy-parser-generator">Toy Parser Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementation.html#test-files">Test files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="issues.html#game-separator-1">Game Separator (1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="issues.html#game-separator-2">Game Separator (2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="issues.html#capture-separator">Capture Separator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="issues.html#move-token">Move token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="issues.html#move-strength">Move strength</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fen.html">FEN tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fen.html#restrictions">Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fen.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fen.html#extensions">Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gametype.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+</div>
+<p><strong>Author:</strong> Wieger Wesselink, wieger &lt;at&gt; 10x10 &lt;dot&gt; org</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Portable Draughts Notation (PDN) Standard</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">PDN Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdnnext.html">PDN 3.1 Proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fen.html">FEN tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="introduction.html" title="next chapter">Introduction</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2011 - 2025, Wieger Wesselink.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

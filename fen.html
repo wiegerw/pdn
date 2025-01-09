@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FEN tag &#8212; Portable Draughts Notation (PDN) Standard 3.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=110ea713"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GameType tag" href="gametype.html" />
+    <link rel="prev" title="PDN parsing issues" href="issues.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="fen-tag">
+<span id="fen-section"></span><h1>FEN tag<a class="headerlink" href="#fen-tag" title="Link to this heading">¶</a></h1>
+<p>The Forsyth-Edwards Notation or shortly FEN tag defines a position on the board.
+In the PDN 2.0 draft standard the following syntax is proposed:</p>
+<p><code class="docutils literal notranslate"><span class="pre">[TURN]:[COLOUR1][[K][SQUARE_NUM][,]...]:[COLOUR2][[K][SQUARE_NUM][,]...]</span></code></p>
+<p>We extend this syntax with ranges of numeric fields, such that the start
+position of international draughts can be defined as <code class="docutils literal notranslate"><span class="pre">[FEN</span> <span class="pre">&quot;W:W31-50:B1-20&quot;]</span></code>.</p>
+<p>Another extension is that we allow <code class="docutils literal notranslate"><span class="pre">?</span></code> to denote an unknown color.</p>
+<p>The following grammar describes the formal syntax of the value of a FEN tag.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>// Productions
+Fen                        : COLOR (NumericSquares | AlphaNumericSquares) DOT?
+NumericSquares             : (COLON COLOR NumericSquareSequence)+
+NumericSquareSequence      : NumericSquareRange (COMMA NumericSquareRange)*
+NumericSquareRange         : KING? NUMSQUARE (HYPHEN NUMSQUARE)?
+AlphaNumericSquares        : (COLON COLOR AlphaNumericSquareSequence)+
+AlphaNumericSquareSequence : KING? ALPHASQUARE (COMMA KING? ALPHASQUARE)*
+
+// Tokens
+COLOR                      : &quot;[WB?]&quot;
+KING                       : &quot;K&quot;
+ALPHASQUARE                : &quot;[a-h][1-8]&quot;
+NUMSQUARE                  : &quot;([1-9][0-9]*)|(0[1-9][0-9]*)|0&quot;
+HYPHEN                     : &quot;\-&quot;
+COMMA                      : &quot;\,&quot;
+COLON                      : &quot;\:&quot;
+DOT                        : &quot;\.&quot;
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Some corrections have been made.</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">COMMA</span></code> in <code class="docutils literal notranslate"><span class="pre">NumericSquareSequence</span></code> and <code class="docutils literal notranslate"><span class="pre">AlphaNumericSquareSequence</span></code> is mandatory.</p></li>
+<li><p>A missing <code class="docutils literal notranslate"><span class="pre">KING?</span></code> in <code class="docutils literal notranslate"><span class="pre">AlphaNumericSquareSequence</span></code> has been added.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NUMSQUARE</span></code> may contain more than two digits (it is up to the implementer to do range checks).</p></li>
+</ul>
+</div>
+<section id="restrictions">
+<h2>Restrictions<a class="headerlink" href="#restrictions" title="Link to this heading">¶</a></h2>
+<p>The following restrictions apply when writing a FEN tag:</p>
+<ul class="simple">
+<li><p>No embedded spaces are allowed inside the value of a FEN tag</p></li>
+<li><p>No dot (‘.’) is allowed at the end of the value of a FEN tag</p></li>
+</ul>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">FEN</span> <span class="s2">&quot;B:W18,24,27,28,K10,K15:B12,16,20,K22,K25,K29&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">FEN</span> <span class="s2">&quot;B:W18,19,21,23,24,26,29,30,31,32:B1,2,3,4,6,7,9,10,11,12&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">FEN</span> <span class="s2">&quot;W:W31-50:B1-20&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="extensions">
+<h2>Extensions<a class="headerlink" href="#extensions" title="Link to this heading">¶</a></h2>
+<p>The above grammar does not allow positions with no pieces for one of the
+players. It should therefore be extended to accept empty ranges of pieces.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Portable Draughts Notation (PDN) Standard</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">PDN Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdnnext.html">PDN 3.1 Proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FEN tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#restrictions">Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extensions">Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="issues.html" title="previous chapter">PDN parsing issues</a></li>
+      <li>Next: <a href="gametype.html" title="next chapter">GameType tag</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2011 - 2025, Wieger Wesselink.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/fen.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

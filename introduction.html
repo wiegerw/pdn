@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction &#8212; Portable Draughts Notation (PDN) Standard 3.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=110ea713"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Character encoding" href="encoding.html" />
+    <link rel="prev" title="PDN 3.0 standard" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h1>
+<p>This document defines the official portable draughts notation standard, PDN 3.0.
+The goal of this document is to give a formal definition of PDN.
+Nowadays there are many conflicts between draughts programs regarding their
+interpretation of valid PDN. This document aims to take away the sources of
+conflicts, by defining grammars, and by giving additional restrictions. Note
+that the PDN definition as given in this document slightly deviates from earlier
+versions. This has been done to make parsing PDN easier. Furthermore, some
+extensions are defined to support setting up positions and to add clock times.</p>
+<p>In <a class="reference internal" href="#wikipedia" id="id1"><span>[Wikipedia]</span></a>, <a class="reference internal" href="#sage" id="id2"><span>[Sage]</span></a>, <a class="reference internal" href="#nemesis" id="id3"><span>[Nemesis]</span></a> and <a class="reference internal" href="#grimminck" id="id4"><span>[Grimminck]</span></a> earlier versions
+of PDN definitions can be found. PDN was derived from the PGN standard
+in chess, see <a class="reference internal" href="#pgn" id="id5"><span>[PGN]</span></a>. The PDN proposal in this document takes the PDN 2.0 draft
+<a class="reference internal" href="#nemesis" id="id6"><span>[Nemesis]</span></a> as a starting point, since it is more complete and precise than the
+earlier ones. Several additions, restrictions and extensions to the PDN 2.0 draft
+are made.</p>
+<p>This document first discusses PDN tags, then a grammar for PDN 3.0 is given, followed
+by some PDN extensions, and some example implementations of the grammar. The
+design of the grammar was influenced by a number of issues of the existing
+PDN standards. These issues are discussed in the <a class="reference internal" href="issues.html#issues-section"><span class="std std-ref">PDN parsing issues</span></a> section.</p>
+<p>For convenience a Java Webstart <a class="reference external" href="http://10x10.org/pdn/test/index.html">PDN 3.0 Checker</a>
+is available, that can be used for checking the validity of a PDN file.</p>
+<section id="pdn-example">
+<h2>PDN Example<a class="headerlink" href="#pdn-example" title="Link to this heading">¶</a></h2>
+<p>A PDN file consists of a section of tags (key-value pairs between brackets)
+followed by a section with moves and variations. A typical example is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Event</span> <span class="s2">&quot;FMJD World Championship&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Site</span> <span class="s2">&quot;Hardenberg, NED&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Date</span> <span class="s2">&quot;2007.05.19&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Round</span> <span class="s2">&quot;7&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">White</span> <span class="s2">&quot;Mikhalchenko,I.&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Black</span> <span class="s2">&quot;Ndjofang,J.&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Result</span> <span class="s2">&quot;0-2&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">GameType</span> <span class="s2">&quot;20&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">WhiteTime</span> <span class="s2">&quot;1:36&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="n">BlackTime</span> <span class="s2">&quot;1:17&quot;</span><span class="p">]</span>
+
+ <span class="mf">1.32</span><span class="o">-</span><span class="mi">28</span> <span class="mi">17</span><span class="o">-</span><span class="mi">22</span>  <span class="mf">2.28</span><span class="n">x17</span> <span class="mi">11</span><span class="n">x22</span>  <span class="mf">3.37</span><span class="o">-</span><span class="mi">32</span>  <span class="mi">6</span><span class="o">-</span><span class="mi">11</span>  <span class="mf">4.41</span><span class="o">-</span><span class="mi">37</span> <span class="mi">12</span><span class="o">-</span><span class="mi">17</span>  <span class="mf">5.46</span><span class="o">-</span><span class="mi">41</span>  <span class="mi">8</span><span class="o">-</span><span class="mi">12</span>
+ <span class="mf">6.34</span><span class="o">-</span><span class="mi">30</span>  <span class="mi">2</span><span class="o">-</span><span class="mi">8</span>   <span class="mf">7.30</span><span class="o">-</span><span class="mi">25</span> <span class="mi">19</span><span class="o">-</span><span class="mi">23</span>  <span class="mf">8.35</span><span class="o">-</span><span class="mi">30</span>  <span class="mi">1</span><span class="o">-</span><span class="mi">6</span>   <span class="mf">9.40</span><span class="o">-</span><span class="mi">35</span> <span class="mi">13</span><span class="o">-</span><span class="mi">19</span> <span class="mf">10.31</span><span class="o">-</span><span class="mi">27</span> <span class="mi">22</span><span class="n">x31</span>
+<span class="mf">11.36</span><span class="n">x27</span>  <span class="mi">9</span><span class="o">-</span><span class="mi">13</span> <span class="mf">12.33</span><span class="o">-</span><span class="mi">28</span>  <span class="mi">4</span><span class="o">-</span><span class="mi">9</span>  <span class="mf">13.41</span><span class="o">-</span><span class="mi">36</span> <span class="mi">17</span><span class="o">-</span><span class="mi">22</span> <span class="mf">14.28</span><span class="n">x17</span> <span class="mi">11</span><span class="n">x31</span> <span class="mf">15.37</span><span class="n">x26</span> <span class="mi">23</span><span class="o">-</span><span class="mi">28</span>
+<span class="mf">16.32</span><span class="n">x23</span> <span class="mi">19</span><span class="n">x28</span> <span class="mf">17.42</span><span class="o">-</span><span class="mi">37</span> <span class="mi">20</span><span class="o">-</span><span class="mi">24</span> <span class="mf">18.30</span><span class="n">x19</span> <span class="mi">14</span><span class="n">x23</span> <span class="mf">19.37</span><span class="o">-</span><span class="mi">31</span> <span class="mi">16</span><span class="o">-</span><span class="mi">21</span> <span class="mf">20.26</span><span class="n">x17</span> <span class="mi">12</span><span class="n">x21</span>
+<span class="mf">21.31</span><span class="o">-</span><span class="mi">27</span> <span class="mi">21</span><span class="n">x32</span> <span class="mf">22.38</span><span class="n">x27</span>  <span class="mi">6</span><span class="o">-</span><span class="mi">11</span> <span class="mf">23.47</span><span class="o">-</span><span class="mi">42</span> <span class="mi">15</span><span class="o">-</span><span class="mi">20</span> <span class="mf">24.25</span><span class="n">x14</span> <span class="mi">10</span><span class="n">x19</span> <span class="mf">25.39</span><span class="o">-</span><span class="mi">33</span> <span class="mi">28</span><span class="n">x39</span>
+<span class="mf">26.44</span><span class="n">x33</span>  <span class="mi">8</span><span class="o">-</span><span class="mi">12</span> <span class="mf">27.42</span><span class="o">-</span><span class="mi">38</span> <span class="mi">23</span><span class="o">-</span><span class="mi">28</span> <span class="mf">28.33</span><span class="n">x22</span> <span class="mi">12</span><span class="o">-</span><span class="mi">17</span> <span class="mf">29.49</span><span class="o">-</span><span class="mi">44</span> <span class="mi">17</span><span class="n">x28</span> <span class="mf">30.38</span><span class="o">-</span><span class="mi">33</span> <span class="mi">28</span><span class="n">x39</span>
+<span class="mf">31.44</span><span class="n">x33</span> <span class="mi">18</span><span class="o">-</span><span class="mi">22</span> <span class="mf">32.27</span><span class="n">x18</span> <span class="mi">13</span><span class="n">x22</span> <span class="mf">33.43</span><span class="o">-</span><span class="mi">38</span> <span class="mi">19</span><span class="o">-</span><span class="mi">23</span> <span class="mf">34.38</span><span class="o">-</span><span class="mi">32</span> <span class="mi">11</span><span class="o">-</span><span class="mi">17</span> <span class="mf">35.32</span><span class="o">-</span><span class="mi">27</span> <span class="mi">22</span><span class="n">x31</span>
+<span class="mf">36.36</span><span class="n">x27</span>  <span class="mi">9</span><span class="o">-</span><span class="mi">13</span> <span class="mf">37.45</span><span class="o">-</span><span class="mi">40</span> <span class="mi">13</span><span class="o">-</span><span class="mi">18</span> <span class="o">*</span>
+</pre></div>
+</div>
+</section>
+<section id="reading-and-writing">
+<h2>Reading and writing<a class="headerlink" href="#reading-and-writing" title="Link to this heading">¶</a></h2>
+<p>Programmers are encouraged to follow the PDN 3.0 standard closely when writing
+PDN. When reading, it is recommended to treat the input much more liberally.
+To this end an example of a liberal reading grammar is given. Also the character
+encoding requirement can be relaxed.</p>
+</section>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">¶</a></h2>
+<p>Thanks to everyone who took part in the discussions on the World Draughts Forum <a class="reference internal" href="#forum" id="id7"><span>[Forum]</span></a>,
+and to Rein Halbersma for leading the review.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">¶</a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="wikipedia" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Wikipedia</a><span class="fn-bracket">]</span></span>
+<p>Wikipedia: Portable Draughts Notation <a class="reference external" href="https://en.wikipedia.org/wiki/Portable_Draughts_Notation">https://en.wikipedia.org/wiki/Portable_Draughts_Notation</a></p>
+</div>
+<div class="citation" id="nemesis" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Nemesis<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id6">2</a>)</span>
+<p>PDN 2.0 Specification by Murray Cash (draft) <a class="reference download internal" download="" href="_downloads/be1570ff4d18e82dc559e1bba9253452/pdn2.txt"><code class="xref download docutils literal notranslate"><span class="pre">pdn2.txt</span></code></a> An archived copy of <a class="reference external" href="http://www.nemesis.info/pdn2.txt">http://www.nemesis.info/pdn2.txt</a>, 17 July 2012.</p>
+</div>
+<div class="citation" id="pgn" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">PGN</a><span class="fn-bracket">]</span></span>
+<p>Portable Game Notation Specification and Implementation Guide <a class="reference external" href="http://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm">http://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm</a></p>
+</div>
+<div class="citation" id="sage" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Sage</a><span class="fn-bracket">]</span></span>
+<p>Adrian Millet’s PDN description: <a class="reference external" href="https://web.archive.org/web/20111021120519/http://homepages.tcp.co.uk/~pcsol/sagehlp1.htm#PDN">https://web.archive.org/web/20111021120519/http://homepages.tcp.co.uk/~pcsol/sagehlp1.htm#PDN</a></p>
+</div>
+<div class="citation" id="grimminck" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Grimminck</a><span class="fn-bracket">]</span></span>
+<p>Michel Grimminck’s PDN page <a class="reference external" href="https://www.xs4all.nl/~mdgsoft/draughts/pdn.html">https://www.xs4all.nl/~mdgsoft/draughts/pdn.html</a></p>
+</div>
+<div class="citation" id="dgt" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>DGT<span class="fn-bracket">]</span></span>
+<p>DGT Clock times extension <a class="reference external" href="https://web.archive.org/web/20100502070409/http://digitalgametechnology.com/site/index.php/Board-Driver/pgn-clock-times-extension.html">https://web.archive.org/web/20100502070409/http://digitalgametechnology.com/site/index.php/Board-Driver/pgn-clock-times-extension.html</a></p>
+</div>
+<div class="citation" id="forum" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">Forum</a><span class="fn-bracket">]</span></span>
+<p>PDN standard topic on World Draughts Forum <a class="reference external" href="https://damforum.nl/bb3/viewtopic.php?t=2544">https://damforum.nl/bb3/viewtopic.php?t=2544</a></p>
+</div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Portable Draughts Notation (PDN) Standard</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pdn-example">PDN Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-and-writing">Reading and writing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acknowledgements">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">PDN Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdnnext.html">PDN 3.1 Proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fen.html">FEN tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">PDN 3.0 standard</a></li>
+      <li>Next: <a href="encoding.html" title="next chapter">Character encoding</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2011 - 2025, Wieger Wesselink.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/introduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

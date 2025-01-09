@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PDN 3.1 Proposals &#8212; Portable Draughts Notation (PDN) Standard 3.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=110ea713"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDN Implementation" href="implementation.html" />
+    <link rel="prev" title="PDN Extensions" href="extensions.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pdn-3-1-proposals">
+<h1>PDN 3.1 Proposals<a class="headerlink" href="#pdn-3-1-proposals" title="Link to this heading">¶</a></h1>
+<p>This section describes proposals for the next version of the PDN standard.</p>
+<section id="alternative-move-disambiguation">
+<h2>Alternative move disambiguation<a class="headerlink" href="#alternative-move-disambiguation" title="Link to this heading">¶</a></h2>
+<p>The current way of move disambiguation (see section <a class="reference internal" href="grammar.html#grammar-section"><span class="std std-ref">PDN Grammars</span></a>) was chosen for backward compatibility.
+The following alternative is proposed. An ambiguous move is written as usual, followed by the sequence of
+captured squares between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. For example, in the following position</p>
+<blockquote>
+<div><img alt="_images/diagram1.png" src="_images/diagram1.png" />
+</div></blockquote>
+<p>the two possible captures are written as <code class="docutils literal notranslate"><span class="pre">47x36</span> <span class="pre">&lt;42,</span> <span class="pre">29,</span> <span class="pre">14,</span> <span class="pre">31&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">47x36</span> <span class="pre">&lt;42,</span> <span class="pre">29,</span> <span class="pre">19,</span> <span class="pre">31&gt;</span></code>. The
+motivation for this is that it is less complicated to implement, and easy to understand for humans.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Portable Draughts Notation (PDN) Standard</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">PDN Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PDN 3.1 Proposals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#alternative-move-disambiguation">Alternative move disambiguation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fen.html">FEN tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="extensions.html" title="previous chapter">PDN Extensions</a></li>
+      <li>Next: <a href="implementation.html" title="next chapter">PDN Implementation</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2011 - 2025, Wieger Wesselink.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/pdnnext.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

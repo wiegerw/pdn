@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PDN Grammars &#8212; Portable Draughts Notation (PDN) Standard 3.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=110ea713"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDN Extensions" href="extensions.html" />
+    <link rel="prev" title="PDN Tags" href="pdntags.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pdn-grammars">
+<span id="grammar-section"></span><h1>PDN Grammars<a class="headerlink" href="#pdn-grammars" title="Link to this heading">¶</a></h1>
+<p>This section defines some PDN grammars. First a PDN 3.0 grammar is given, with some
+additional restrictions. The goal of these restrictions is to make PDN easier to parse,
+and thus to make it easier for programmers to support PDN 3.0.
+Also some explanations are given. Finally, a much more liberal <em>reading</em> grammar is
+given that can be used when reading existing PDN files.
+The grammars that are given in this section can not be parsed using a simple LL(1)
+parser. See the <a class="reference internal" href="implementation.html#implementation-section"><span class="std std-ref">PDN Implementation</span></a> section for some examples of LL(1)
+grammars.</p>
+<section id="pdn-3-0-grammar">
+<h2>PDN 3.0 Grammar<a class="headerlink" href="#pdn-3-0-grammar" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>// Game independent productions
+PdnFile          : Game (GameSeparator Game)* GameSeparator?
+GameSeparator    : ASTERISK
+Game             : (GameHeader GameBody?) | GameBody
+GameHeader       : PdnTag+
+GameBody         : (GameMove | Variation | COMMENT | SETUP | NAG)+
+PdnTag           : LBRACKET IDENTIFIER STRING RBRACKET
+GameMove         : MOVENUMBER? Move MOVESTRENGTH?
+Variation        : LPAREN GameBody RPAREN
+
+// Game dependent productions
+Move             : NormalMove | CaptureMove
+NormalMove       : Square MOVESEPARATOR Square
+CaptureMove      : Square (CAPTURESEPARATOR Square)+
+Square           : ALPHASQUARE | NUMSQUARE
+
+// Tokens
+MOVENUMBER       : &quot;[0-9]+\.(\.\.)?&quot;
+MOVESEPARATOR    : &quot;-&quot;
+CAPTURESEPARATOR : &quot;x&quot;
+ALPHASQUARE      : &quot;[a-h][1-8]&quot;
+NUMSQUARE        : &quot;[1-9][0-9]?&quot;
+MOVESTRENGTH     : &quot;([\!\?]+)|(\([\!\?]+\))&quot;
+NAG              : &quot;\$[0-9]+&quot;
+LPAREN           : &quot;\(&quot;
+RPAREN           : &quot;\)&quot;
+LBRACKET         : &quot;\[&quot;
+RBRACKET         : &quot;\]&quot;
+ASTERISK         : &quot;\*&quot;
+SETUP            : &quot;\/[^\/]*\/&quot;
+STRING           : &quot;\&quot;([^\&quot;]|\\\&quot;)*\&quot;&quot;
+COMMENT          : &quot;\{[^}]*\}&quot;
+IDENTIFIER       : &quot;[A-Z][a-zA-Z0-9_]*&quot;
+</pre></div>
+</div>
+<p>Besides the usual white space characters (spaces, tabs and line endings),
+also line comments starting with a <code class="docutils literal notranslate"><span class="pre">%</span></code>  are allowed. For example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">Board</span> <span class="n">game</span><span class="p">:</span> <span class="n">International</span> <span class="n">Draughts</span> <span class="mi">10</span><span class="n">x10</span>
+<span class="p">[</span><span class="n">Date</span> <span class="s2">&quot;2012.02.01&quot;</span><span class="p">]</span>
+<span class="mf">1.</span> <span class="mi">32</span><span class="o">-</span><span class="mi">28</span> <span class="mi">19</span><span class="o">-</span><span class="mi">23</span>
+</pre></div>
+</div>
+</section>
+<section id="pdn-3-0-restrictions">
+<h2>PDN 3.0 Restrictions<a class="headerlink" href="#pdn-3-0-restrictions" title="Link to this heading">¶</a></h2>
+<p>When writing PDN, the following restrictions should be applied:</p>
+<ol class="arabic">
+<li><p>Spaces are not allowed in the notation of a move. For example, <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">7</span></code> is not allowed.</p></li>
+<li><p>Spaces are not allowed between a move notation and it’s move strength indicator. For example, <code class="docutils literal notranslate"><span class="pre">32-28</span> <span class="pre">!</span></code> is not allowed.</p></li>
+<li><p>The symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> is not allowed as a move strength indicator. Use the <code class="docutils literal notranslate"><span class="pre">$7</span></code> numeric annotation glyph instead.
+See the <a class="reference internal" href="issues.html#issues-section"><span class="std std-ref">PDN parsing issues</span></a> section for an explanation.</p></li>
+<li><p>Only the symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> is allowed as a game separator.</p></li>
+<li><p>Squares of moves may not have leading zeroes. For example <code class="docutils literal notranslate"><span class="pre">01-07</span></code> is not allowed.</p></li>
+<li><p>Moves must be written in the format (Alpha numeric, Numeric or SAN) as it is specified in the Notation attribute of the
+<code class="docutils literal notranslate"><span class="pre">GameType</span></code> tag. See also section <a class="reference internal" href="gametype.html#gametype-section"><span class="std std-ref">GameType tag</span></a>.</p></li>
+<li><p>Capture moves must be written using the capture separator corresponding to the <code class="docutils literal notranslate"><span class="pre">GameType</span></code>, as it is specified in the
+table in section <a class="reference internal" href="gametype.html#gametype-section"><span class="std std-ref">GameType tag</span></a>.</p></li>
+<li><p>Ambiguous moves must be written in long notation, i.e. they must contain the full capture sequence. All other moves
+should use regular notation, i.e. only a begin and an end square.</p>
+<p>Explanation: sometimes the regular notation of a move is ambiguous. For example in the position below the notation
+<code class="docutils literal notranslate"><span class="pre">47x36</span></code> does not specify exactly which black pieces were captured.</p>
+<img alt="_images/diagram1.png" src="_images/diagram1.png" />
+<p>To resolve this, <code class="docutils literal notranslate"><span class="pre">47x38x24x13x36</span></code> or <code class="docutils literal notranslate"><span class="pre">47x38x20x9x36</span></code> must be chosen.</p>
+</li>
+<li><p>Disambiguated capture sequences have to specify a complete sequence of intermediate squares along the path of the
+capture. If there is a change in direction, an intermediate square is the square where a turn in direction was made.
+If there was not a change in direction, the intermediate square is the square immediately behind a captured piece.
+There is no intermediate square behind the last captured piece, but otherwise leaving out an intermediate square
+that is not necessary for the disambiguation is forbidden.</p>
+<p>For example, in the above diagram <code class="docutils literal notranslate"><span class="pre">47x24x36</span></code> is not allowed, even though it uniquely determines the move.
+Also <code class="docutils literal notranslate"><span class="pre">47x33x24x13x36</span></code> is not allowed, since 33 is not immediately behind a captured piece.</p>
+</li>
+</ol>
+<p>N.B. The first five restrictions are enforced by the grammar. Other restrictions have to be checked after parsing.</p>
+</section>
+<section id="explanation">
+<h2>Explanation<a class="headerlink" href="#explanation" title="Link to this heading">¶</a></h2>
+<p>The grammar is given in <a class="reference external" href="http://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form">EBNF</a> format.
+In the productions the symbol <code class="docutils literal notranslate"><span class="pre">?</span></code> stands for 0 or 1 repetitions, <code class="docutils literal notranslate"><span class="pre">*</span></code> stands for 0 or more repetitions,
+and <code class="docutils literal notranslate"><span class="pre">+</span></code> stands for 1 or more repetitions. Tokens are given between double quotes and should be interpreted
+as <a class="reference external" href="http://en.wikipedia.org/wiki/Regular_expression">regular expressions</a>.</p>
+<ul class="simple">
+<li><p>Strings can have embedded double quotes <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>, by using the escape sequence <code class="docutils literal notranslate"><span class="pre">\&quot;</span></code>. For example <code class="docutils literal notranslate"><span class="pre">&quot;An</span> <span class="pre">embedded</span> <span class="pre">\&quot;</span> <span class="pre">quote!&quot;</span></code>.</p></li>
+<li><p>Comments are placed between braces. For example <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">Start</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">game</span> <span class="pre">}</span> <span class="pre">33-28</span> <span class="pre">18-22</span> <span class="pre">39-33?</span> <span class="pre">{</span> <span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">classical</span> <span class="pre">mistake</span> <span class="pre">}</span></code>.</p></li>
+<li><p>In existing PDN files games are usually terminated with a result. It can be one of the chess results
+<code class="docutils literal notranslate"><span class="pre">1-0,</span> <span class="pre">1/2-1/2,</span> <span class="pre">0-1</span></code>, one of the results of international draughts <code class="docutils literal notranslate"><span class="pre">2-0,</span> <span class="pre">1-1,</span> <span class="pre">0-2</span></code>, or a
+double forfeit <code class="docutils literal notranslate"><span class="pre">0-0</span></code>. Finally the <code class="docutils literal notranslate"><span class="pre">*</span></code> can be used as a terminator.</p></li>
+<li><p>A game can not be empty.</p></li>
+<li><p>Both numeric moves <code class="docutils literal notranslate"><span class="pre">32-28</span></code> and alpha-numeric moves <code class="docutils literal notranslate"><span class="pre">a3-b4</span></code> are allowed.</p></li>
+<li><p>In alpha-numeric moves the separator may be omitted, so <code class="docutils literal notranslate"><span class="pre">a3b4</span></code> is allowed.</p></li>
+<li><p>A move number is a number followed by either one dot or three dots, for example <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">32-28</span></code> or
+<code class="docutils literal notranslate"><span class="pre">23...</span> <span class="pre">20-25</span></code>. The three dots denotes that it is a black move.</p></li>
+<li><p>Moves can be annotated using a move strength indicator right after their notation, for example <code class="docutils literal notranslate"><span class="pre">10-15!</span></code> or <code class="docutils literal notranslate"><span class="pre">29-23(?)</span></code>.</p></li>
+<li><p>Moves can also be annotated using <a class="reference external" href="http://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs">numeric annotation glyphs</a>
+(NAGs). For example <code class="docutils literal notranslate"><span class="pre">$1</span></code> has the same meaning as the move strength indicator <code class="docutils literal notranslate"><span class="pre">!</span></code>.</p></li>
+<li><p>Comments, variations and NAGs may appear anywhere in the game, in any order. This is less
+restrictive than in <a class="reference internal" href="introduction.html#nemesis" id="id1"><span>[Nemesis]</span></a>,</p></li>
+<li><p>Variations are placed between parentheses. They can be nested arbitrarily, for example:
+<code class="docutils literal notranslate"><span class="pre">32-28</span> <span class="pre">19-23</span> <span class="pre">(18-23</span> <span class="pre">38-32</span> <span class="pre">(37-32?</span> <span class="pre">23-29!</span> <span class="pre">{</span> <span class="pre">Black</span> <span class="pre">wins</span> <span class="pre">})</span> <span class="pre">12-18)</span> <span class="pre">28x19</span> <span class="pre">14x23</span></code>.</p></li>
+<li><p>A setup of a new position is a FEN command surrounded by forward slashes (<code class="docutils literal notranslate"><span class="pre">/</span></code>), and it can appear
+anywhere in the game. An example is <code class="docutils literal notranslate"><span class="pre">/FEN</span> <span class="pre">&quot;B:W18,24,27,28,K10,K15:B12,16,20,K22,K25,K29&quot;/</span></code>.
+It is not backward compatible with existing PDN, see the <a class="reference internal" href="extensions.html#extensions-section"><span class="std std-ref">PDN Extensions</span></a> section
+for an explanation.</p></li>
+</ul>
+</section>
+<section id="pdn-reading-grammar">
+<h2>PDN Reading Grammar<a class="headerlink" href="#pdn-reading-grammar" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>// Game independent productions
+PdnFile          : Game (GameSeparator Game)* GameSeparator?
+GameSeparator    : ASTERISK | Result
+Game             : (GameHeader GameBody?) | GameBody
+GameHeader       : PdnTag+
+GameBody         : (GameMove | Variation | COMMENT | SETUP | NAG)+
+PdnTag           : LBRACKET IDENTIFIER STRING RBRACKET
+GameMove         : MOVENUMBER? Move MOVESTRENGTH?
+Variation        : LPAREN GameBody RPAREN
+
+// Game dependent productions
+Move             : NormalMove | CaptureMove | ELLIPSES
+NormalMove       : Square MOVESEPARATOR Square
+CaptureMove      : Square (CAPTURESEPARATOR Square)+
+Square           : ALPHASQUARE | NUMSQUARE
+Result           : Result1 | Result2 | DOUBLEFORFEIT
+Result1          : WIN1 | DRAW1 | LOSS1
+Result2          : WIN2 | DRAW2 | LOSS2
+
+// Tokens
+WIN1             : &quot;1-0&quot;
+DRAW1            : &quot;1\/2-1\/2&quot;
+LOSS1            : &quot;0-1&quot;
+WIN2             : &quot;2-0&quot;
+DRAW2            : &quot;1-1&quot;
+LOSS2            : &quot;0-2&quot;
+DOUBLEFORFEIT    : &quot;0-0&quot;
+ELLIPSES         : &quot;\.\.\.&quot;
+MOVENUMBER       : &quot;[0-9]+\.(\.\.)?&quot;
+MOVESEPARATOR    : &quot;-&quot;
+CAPTURESEPARATOR : &quot;[x:]&quot;
+ALPHASQUARE      : &quot;[a-h][1-8]&quot;
+NUMSQUARE        : &quot;([1-9][0-9]?)|(0[1-9])&quot;
+MOVESTRENGTH     : &quot;([\!\?]+)|(\([\!\?]+\))&quot;
+NAG              : &quot;\$[0-9]+&quot;
+LPAREN           : &quot;\(&quot;
+RPAREN           : &quot;\)&quot;
+LBRACKET         : &quot;\[&quot;
+RBRACKET         : &quot;\]&quot;
+ASTERISK         : &quot;\*&quot;
+SETUP            : &quot;\/[^\/]*\/&quot;
+STRING           : &quot;\&quot;([^\&quot;]|\\\&quot;)*\&quot;&quot;
+COMMENT          : &quot;\{[^}]*\}&quot;
+IDENTIFIER       : &quot;[A-Z][a-zA-Z0-9_]*&quot;
+</pre></div>
+</div>
+<p>When reading PDN, one must take into account that captures can can contain the full capture sequence,
+also in the case of non-ambiguous moves. This is for backward compatibility.</p>
+<p>Note that the above <em>reading</em> grammar does not take everything into account. Some additional
+constructs that are encountered in practice are:</p>
+<ul class="simple">
+<li><p>Specify unknown moves using a minus sign: <code class="docutils literal notranslate"><span class="pre">41.</span> <span class="pre">-</span> <span class="pre">-</span></code>.</p></li>
+<li><p>Write a move number without a move to specify an empty game: <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">2-0</span></code>.</p></li>
+<li><p>Omit move separators in numeric moves: <code class="docutils literal notranslate"><span class="pre">3228</span> <span class="pre">1823</span></code>.</p></li>
+</ul>
+<p>The reading grammar can be extended to handle such cases, but this goes beyond the
+scope of this document.</p>
+<p>In several PDN examples three dots are being used for an unspecified or unknown move.
+For example <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">...</span> <span class="pre">7-12</span></code> is sometimes used instead of <code class="docutils literal notranslate"><span class="pre">1...</span> <span class="pre">7-12</span></code>. This case has
+been added to the reading grammar by means of the <code class="docutils literal notranslate"><span class="pre">ELLIPSES</span></code> token.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Portable Draughts Notation (PDN) Standard</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Character encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdntags.html">PDN Tags</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PDN Grammars</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pdn-3-0-grammar">PDN 3.0 Grammar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pdn-3-0-restrictions">PDN 3.0 Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explanation">Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pdn-reading-grammar">PDN Reading Grammar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">PDN Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdnnext.html">PDN 3.1 Proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">PDN Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">PDN Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">PDN parsing issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fen.html">FEN tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gametype.html">GameType tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pdntags.html" title="previous chapter">PDN Tags</a></li>
+      <li>Next: <a href="extensions.html" title="next chapter">PDN Extensions</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2011 - 2025, Wieger Wesselink.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/grammar.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
