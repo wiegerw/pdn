@@ -35,31 +35,23 @@ jobs:
         working-directory: doc
         run: |
           make html
-          # Debugging: List contents of doc/build to ensure HTML files are created
-          ls -l doc/build
-          ls -l doc/build/html
+          # Debugging: List contents of the build/html directory to ensure HTML files are created
+          ls -l build/html
 
       # Build PDF documentation
       - name: Build PDF documentation
         working-directory: doc
         run: |
           make latexpdf
-          # Debugging: List contents of doc/build/latex to check PDF generation
-          ls -l doc/build/latex
+          # Debugging: List contents of the build/latex directory to check PDF generation
+          ls -l build/latex
 
       # Move PDF to HTML directory for deployment
       - name: Move PDF to HTML directory
         run: |
-          mv doc/build/latex/*.pdf doc/build/html/
+          mv build/latex/*.pdf build/html/
           # Debugging: Confirm that the PDF was moved successfully
-          ls -l doc/build/html
-
-      # Save PDF as an artifact from the HTML directory
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: sphinx-pdf
-          path: doc/build/html/*.pdf
+          ls -l build/html
 
   deploy-html:
     name: Deploy HTML Documentation
@@ -71,7 +63,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Debugging: List contents of doc/build/html to confirm it's ready for deployment
+      # List contents of doc/build/html to confirm it's ready for deployment
       - name: List contents of publish directory
         run: |
           ls -l doc/build/html  # Ensure HTML files are ready for deployment
