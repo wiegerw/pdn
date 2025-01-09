@@ -136,7 +136,7 @@ Examples
 
 Italian draughts uses the following notation:
 
-   .. image:: gametype_italian.gif
+   .. image:: gametype_italian.png
 
 For Italian draughts the first square (1) is located in the top left corner of
 the board. The next square (2) can be found by moving in horizontal direction
@@ -145,7 +145,7 @@ corresponds with (Top left, horizontal).
 
 American pool checkers uses the following notation:
 
-   .. image:: gametype_american_pool_checkers.gif
+   .. image:: gametype_american_pool_checkers.png
 
 Pool checkers uses the following notation:
 
@@ -153,5 +153,5 @@ Pool checkers uses the following notation:
 
 Jamaican draughts uses the following notation:
 
-   .. image:: gametype_jamaican_draughts.gif
+   .. image:: gametype_jamaican_draughts.png
 
