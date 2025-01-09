@@ -1,4 +1,6 @@
 # PDN
-The official portable draughts notation standard PDN 3.0. For the generated documentation, see [http://pdn.fmjd.org/](http://pdn.fmjd.org/).
+This is the repository for the official Portable Draughts Notation (PDN) Standard. The current version is 3.0.
+The documentation is written in [reStructuredText](http://docutils.sourceforge.net/rst.html) format, and it is built using Sphinx.
 
-The documentation is written in [reStructuredText](http://docutils.sourceforge.net/rst.html) format, and can be found in the `doc` directory. The [Sphinx Python Document Generator](http://www.sphinx-doc.org/en/stable/#) must be installed. To rebuild the documentation, call `make html` in the `doc` directory.
+Take a look at the generated [HTML documentation](https://wiegerw.github.io/pdn/) or the [PDF documentation](https://wiegerw.github.io/pdn/pdf/pdn_standard.pdf).
+
