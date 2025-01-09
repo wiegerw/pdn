@@ -75,17 +75,17 @@ and to Rein Halbersma for leading the review.
 References
 ----------
 
-.. [Wikipedia] Wikipedia: Portable Draughts Notation http://en.wikipedia.org/wiki/Portable_Draughts_Notation
+.. [Wikipedia] Wikipedia: Portable Draughts Notation https://en.wikipedia.org/wiki/Portable_Draughts_Notation
 
 .. [Nemesis] PDN 2.0 Specification by Murray Cash (draft) :download:`pdn2.txt <pdn2.txt>` An archived copy of http://www.nemesis.info/pdn2.txt, 17 July 2012.
 
 .. [PGN] Portable Game Notation Specification and Implementation Guide http://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm
 
-.. [Sage] Adrian Millet's PDN description: http://homepages.tcp.co.uk/~pcsol/sagehlp1.htm#PDN
+.. [Sage] Adrian Millet's PDN description: https://web.archive.org/web/20111021120519/http://homepages.tcp.co.uk/~pcsol/sagehlp1.htm#PDN
 
-.. [Grimminck] Michel Grimminck's PDN page http://www.xs4all.nl/~mdgsoft/draughts/pdn.html
+.. [Grimminck] Michel Grimminck's PDN page https://www.xs4all.nl/~mdgsoft/draughts/pdn.html
 
-.. [DGT] DGT Clock times extension http://digitalgametechnology.com/site/index.php/Board-Driver/pgn-clock-times-extension.html
+.. [DGT] DGT Clock times extension https://web.archive.org/web/20100502070409/http://digitalgametechnology.com/site/index.php/Board-Driver/pgn-clock-times-extension.html
 
-.. [Forum] PDN standard topic on World Draughts Forum http://laatste.info/bb/viewtopic.php?t=2544
+.. [Forum] PDN standard topic on World Draughts Forum https://damforum.nl/bb3/viewtopic.php?t=2544
 
