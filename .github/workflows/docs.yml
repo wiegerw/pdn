@@ -51,6 +51,10 @@ jobs:
           name: sphinx-pdf
           path: doc/build/html/*.pdf
 
+      # Debugging: Check contents of doc/build/html
+      - name: List contents of doc/build/html
+        run: ls -l doc/build/html
+
   deploy-html:
     name: Deploy HTML Documentation
     runs-on: ubuntu-latest
@@ -60,6 +64,23 @@ jobs:
       # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      # Set up gh-pages branch
+      - name: Set up gh-pages branch
+        run: |
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git reset --hard
+
+      # Debugging: Check if index.html exists in the publish directory
+      - name: Check if index.html exists in publish directory
+        run: |
+          ls doc/build/html
+
+      # Force add and commit files (if any changes exist)
+      - name: Force commit changes
+        run: |
+          git add --all
+          git commit -m "Deploy Sphinx documentation" || echo "No changes to commit"
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
