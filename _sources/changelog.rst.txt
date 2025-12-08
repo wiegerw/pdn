@@ -98,3 +98,7 @@ Changelog
 * Updated the grammars.
 
 * Updated the PDN checker.
+
+8 December 2025
+
+* Added optional player tags `WhiteFmjdId` and `BlackFmjdId`.

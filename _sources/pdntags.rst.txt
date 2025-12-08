@@ -93,6 +93,7 @@ Player related tags
 ==========================   ============================================
 WhiteTitle, BlackTitle       FMJD titles of the players
 WhiteRating, BlackRating     FMJD rating
+WhiteFmjdId, BlackFmjdId     FMJD IDs of the players
 WhiteNA, BlackNA             E-mail or network addresses of the players
 WhiteType, BlackType         Player types ("human" or "program")
 ==========================   ============================================
@@ -296,3 +297,4 @@ Details and Examples
   [TimeControl "40/7200:3600+60"]       { 40 moves in 2 hours, 1 hour for the rest of the game with increment of 60 seconds/move }
   [TimeControl "40/7200:20/2400:600+5"] { 40 moves in 2 hours, 20 moves in 40 minutes, 10 minutes for the rest of the game with increment of 5 seconds/move }
   [TimeControl "*120"]                  { 2 minutes for a "sandclock" or "hourglass" control period, more suitable usage with physical sandclock }
+
