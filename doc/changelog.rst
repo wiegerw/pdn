@@ -2,6 +2,16 @@
 Changelog
 =========
 
+8 December 2025
+
+* Added optional player tags ``WhiteFmjdId`` and ``BlackFmjdId``.
+
+9 January 2025
+
+* Use a new layout for the documentation.
+
+* Automatically generate the documentation using CI.
+
 24 June 2017
 
 * Put the standard in a github repository on https://github.com/wiegerw/pdn.
@@ -98,7 +108,3 @@ Changelog
 * Updated the grammars.
 
 * Updated the PDN checker.
-
-8 December 2025
-
-* Added optional player tags `WhiteFmjdId` and `BlackFmjdId`.
