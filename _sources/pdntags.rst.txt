@@ -98,7 +98,10 @@ WhiteNA, BlackNA             E-mail or network addresses of the players
 WhiteType, BlackType         Player types ("human" or "program")
 ==========================   ============================================
 
-The tags ``WhiteRating`` and ``BlackRating`` are named WhiteElo and BlackElo in chess.
+The tags ``WhiteRating`` and ``BlackRating`` are named ``WhiteElo`` and ``BlackElo`` in chess.
+
+The FMJD IDs used in ``WhiteFmjdId`` and ``BlackFmjdId`` can be obtained through the
+`FMJD public API <https://fmjd.org/webservices/api/public/api_doc/>`_.
 
 Event related tags
 ------------------
