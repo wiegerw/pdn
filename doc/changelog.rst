@@ -2,6 +2,10 @@
 Changelog
 =========
 
+13 April 2026
+
+* Corrected the starting player of Jamaican draughts, noted by Harris Mowbray.
+
 8 December 2025
 
 * Added optional player tags ``WhiteFmjdId`` and ``BlackFmjdId``.
