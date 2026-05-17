@@ -78,7 +78,7 @@ numbering is vertical instead of horizontal. Zimbabwean is played on the light s
 All checkers variants share the number 23, but the abbreviated version ``[GameType "23"]``
 still expands to ``[GameType "23,B,8,8,N1,0"]`` (American pool checkers).
 
-The game types 29, 30, 31, 40 and 41 are not listed in [Wikipedia]_, but they were added
+The game types 29, 30, 31, 40 and 41 were added
 based on conventions of the game site `Play OK <http://playok.com>`_ and the
 program `Aurora Borealis <http://aurora.shashki.com/>`_.
 
