@@ -73,7 +73,7 @@ found at :download:`gametype.html <gametype.html>`.
 
 ***)** Note that Pool checkers and Jamaican draughts have
 been added later. They have the same rules as American pool checkers, but they use algebraic
-notation, and white moves first. Moreover, in Jamaican draughts the direction of the
+notation. Moreover, in Jamaican draughts the direction of the
 numbering is vertical instead of horizontal. Zimbabwean is played on the light squares.
 All checkers variants share the number 23, but the abbreviated version ``[GameType "23"]``
 still expands to ``[GameType "23,B,8,8,N1,0"]`` (American pool checkers).
