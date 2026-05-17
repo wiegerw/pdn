@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.17)  17 MAY 2026 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.17)  17 MAY 2026 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,25 +975,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 2829--2829
  []
 
 [32]
-<gametype_italian.png, id=523, 188.20313pt x 188.20313pt>
+<gametype_italian.png, id=522, 188.20313pt x 188.20313pt>
 File: gametype_italian.png Graphic file (type png)
 <use gametype_italian.png>
 Package pdftex.def Info: gametype_italian.png  used on input line 2871.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<gametype_american_pool_checkers.png, id=524, 188.20313pt x 188.20313pt>
+<gametype_american_pool_checkers.png, id=523, 188.20313pt x 188.20313pt>
 File: gametype_american_pool_checkers.png Graphic file (type png)
 <use gametype_american_pool_checkers.png>
 Package pdftex.def Info: gametype_american_pool_checkers.png  used on input lin
 e 2884.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<gametype_unified_pool_checkers.jpg, id=525, 301.125pt x 298.11375pt>
+<gametype_unified_pool_checkers.jpg, id=524, 301.125pt x 298.11375pt>
 File: gametype_unified_pool_checkers.jpg Graphic file (type jpg)
 <use gametype_unified_pool_checkers.jpg>
 Package pdftex.def Info: gametype_unified_pool_checkers.jpg  used on input line
  2891.
 (pdftex.def)             Requested size: 301.12425pt x 298.11302pt.
  [33 <./gametype_italian.png> <./gametype_american_pool_checkers.png>]
-<gametype_jamaican_draughts.png, id=533, 301.125pt x 301.125pt>
+<gametype_jamaican_draughts.png, id=532, 301.125pt x 301.125pt>
 File: gametype_jamaican_draughts.png Graphic file (type png)
 <use gametype_jamaican_draughts.png>
 Package pdftex.def Info: gametype_jamaican_draughts.png  used on input line 289
@@ -1032,10 +1032,10 @@ r/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on pdn_standard.pdf (41 pages, 390780 bytes).
+Output written on pdn_standard.pdf (41 pages, 390703 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
+ 636 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
  110 named destinations out of 1000 (max. 500000)
  453 words of extra memory for PDF output out of 10000 (max. 10000000)
 
