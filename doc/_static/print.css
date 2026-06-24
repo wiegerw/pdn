@@ -27,4 +27,18 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
   }
+
+  /* WeasyPrint only auto-generates a couple of top-level PDF bookmarks
+     unless told otherwise; this rebuilds the full chapter/section outline
+     the previous LaTeX-based PDF had. Hiding the headerlink anchor keeps
+     the trailing "\B6" out of each bookmark's title. */
+  h1 { bookmark-level: 1; }
+  h2 { bookmark-level: 2; }
+  h3 { bookmark-level: 3; }
+  h4 { bookmark-level: 4; }
+  h5 { bookmark-level: 5; }
+  h6 { bookmark-level: 6; }
+  a.headerlink {
+    display: none;
+  }
 }
