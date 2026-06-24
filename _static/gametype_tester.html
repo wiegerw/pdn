@@ -246,6 +246,112 @@
       }
     }
 
+    // Renders an arbitrary FEN position (used by generate_images.py to
+    // produce documentation diagrams that aren't an initial position).
+    // Only the numeric-squares subset of the FEN grammar in fen.rst is
+    // supported (no kings, no alpha squares) - that's all the diagrams need.
+    function numeric_square(r, c)
+    {
+      var left = notation_start == 0 || notation_start == 2;
+      var bottom = notation_start == 0 || notation_start == 1;
+      var r2 = bottom ? rows - r - 1 : r;
+      var c2 = left ? c : columns - c - 1;
+      return rc2f(r2, c2, rows, columns);
+    }
+
+    function build_square_map()
+    {
+      var map = {};
+      for (var r = 0; r < rows; r++)
+      {
+        for (var c = 0; c < columns; c++)
+        {
+          if (!is_empty_field(r, c))
+          {
+            map[numeric_square(r, c)] = [r, c];
+          }
+        }
+      }
+      return map;
+    }
+
+    function parse_fen_squares(spec)
+    {
+      var squares = [];
+      spec.slice(1).split(',').forEach(function (part) {
+        if (part.indexOf('-') >= 0)
+        {
+          var range = part.split('-');
+          for (var n = parseInt(range[0]); n <= parseInt(range[1]); n++)
+          {
+            squares.push(n);
+          }
+        }
+        else if (part.length)
+        {
+          squares.push(parseInt(part));
+        }
+      });
+      return squares;
+    }
+
+    function parse_fen(fen)
+    {
+      var parts = fen.split(':');
+      var position = { W: [], B: [] };
+      for (var i = 1; i < parts.length; i++)
+      {
+        position[parts[i][0]] = parse_fen_squares(parts[i]);
+      }
+      return position;
+    }
+
+    function renderFenPosition(canvasId, gametype, fen, playerColor, opponentColor, lightColor, darkColor)
+    {
+      if (!parse_gametype(gametype))
+      {
+        return;
+      }
+      flipped = false;
+      player_piece_color = playerColor;
+      opponent_piece_color = opponentColor;
+      light_field_color = lightColor;
+      dark_field_color = darkColor;
+
+      var squareMap = build_square_map();
+      var position = parse_fen(fen);
+
+      var canvas = document.getElementById(canvasId);
+      canvas.width = columns * size;
+      canvas.height = rows * size;
+      var ctx = canvas.getContext("2d");
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.font = "10px sans-serif";
+
+      for (var r = 0; r < rows; r++)
+      {
+        for (var c = 0; c < columns; c++)
+        {
+          drawsquare(ctx, c * size, r * size, fieldcolor(r, c));
+        }
+      }
+      position.W.forEach(function (f) {
+        var rc = squareMap[f];
+        if (rc) drawpiece(ctx, rc[1] * size, rc[0] * size, player_piece_color);
+      });
+      position.B.forEach(function (f) {
+        var rc = squareMap[f];
+        if (rc) drawpiece(ctx, rc[1] * size, rc[0] * size, opponent_piece_color);
+      });
+      for (var r2 = 0; r2 < rows; r2++)
+      {
+        for (var c2 = 0; c2 < columns; c2++)
+        {
+          drawnumber(ctx, c2 * size, r2 * size, r2, c2);
+        }
+      }
+    }
+
     function parse_gametype(gametype)
     {
       var values = gametype.split(',');
