@@ -149,7 +149,7 @@ American pool checkers uses the following notation:
 
 Pool checkers uses the following notation:
 
-   .. image:: gametype_unified_pool_checkers.jpg
+   .. image:: gametype_unified_pool_checkers.png
 
 Jamaican draughts uses the following notation:
 
