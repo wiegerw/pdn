@@ -383,9 +383,11 @@
       var container = document.getElementById(containerId);
       presets.forEach(function (color) {
         var hex = toHexColor(color);
-        var swatch = document.createElement('span');
+        var swatch = document.createElement('button');
+        swatch.type = 'button';
         swatch.title = color;
-        swatch.style.cssText = 'display:inline-block;width:16px;height:16px;' +
+        swatch.setAttribute('aria-label', color);
+        swatch.style.cssText = 'display:inline-block;width:16px;height:16px;padding:0;' +
           'margin:2px;border:1px solid black;cursor:pointer;background:' + hex;
         swatch.onclick = function () {
           document.getElementById(inputId).value = hex;
@@ -415,14 +417,6 @@
       window.location.href = 'mailto:pdn@10x10.org' +
         '?subject=' + encodeURIComponent(subject) +
         '&body=' + encodeURIComponent(body);
-    }
-
-    function copyItem(thelist)
-    {
-      var idx = thelist.selectedIndex;
-      var content = table[idx][1];
-      theinput = document.getElementById('theinput');
-      theinput.value = content;
     }
 
     function selectItem(thelist)
@@ -515,28 +509,35 @@
     }
   </script>
  </head>
- <body>
+ <body style="font-family: sans-serif;">
    <h1>PDN GameType tag tester</h1>
-   <p>This page displays the initial position af a draughts board corresponding to a
+   <p>This page displays the initial position of a draughts board corresponding to a
       GameType tag, as specified in the <a href="http://pdn.fmjd.org/gametype.html">PDN Standard</a>.
-      Please send corrections to wieger &lt;at&gt; 10x10 &lt;dot&gt; org.
+   </p>
+   <p>
+     Found an issue, or want to suggest a new game type or a change to an existing one?
+     Click the button below to open an email to <a href="mailto:pdn@10x10.org">pdn@10x10.org</a>
+     pre-filled with your currently selected settings.
+     <br>
+     <input id="submit" type="button" value="Suggest a change" onclick="submit_request();"
+            style="margin-top: 8px; padding: 8px 16px; font-size: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 4px; cursor: pointer;" />
    </p>
    <div id="top" style="padding: 20px; height:50px;">
      <div style="float: left; padding: 25px 20px 0 0;">
-       <input type="text" id="theinput" name="theinput" onKeyPress="onPressEnter(event)"/>
-       <select name="thelist" onChange="selectItem(this)" onMouseOut="copyItem(this)">
+       <label>PDN tag <input type="text" id="theinput" name="theinput" onKeyPress="onPressEnter(event)"/></label>
+       <label>Preset <select name="thelist" onChange="selectItem(this)">
          <script>fillcombobox();</script>
-       </select>
+       </select></label>
        <input id="flip" type="button" value="flip" onclick="flip_board();" />
-       <input id="submit" type="button" value="Submit change request / addition" onclick="submit_request();" />
      </div>
      <div style="float: left; font: 12px sans-serif; text-align: center">
-       Start color:
+       First to move:
        <canvas id="startcolor" width="50" height="50"></canvas>
      </div>
    </div>
    <br style="clear: left;" />
-   <div id="fields" style="display: flex; flex-wrap: wrap; gap: 12px; padding: 0 20px 20px 0; font: 12px sans-serif;">
+   <fieldset id="fields" style="display: flex; flex-wrap: wrap; gap: 12px; font: 12px sans-serif;">
+     <legend>GameType tag fields</legend>
      <label>Game type<br>
        <input type="number" id="field_typenumber" size="4" style="width: 4em" onchange="fields_changed()">
      </label>
@@ -573,8 +574,9 @@
          <option value="1">1 - bottom left is not a playing square</option>
        </select>
      </label>
-   </div>
-   <div id="colors" style="display: flex; flex-wrap: wrap; gap: 20px; padding: 0 20px 20px 0; font: 12px sans-serif;">
+   </fieldset>
+   <fieldset id="colors" style="display: flex; flex-wrap: wrap; gap: 20px; font: 12px sans-serif;">
+     <legend>Colors</legend>
      <label>Player piece color<br>
        <input type="color" id="field_playercolor" onchange="colors_changed()">
        <div id="swatches_playercolor"></div>
@@ -591,12 +593,12 @@
        <input type="color" id="field_darkcolor" onchange="colors_changed()">
        <div id="swatches_darkcolor"></div>
      </label>
-   </div>
+   </fieldset>
    <div id="bottom" style="float: left">
      <canvas id="canvas" width="700" height="700"></canvas>
    </div>
    <div style="float: left; padding-left: 20px">
-     <textarea id="explanation" rows="12" cols="47"></textarea>
+     <textarea id="explanation" rows="12" cols="47" readonly></textarea>
    </div>
    <script>load();</script>
  </body>
