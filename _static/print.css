@@ -1,0 +1,30 @@
+/* Used when rendering the singlehtml build to PDF (see .github/workflows/pdf.yml).
+   The alabaster theme hard-codes div.document to a fixed 940px width for the
+   on-screen two-column (sidebar + body) layout. That's wider than a PDF page,
+   so anything sized relative to it (e.g. wide tables) gets clipped at the
+   page edge. Drop the sidebar and let the body use the full, fluid page width.
+*/
+@media print {
+  div.document {
+    width: auto !important;
+    margin: 0 !important;
+  }
+  div.bodywrapper {
+    margin-left: 0 !important;
+  }
+  div.sphinxsidebar {
+    display: none !important;
+  }
+  div.body {
+    padding: 0 !important;
+  }
+  table.docutils {
+    width: 100% !important;
+    table-layout: fixed;
+    font-size: 9pt;
+  }
+  table.docutils td, table.docutils th {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}

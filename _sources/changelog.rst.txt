@@ -2,6 +2,22 @@
 Changelog
 =========
 
+24 June 2026
+
+* Made the test page for the GameType tag fully interactive: every tag
+  field (game type, start color, columns, rows, notation, etc.) and every
+  board/piece color can now be edited directly, in addition to selecting
+  a predefined game type from the dropdown.
+
+* Gave the pieces on the test page a more realistic, 3D look.
+
+* Added a button to the test page for submitting a change request or an
+  addition by email.
+
+* Published the test page as a regular page
+  (``doc/_static/gametype_tester.html``) instead of a download, so it no
+  longer clashes with the page generated from ``gametype.rst``.
+
 13 April 2026
 
 * Corrected the starting player of Jamaican draughts, noted by Harris Mowbray.
