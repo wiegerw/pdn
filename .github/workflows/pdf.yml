@@ -22,28 +22,26 @@ jobs:
         with:
           python-version: 3.12
 
-      # Install dependencies. WeasyPrint replaces the previous LaTeX-based
-      # PDF build (latexmk + texlive + texlive-lang-all), which pulled in
-      # several GB of mostly unused language/font packages and was a
-      # recurring source of slow, flaky CI runs.
-      - name: Install Sphinx and WeasyPrint dependencies
+      # Install dependencies. texlive-lang-all (hyphenation/font packages for
+      # dozens of languages this English-only doc never uses) was dropped:
+      # it's the single largest, slowest part of this install and isn't
+      # needed for the LaTeX build to succeed.
+      - name: Install Sphinx and LaTeX dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+          sudo apt-get install -y latexmk texlive texlive-latex-extra texlive-fonts-recommended
           python -m pip install --upgrade pip
-          pip install sphinx weasyprint
+          pip install sphinx
 
-      # Build a single combined HTML page, then render it to PDF
+      # Build the PDF documentation
       - name: Build PDF documentation
-        run: |
-          sphinx-build -b singlehtml doc build/singlehtml
-          mkdir -p build/pdf
-          weasyprint build/singlehtml/index.html build/pdf/pdn_standard.pdf
+        working-directory: doc
+        run: make latexpdf
 
       # Deploy PDF to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/pdf
+          publish_dir: doc/build/latex
           destination_dir: pdf
