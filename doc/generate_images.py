@@ -15,30 +15,33 @@ from playwright.sync_api import sync_playwright
 DOC_DIR = pathlib.Path(__file__).parent
 TOOL_URL = (DOC_DIR / "_static" / "gametype_tester.html").resolve().as_uri()
 
-# Default colors shared by the international-draughts example diagrams.
-DEFAULT_COLORS = dict(player="White", opponent="DimGray", light="Wheat", dark="Peru")
+# The pool-checkers color scheme: used for setup/diagram1/italian.
+DEFAULT_COLORS = dict(player="White", opponent="Black", light="Wheat", dark="Peru")
+
+# Green squares, red/white pieces: used for pool checkers and jamaican.
+GREEN_COLORS = dict(player="White", opponent="Crimson", light="Ivory", dark="ForestGreen")
 
 IMAGES = [
     # -- gametype.rst: initial position of a named variant --
     dict(
         filename="gametype_italian.png",
         tag="22,W,8,8,N2,1",
-        colors=dict(player="White", opponent="Black", light="Ivory", dark="ForestGreen"),
+        colors=DEFAULT_COLORS,
     ),
     dict(
         filename="gametype_american_pool_checkers.png",
         tag="23,B,8,8,N1,0",
-        colors=dict(player="White", opponent="Black", light="Wheat", dark="Peru"),
+        colors=GREEN_COLORS,
     ),
     dict(
         filename="gametype_unified_pool_checkers.png",
         tag="23,W,8,8,A0,0",
-        colors=dict(player="White", opponent="Navy", light="Wheat", dark="SaddleBrown"),
+        colors=GREEN_COLORS,
     ),
     dict(
         filename="gametype_jamaican_draughts.png",
         tag="23,B,8,8,A1,1",
-        colors=dict(player="LightYellow", opponent="Crimson", light="White", dark="Teal"),
+        colors=GREEN_COLORS,
     ),
     # -- extensions.rst: a game starting with an illegal move, corrected via Setup --
     dict(
