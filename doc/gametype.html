@@ -53,18 +53,38 @@
 
     function drawpiece(ctx, x, y, color)
     {
-      ctx.fillStyle = color;
+      var dx = 14;
+      var cx = x + size / 2;
+      var cy = y + size / 2;
+      var rx = (size - dx) / 2;
+      var ry = rx * 0.55;
+      var rim = rx * 0.35;
+      var stroke = contrastColor(color) == '#fff' ? '#dfdfdf' : '#000';
+
+      // rim: the visible curved front edge of the disc
       ctx.beginPath();
-      var dx = 12;
-      var radius = (size - dx) / 2;
-      var startAngle = 0;
-      var endAngle = 2 * Math.PI;
-      var counterClockwise = false;
-      ctx.arc(x + size/2, y + size/2, radius, startAngle, endAngle, counterClockwise);
-      ctx.lineWidth = 2;
-      ctx.fillStyle = color;
-      ctx.strokeStyle = 'black';
+      ctx.moveTo(cx - rx, cy);
+      ctx.lineTo(cx - rx, cy + rim);
+      ctx.ellipse(cx, cy + rim, rx, ry, 0, Math.PI, 0, true);
+      ctx.lineTo(cx + rx, cy);
+      ctx.closePath();
+      var grad = ctx.createLinearGradient(cx - rx, cy, cx + rx, cy);
+      grad.addColorStop(0, shade(color, -0.45));
+      grad.addColorStop(0.5, color);
+      grad.addColorStop(1, color);
+      ctx.fillStyle = grad;
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = 1;
       ctx.fill();
+      ctx.stroke();
+
+      // top face of the disc
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx, ry, 0, 0, 2 * Math.PI);
+      ctx.fillStyle = color;
+      ctx.strokeStyle = stroke;
+      ctx.fill();
+      ctx.stroke();
     }
 
     function rc2f(r, c, maxr, maxc)
@@ -112,10 +132,15 @@
         return;
       }
       var dx = 2;
-      ctx.fillStyle = "Black";
-      ctx.textAlign = "right";
-      ctx.textBaseline = "bottom";
-      ctx.fillText(notation(r, c), x + size - dx, y + size - dx);
+      var fill = contrastColor(fieldcolor(r, c));
+      var halo = fill == '#fff' ? '#000' : '#fff';
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = halo;
+      ctx.strokeText(notation(r, c), x + dx, y + dx);
+      ctx.fillStyle = fill;
+      ctx.fillText(notation(r, c), x + dx, y + dx);
     }
 
     function is_empty_field(r, c)
@@ -313,6 +338,27 @@
       var ctx = document.createElement('canvas').getContext('2d');
       ctx.fillStyle = color;
       return ctx.fillStyle; // normalized "#rrggbb"
+    }
+
+    function shade(color, percent) // negative = darker, positive = lighter
+    {
+      var hex = toHexColor(color);
+      var r = parseInt(hex.substr(1, 2), 16);
+      var g = parseInt(hex.substr(3, 2), 16);
+      var b = parseInt(hex.substr(5, 2), 16);
+      var t = percent < 0 ? 0 : 255;
+      var p = Math.abs(percent);
+      var blend = function (c) { return Math.round((t - c) * p + c); };
+      return 'rgb(' + blend(r) + ',' + blend(g) + ',' + blend(b) + ')';
+    }
+
+    function contrastColor(color) // '#000' or '#fff', whichever reads better on `color`
+    {
+      var hex = toHexColor(color);
+      var r = parseInt(hex.substr(1, 2), 16);
+      var g = parseInt(hex.substr(3, 2), 16);
+      var b = parseInt(hex.substr(5, 2), 16);
+      return (0.299 * r + 0.587 * g + 0.114 * b) < 128 ? '#fff' : '#000';
     }
 
     function colors_changed()
