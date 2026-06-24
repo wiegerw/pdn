@@ -245,6 +245,7 @@
       {
         return;
       }
+      update_fields_from_globals();
       if (rows > 20 || columns > 20)
       {
         alert("Too many rows and columns!");
@@ -272,6 +273,38 @@
         drawsquare(ctx, 0, 0, dark_field_color);
         drawpiece(ctx, 0, 0, piece_color(!flipped));
       }
+    }
+
+    function build_gametype_string()
+    {
+      var notation = document.getElementById('field_notationtype').value
+                   + document.getElementById('field_notationstart').value;
+      return [
+        document.getElementById('field_typenumber').value,
+        document.getElementById('field_startcolor').value,
+        document.getElementById('field_columns').value,
+        document.getElementById('field_rows').value,
+        notation,
+        document.getElementById('field_invertflag').value
+      ].join(',');
+    }
+
+    function fields_changed()
+    {
+      var content = build_gametype_string();
+      document.getElementById('theinput').value = content;
+      draw(content);
+    }
+
+    function update_fields_from_globals()
+    {
+      document.getElementById('field_typenumber').value = type_number;
+      document.getElementById('field_startcolor').value = start_color;
+      document.getElementById('field_columns').value = columns;
+      document.getElementById('field_rows').value = rows;
+      document.getElementById('field_notationtype').value = notation_type;
+      document.getElementById('field_notationstart').value = notation_start;
+      document.getElementById('field_invertflag').value = invert_flag;
     }
 
     function copyItem(thelist)
@@ -391,6 +424,44 @@
      </div>
    </div>
    <br style="clear: left;" />
+   <div id="fields" style="display: flex; flex-wrap: wrap; gap: 12px; padding: 0 20px 20px 0; font: 12px sans-serif;">
+     <label>Game type<br>
+       <input type="number" id="field_typenumber" size="4" style="width: 4em" onchange="fields_changed()">
+     </label>
+     <label>Start color<br>
+       <select id="field_startcolor" onchange="fields_changed()">
+         <option value="W">White</option>
+         <option value="B">Black</option>
+       </select>
+     </label>
+     <label>Columns<br>
+       <input type="number" id="field_columns" min="1" max="20" style="width: 4em" onchange="fields_changed()">
+     </label>
+     <label>Rows<br>
+       <input type="number" id="field_rows" min="1" max="20" style="width: 4em" onchange="fields_changed()">
+     </label>
+     <label>Notation<br>
+       <select id="field_notationtype" onchange="fields_changed()">
+         <option value="N">N - numeric</option>
+         <option value="A">A - algebraic</option>
+         <option value="S">S - SAN</option>
+       </select>
+     </label>
+     <label>First square<br>
+       <select id="field_notationstart" onchange="fields_changed()">
+         <option value="0">0 - bottom left</option>
+         <option value="1">1 - bottom right</option>
+         <option value="2">2 - top left</option>
+         <option value="3">3 - top right</option>
+       </select>
+     </label>
+     <label>Invert flag<br>
+       <select id="field_invertflag" onchange="fields_changed()">
+         <option value="0">0 - bottom left is a playing square</option>
+         <option value="1">1 - bottom left is not a playing square</option>
+       </select>
+     </label>
+   </div>
    <div id="bottom" style="float: left">
      <canvas id="canvas" width="700" height="700"></canvas>
    </div>
