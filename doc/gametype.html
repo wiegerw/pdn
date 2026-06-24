@@ -511,9 +511,16 @@
  </head>
  <body style="font-family: sans-serif;">
    <h1>PDN GameType tag tester</h1>
-   <p>This page displays the initial position af a draughts board corresponding to a
+   <p>This page displays the initial position of a draughts board corresponding to a
       GameType tag, as specified in the <a href="http://pdn.fmjd.org/gametype.html">PDN Standard</a>.
-      Please send corrections to wieger &lt;at&gt; 10x10 &lt;dot&gt; org.
+   </p>
+   <p>
+     Found an issue, or want to suggest a new game type or a change to an existing one?
+     Click the button below to open an email to <a href="mailto:pdn@10x10.org">pdn@10x10.org</a>
+     pre-filled with your currently selected settings.
+     <br>
+     <input id="submit" type="button" value="Suggest a change" onclick="submit_request();"
+            style="margin-top: 8px; padding: 8px 16px; font-size: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 4px; cursor: pointer;" />
    </p>
    <div id="top" style="padding: 20px; height:50px;">
      <div style="float: left; padding: 25px 20px 0 0;">
@@ -522,7 +529,6 @@
          <script>fillcombobox();</script>
        </select></label>
        <input id="flip" type="button" value="flip" onclick="flip_board();" />
-       <input id="submit" type="button" value="Suggest a change" onclick="submit_request();" />
      </div>
      <div style="float: left; font: 12px sans-serif; text-align: center">
        First to move:
