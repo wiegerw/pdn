@@ -16,33 +16,33 @@
     var invert_flag;        // 0-1
     var flipped = false;    // normal/flipped
     var player_piece_color = "White";
-    var opponent_piece_color = "DimGray";
+    var opponent_piece_color = "Black";
     var light_field_color = "Wheat";
     var dark_field_color  = "Peru";
     var size = 50;
     var table = [
       // type number, description, gametype tag, player piece color, opponent piece color, light field color, dark field color, orientation
-      ['International draughts'  , '20,W,10,10,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal'],
+      ['International draughts'  , '20,W,10,10,N2,0', 'White', 'Black', 'Wheat', 'Peru', 'normal'],
       ['English draughts'        , '21,B,8,8,N1,0'  , 'Crimson', 'White', 'LightYellow', 'LimeGreen', 'flipped'],
-      ['Italian draughts'        , '22,W,8,8,N2,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
+      ['Italian draughts'        , '22,W,8,8,N2,1'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
       ['American pool checkers'  , '23,B,8,8,N1,0'  , 'Crimson', 'White', 'LightYellow', 'LimeGreen', 'normal'],
-      ['Pool checkers (unified)' , '23,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Zimbabwean pool checkers', '23,W,8,8,A0,0'  , 'White', 'DimGray', 'Peru', 'Wheat', 'normal' ],
-      ['Jamaican draughts'       , '23,B,8,8,A1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Spanish draughts'        , '24,W,8,8,N1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Russian draughts'        , '25,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Brazilian draughts'      , '26,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Canadian draughts'       , '27,W,12,12,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Portuguese draughts'     , '28,W,8,8,N1,1'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Czech draughts'          , '29,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Turkish draughts'        , '30,W,8,8,A0,0'  , 'White', 'DimGray', 'Wheat', 'Wheat', 'normal' ],
-      ['Thai draughts'           , '31,B,8,8,N2,0'  , 'DimGray', 'White', 'Wheat', 'Peru', 'normal' ],
-      ['Frisian draughts'        , '40,W,10,10,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Spantsiretti draughts'   , '41,W,10,8,A0,0' , 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Dumm (South Africa)'     , '-1,W,14,14,N2,0', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Sri Lanka Draughts'      , '-1,W,12,12,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Ktar 10x11'              , '-1,W,10,11,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ],
-      ['Ktar 10x12'              , '-1,W,10,12,N2,1', 'White', 'DimGray', 'Wheat', 'Peru', 'normal' ]
+      ['Pool checkers (unified)' , '23,W,8,8,A0,0'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Zimbabwean pool checkers', '23,W,8,8,A0,0'  , 'White', 'Black', 'Peru', 'Wheat', 'normal' ],
+      ['Jamaican draughts'       , '23,B,8,8,A1,1'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Spanish draughts'        , '24,W,8,8,N1,1'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Russian draughts'        , '25,W,8,8,A0,0'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Brazilian draughts'      , '26,W,8,8,A0,0'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Canadian draughts'       , '27,W,12,12,N2,0', 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Portuguese draughts'     , '28,W,8,8,N1,1'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Czech draughts'          , '29,W,8,8,A0,0'  , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Turkish draughts'        , '30,W,8,8,A0,0'  , 'White', 'Black', 'Wheat', 'Wheat', 'normal' ],
+      ['Thai draughts'           , '31,B,8,8,N2,0'  , 'Black', 'White', 'Wheat', 'Peru', 'normal' ],
+      ['Frisian draughts'        , '40,W,10,10,N2,0', 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Spantsiretti draughts'   , '41,W,10,8,A0,0' , 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Dumm (South Africa)'     , '-1,W,14,14,N2,0', 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Sri Lanka Draughts'      , '-1,W,12,12,N2,1', 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Ktar 10x11'              , '-1,W,10,11,N2,1', 'White', 'Black', 'Wheat', 'Peru', 'normal' ],
+      ['Ktar 10x12'              , '-1,W,10,12,N2,1', 'White', 'Black', 'Wheat', 'Peru', 'normal' ]
     ];
 
     function drawsquare(ctx, x, y, color)

@@ -2,6 +2,13 @@
 Changelog
 =========
 
+25 June 2026
+
+* Replaced the board-diagram images in the documentation, which had been
+  produced by different tools over the years and had inconsistent styles,
+  with images generated directly from the GameType test page
+  (``doc/_static/gametype_tester.html``) via ``doc/generate_images.py``.
+
 24 June 2026
 
 * Made the test page for the GameType tag fully interactive: every tag
