@@ -246,6 +246,7 @@
         return;
       }
       update_fields_from_globals();
+      update_color_fields_from_globals();
       if (rows > 20 || columns > 20)
       {
         alert("Too many rows and columns!");
@@ -305,6 +306,69 @@
       document.getElementById('field_notationtype').value = notation_type;
       document.getElementById('field_notationstart').value = notation_start;
       document.getElementById('field_invertflag').value = invert_flag;
+    }
+
+    function toHexColor(color)
+    {
+      var ctx = document.createElement('canvas').getContext('2d');
+      ctx.fillStyle = color;
+      return ctx.fillStyle; // normalized "#rrggbb"
+    }
+
+    function colors_changed()
+    {
+      player_piece_color   = document.getElementById('field_playercolor').value;
+      opponent_piece_color = document.getElementById('field_opponentcolor').value;
+      light_field_color    = document.getElementById('field_lightcolor').value;
+      dark_field_color     = document.getElementById('field_darkcolor').value;
+      draw(document.getElementById('theinput').value);
+    }
+
+    function update_color_fields_from_globals()
+    {
+      document.getElementById('field_playercolor').value   = toHexColor(player_piece_color);
+      document.getElementById('field_opponentcolor').value = toHexColor(opponent_piece_color);
+      document.getElementById('field_lightcolor').value    = toHexColor(light_field_color);
+      document.getElementById('field_darkcolor').value     = toHexColor(dark_field_color);
+    }
+
+    function render_color_swatches(containerId, inputId, presets)
+    {
+      var container = document.getElementById(containerId);
+      presets.forEach(function (color) {
+        var hex = toHexColor(color);
+        var swatch = document.createElement('span');
+        swatch.title = color;
+        swatch.style.cssText = 'display:inline-block;width:16px;height:16px;' +
+          'margin:2px;border:1px solid black;cursor:pointer;background:' + hex;
+        swatch.onclick = function () {
+          document.getElementById(inputId).value = hex;
+          colors_changed();
+        };
+        container.appendChild(swatch);
+      });
+    }
+
+    function render_all_color_swatches()
+    {
+      var piece_presets = ['White', 'Black', 'Crimson', 'DimGray', 'Tan', 'SaddleBrown', 'Ivory', 'LightYellow'];
+      var field_presets = ['Wheat', 'Peru', 'Cream', 'SaddleBrown', 'Ivory', 'Black', 'ForestGreen', 'DimGray'];
+      render_color_swatches('swatches_playercolor', 'field_playercolor', piece_presets);
+      render_color_swatches('swatches_opponentcolor', 'field_opponentcolor', piece_presets);
+      render_color_swatches('swatches_lightcolor', 'field_lightcolor', field_presets);
+      render_color_swatches('swatches_darkcolor', 'field_darkcolor', field_presets);
+    }
+
+    function submit_request()
+    {
+      var subject = 'PDN GameType change request / addition';
+      var body = 'Describe the requested change or addition here:\r\n\r\n\r\n' +
+                 '--- Current settings ---\r\n' +
+                 'PDN GameType tag: ' + document.getElementById('theinput').value + '\r\n' +
+                 document.getElementById('explanation').value;
+      window.location.href = 'mailto:pdn@10x10.org' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
     }
 
     function copyItem(thelist)
@@ -367,6 +431,7 @@
 
     function load()
     {
+      render_all_color_swatches();
       var content = table[0][1];
       game_description = table[0][0];
       theinput = document.getElementById('theinput');
@@ -417,6 +482,7 @@
          <script>fillcombobox();</script>
        </select>
        <input id="flip" type="button" value="flip" onclick="flip_board();" />
+       <input id="submit" type="button" value="Submit change request / addition" onclick="submit_request();" />
      </div>
      <div style="float: left; font: 12px sans-serif; text-align: center">
        Start color:
@@ -460,6 +526,24 @@
          <option value="0">0 - bottom left is a playing square</option>
          <option value="1">1 - bottom left is not a playing square</option>
        </select>
+     </label>
+   </div>
+   <div id="colors" style="display: flex; flex-wrap: wrap; gap: 20px; padding: 0 20px 20px 0; font: 12px sans-serif;">
+     <label>Player piece color<br>
+       <input type="color" id="field_playercolor" onchange="colors_changed()">
+       <div id="swatches_playercolor"></div>
+     </label>
+     <label>Opponent piece color<br>
+       <input type="color" id="field_opponentcolor" onchange="colors_changed()">
+       <div id="swatches_opponentcolor"></div>
+     </label>
+     <label>Light field color<br>
+       <input type="color" id="field_lightcolor" onchange="colors_changed()">
+       <div id="swatches_lightcolor"></div>
+     </label>
+     <label>Dark field color<br>
+       <input type="color" id="field_darkcolor" onchange="colors_changed()">
+       <div id="swatches_darkcolor"></div>
      </label>
    </div>
    <div id="bottom" style="float: left">
