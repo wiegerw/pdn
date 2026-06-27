@@ -244,6 +244,33 @@
           drawfield(ctx, r, c);
         }
       }
+      if (type_number == 30) drawgrid(ctx, columns * size, rows * size);
+    }
+
+    function drawborder(ctx, w, h)
+    {
+      ctx.strokeStyle = "Black";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(1, 1, w - 2, h - 2);
+    }
+
+    // Draws grid lines between squares — used for monochrome boards like Turkish draughts.
+    function drawgrid(ctx, w, h)
+    {
+      ctx.strokeStyle = shade(dark_field_color, -0.35);
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      for (var i = 1; i < columns; i++)
+      {
+        ctx.moveTo(i * size, 0);
+        ctx.lineTo(i * size, h);
+      }
+      for (var j = 1; j < rows; j++)
+      {
+        ctx.moveTo(0, j * size);
+        ctx.lineTo(w, j * size);
+      }
+      ctx.stroke();
     }
 
     // Renders an arbitrary FEN position (used by generate_images.py to
@@ -350,6 +377,8 @@
           drawnumber(ctx, c2 * size, r2 * size, r2, c2);
         }
       }
+      if (type_number == 30) drawgrid(ctx, canvas.width, canvas.height);
+      drawborder(ctx, canvas.width, canvas.height);
     }
 
     function parse_gametype(gametype)
@@ -391,6 +420,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.font = "10px sans-serif";
         drawboard(ctx);
+        drawborder(ctx, canvas.width, canvas.height);
       }
       draw_start_color();
       explain();
