@@ -11,7 +11,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dparser = ["dparser"]
+# dparser 1.37 (Cython-based) is required for Python 3.12+ support.
+# Install from ../github-dparser/python: pip install --no-build-isolation -e ../github-dparser/python
+dparser = ["dparser>=1.37"]
 dev = ["pytest"]
 
 [tool.setuptools]

@@ -1,28 +1,27 @@
 #!/usr/bin/env python3
 
-# Grammar actions for the Python dparser package (https://pypi.org/project/dparser/).
+# Grammar actions for the Python dparser package (github-dparser 1.37, Cython-based).
 # Each d_* function's docstring is one grammar production; dparser collects them from
 # this module's globals via dparser.Parser(modules=globals()).
 #
-# NOTE: dparser requires swig and a C compiler to build. If swig is not available,
-# all tests in this file are automatically skipped.
-#
-# NOTE: dparser 1.31.8's C extension uses Py_BuildValue '#' formats without the
-# PY_SSIZE_T_CLEAN macro, which is a hard error in Python 3.12+. Tests are skipped
-# on Python 3.12+ until a compatible release is available.
+# NOTE: dparser uses the FIRST function (sorted by line number) as the start symbol.
+# d_pdn_file must remain the first d_* function in this file.
 
-import sys
 from pathlib import Path
 
 import pytest
 
 dparser = pytest.importorskip('dparser')
 
-if sys.version_info >= (3, 12):
-    pytest.skip('dparser 1.31.8 is not compatible with Python 3.12+ (PY_SSIZE_T_CLEAN)',
-                allow_module_level=True)
-
 GAMES_DIR = Path(__file__).parent.parent / 'games'
+
+
+# ---------------------------------------------------------------------------
+# Top-level production (must be first — dparser uses this as the start symbol)
+# ---------------------------------------------------------------------------
+
+def d_pdn_file(t):
+    r'''PdnFile: Game (GameSeparator Game)* GameSeparator?'''
 
 
 # ---------------------------------------------------------------------------
@@ -136,10 +135,6 @@ def d_whitespace(t):
 # ---------------------------------------------------------------------------
 # Productions
 # ---------------------------------------------------------------------------
-
-def d_pdn_file(t):
-    r'''PdnFile: Game (GameSeparator Game)* GameSeparator?'''
-
 
 def d_game_separator_asterisk(t):
     r'''GameSeparator: ASTERISK'''
@@ -272,15 +267,12 @@ def d_result2_loss(t):
 PARSER = dparser.Parser(modules=globals())
 
 
-# dparser's default my_syntax_error_func calls self.this.__getattr__() on the
-# SWIG C object, which does not exist in Python 3. Provide a compatible replacement
-# that only accesses loc.s (which is handled via dparser_swigc directly).
 def _syntax_error_fn(loc):
     raise dparser.SyntaxErr(f'syntax error at byte offset {loc.s}')
 
 
 def _parse(text):
-    return PARSER.parse(text, syntax_error_fn=_syntax_error_fn, start_symbol='PdnFile')
+    return PARSER.parse(text, syntax_error_fn=_syntax_error_fn)
 
 
 # ---------------------------------------------------------------------------
