@@ -53,13 +53,13 @@ IMAGES = [
     dict(
         filename="setup2.png",
         tag="20,W,10,10,N2,0",
-        fen='B:W28,31,33-50:B1-18,20',
+        fen='B:W28,31-36,38-50:B1-20',
         colors=DEFAULT_COLORS,
     ),
     dict(
         filename="setup3.png",
         tag="20,W,10,10,N2,0",
-        fen='W:W28,31,33-50:B1-13,15-20',
+        fen='W:W28,31-36,38-50:B1-19,25',
         colors=DEFAULT_COLORS,
     ),
     # -- grammar.rst / pdnnext.rst: the 47x36 move-disambiguation example.

@@ -138,7 +138,7 @@ as `regular expressions <http://en.wikipedia.org/wiki/Regular_expression>`_.
 
 - A setup of a new position is a FEN command surrounded by forward slashes (``/``), and it can appear
   anywhere in the game. An example is ``/FEN "B:W18,24,27,28,K10,K15:B12,16,20,K22,K25,K29"/``.
-  It is not backward compatible with existing PDN, see the :ref:`extensions-section` section
+  It is not backward compatible with existing PDN, see the :ref:`commands-section` section
   for an explanation.
 
 -------------------
