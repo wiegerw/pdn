@@ -21,17 +21,41 @@ and additional details about the tags.
 'Mandatory' tags
 ----------------
 
-========  =====================================================  ===============
-  Tag       Description                                          Unknown value
-========  =====================================================  ===============
-Event     Name of the tournament or match event, see [Nemesis]_   "?"
-Site      Location of the event, see [Nemesis]_                   "?"
-Date      Starting date of the game, see [Nemesis]_               "????.??.??"
-Round     Playing round ordinal of the game, see [Nemesis]_       "?"
-White     Player of the White pieces, see [Nemesis]_              "?"
-Black     Player of the Black pieces, see [Nemesis]_              "?"
-Result    Result of the game, see [Nemesis]_                      "*"
-========  =====================================================  ===============
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Unknown value
+     - Since
+   * - Event
+     - Name of the tournament or match event, see [Nemesis]_
+     - "?"
+     - 1.0
+   * - Site
+     - Location of the event, see [Nemesis]_
+     - "?"
+     - 1.0
+   * - Date
+     - Starting date of the game, see [Nemesis]_
+     - "????.??.??"
+     - 1.0
+   * - Round
+     - Playing round ordinal of the game, see [Nemesis]_
+     - "?"
+     - 1.0
+   * - White
+     - Player of the White pieces, see [Nemesis]_
+     - "?"
+     - 1.0
+   * - Black
+     - Player of the Black pieces, see [Nemesis]_
+     - "?"
+     - 1.0
+   * - Result
+     - Result of the game, see [Nemesis]_
+     - "*"
+     - 1.0
 
 N.B. The name *mandatory tags* is misleading, since these tags are not mandatory
 for an arbitrary PDN file. It is however recommended to include all of the mandatory
@@ -88,15 +112,27 @@ Result tag
 Player related tags
 -------------------
 
-==========================   ============================================
-  Tag                          Description
-==========================   ============================================
-WhiteTitle, BlackTitle       FMJD titles of the players
-WhiteRating, BlackRating     FMJD rating
-WhiteFmjdId, BlackFmjdId     FMJD IDs of the players
-WhiteNA, BlackNA             E-mail or network addresses of the players
-WhiteType, BlackType         Player types ("human" or "program")
-==========================   ============================================
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Since
+   * - WhiteTitle, BlackTitle
+     - FMJD titles of the players
+     - 2.0
+   * - WhiteRating, BlackRating
+     - FMJD rating
+     - 2.0
+   * - WhiteFmjdId, BlackFmjdId
+     - FMJD IDs of the players
+     - 3.0
+   * - WhiteNA, BlackNA
+     - E-mail or network addresses of the players
+     - 2.0
+   * - WhiteType, BlackType
+     - Player types ("human" or "program")
+     - 2.0
 
 The tags ``WhiteRating`` and ``BlackRating`` are named ``WhiteElo`` and ``BlackElo`` in chess.
 
@@ -106,27 +142,49 @@ The FMJD IDs used in ``WhiteFmjdId`` and ``BlackFmjdId`` can be obtained through
 Event related tags
 ------------------
 
-=============  =================================================================
-  Tag            Description
-=============  =================================================================
-EventDate      Starting date of the event
-EventSponsor   Sponsor of the event
-Section        Playing section of a tournament (e.g., "Open" or "Reserve")
-Stage          Stage of a multistage event (e.g., "Preliminary" or "Semifinal")
-Board          Board number in a team event or in a simultaneous exhibition
-=============  =================================================================
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Since
+   * - EventDate
+     - Starting date of the event
+     - 2.0
+   * - EventSponsor
+     - Sponsor of the event
+     - 2.0
+   * - Section
+     - Playing section of a tournament (e.g., "Open" or "Reserve")
+     - 2.0
+   * - Stage
+     - Stage of a multistage event (e.g., "Preliminary" or "Semifinal")
+     - 2.0
+   * - Board
+     - Board number in a team event or in a simultaneous exhibition
+     - 2.0
 
 Game related tags
 -----------------
 
-===========  ==============================
-  Tag         Description
-===========  ==============================
-GameType      Type of the game, see :ref:`gametype-section`
-FEN           The position at the start of the game, see :ref:`fen-section`
-PlyCount      The number of ply (moves) in the game
-Termination   Describes the reason for conclusion of the game, see [PGN]_
-===========  ==============================
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Since
+   * - GameType
+     - Type of the game, see :ref:`gametype-section`
+     - 1.0
+   * - FEN
+     - The position at the start of the game, see :ref:`fen-section`
+     - 1.0
+   * - PlyCount
+     - The number of ply (moves) in the game
+     - 2.0
+   * - Termination
+     - Describes the reason for conclusion of the game, see [PGN]_
+     - 2.0
 
 The ``GameType`` tag is specific for draughts, and is used to distinguish between
 the different draughts variants.
@@ -134,55 +192,86 @@ the different draughts variants.
 Clock related tags
 ------------------
 
-=================  ========================================================
-  Tag                 Description
-=================  ========================================================
-TimeControl         Time control settings for both players, see [PGN]_
-TimeControlWhite    Time control settings for the white player
-TimeControlBlack    Time control settings for the black player
-WhiteTime           Time used by the White player at the end of the game
-BlackTime           Time used by the Black player at the end of the game
-=================  ========================================================
+.. list-table::
+   :header-rows: 1
 
-The ``WhiteTime`` and ``BlackTime`` tags are new. It is common practice
-to record the time used by both players, so it seems useful to define a
-tag for it. The ``TimeControlWhite`` and ``TimeControlBlack`` tags can
-be used when the players start with different times on the clock.
-This is for example the case in Georgiev-Lehmann tie-breaks.
+   * - Tag
+     - Description
+     - Since
+   * - TimeControl
+     - Time control settings for both players, see [PGN]_
+     - 2.0
+   * - TimeControlWhite
+     - Time control settings for the white player
+     - 3.0
+   * - TimeControlBlack
+     - Time control settings for the black player
+     - 3.0
+   * - WhiteTime
+     - Time used by the White player at the end of the game
+     - 3.0
+   * - BlackTime
+     - Time used by the Black player at the end of the game
+     - 3.0
+
+It is common practice to record the time used by both players, so it seems useful to
+define a tag for it. The ``TimeControlWhite`` and ``TimeControlBlack`` tags can be used
+when the players start with different times on the clock. This is for example the case
+in Georgiev-Lehmann tie-breaks.
 
 Time and date tags
 ------------------
 
-=============  ================================================
-  Tag            Description
-=============  ================================================
-Time           Time-of-day value in "HH:MM:SS" format
-UTCTime        Time-of-day in Universal Coordinated Time format
-UTCDate        Date in Universal Coordinated Time format
-=============  ================================================
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Since
+   * - Time
+     - Time-of-day value in "HH:MM:SS" format
+     - 2.0
+   * - UTCTime
+     - Time-of-day in Universal Coordinated Time format
+     - 2.0
+   * - UTCDate
+     - Date in Universal Coordinated Time format
+     - 2.0
 
 Miscellaneous tags
 ------------------
 
-=============  ==============================
-  Tag            Description
-=============  ==============================
-Annotator      Identifies the annotator or annotators of the game
-=============  ==============================
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+     - Description
+     - Since
+   * - Annotator
+     - Identifies the annotator or annotators of the game
+     - 2.0
 
 Problemism related tags
 -----------------------
 
-===============   =============================
-  Tag               Description
-===============   =============================
-Author            Author(s) of the analysis or composition
-Publication       Original publication of the analysis or composition
-PublicationDate   Date of the original publication
-===============   =============================
+.. list-table::
+   :header-rows: 1
 
-These tags are new. PDN can be used to store databases with problems,
-so it seems useful to define tags to support this.
+   * - Tag
+     - Description
+     - Since
+   * - Author
+     - Author(s) of the analysis or composition
+     - 3.0
+   * - Publication
+     - Original publication of the analysis or composition
+     - 3.0
+   * - PublicationDate
+     - Date of the original publication
+     - 3.0
+
+PDN can be used to store databases with problems, so it seems useful to define tags
+to support this.
 
 --------------------
 Details and Examples
@@ -252,9 +341,8 @@ Details and Examples
 
 **WhiteTime/BlackTime Tag**
   The WhiteTime and BlackTime tags specify the amount of time that the players
-  have used during the game. Note that these tags do not exist in earlier versions
-  of the PDN standard. It is common practice to record these times, hence it seems
-  logical to define a tag for it.
+  have used during the game. It is common practice to record these times, hence
+  it seems logical to define a tag for it.
 
   Clock times are specified in ``[H]H:MM[:SS]`` format. Note that in practice also
   ``[H]H.MM[.SS]`` is used.
@@ -300,4 +388,3 @@ Details and Examples
   [TimeControl "40/7200:3600+60"]       { 40 moves in 2 hours, 1 hour for the rest of the game with increment of 60 seconds/move }
   [TimeControl "40/7200:20/2400:600+5"] { 40 moves in 2 hours, 20 moves in 40 minutes, 10 minutes for the rest of the game with increment of 5 seconds/move }
   [TimeControl "*120"]                  { 2 minutes for a "sandclock" or "hourglass" control period, more suitable usage with physical sandclock }
-

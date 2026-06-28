@@ -1,8 +1,8 @@
-.. _extensions-section:
+.. _commands-section:
 
-==============
-PDN Extensions
-==============
+============
+PDN Commands
+============
 
 -----------------
 Embedded commands
@@ -103,20 +103,29 @@ A possible notation for a null move, proposed by Gérard Taille, is
   1.31-26 17-21 /FEN "B:B1-16,18-21:W26,28,33-50"/
   { White forgot to make a capture and played 32-28 instead }
 
-Suppose a game starts with an illegal move, resulting in the following sequence
-of positions:
+Suppose White plays two moves in a row: first 32-28, then illegally 37-32.
+Black then responds with 20-25. The following positions occur:
 
-   .. image:: setup1.png
-   .. image:: setup2.png
-   .. image:: setup3.png
+.. figure:: setup1.png
 
-This can be encoded using
+   Initial position.
+
+.. figure:: setup2.png
+
+   After White illegally plays two moves.
+
+.. figure:: setup3.png
+
+   After Black plays 20-25.
+
+Writing ``01. 32-28 37-32`` is not valid PDN, since two consecutive moves by the same player
+are not allowed. The correct approach is to use a setup command. This can be encoded using
 
 ::
 
    /FEN "W:W31-50:B1-20"/
-   /FEN "B:W28,31,33-50:B1-18,20"/
-   01... 14-19
+   /FEN "B:W28,31-36,38-50:B1-20"/
+   01... 20-25
 
 The setup of the initial position is required here. If it was
 omitted, the second setup would be taken as initial position of the game.

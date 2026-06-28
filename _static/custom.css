@@ -1,1 +1,21 @@
-/* This file intentionally left blank. */
+/* Tables preceded by .. rst-class:: proposed */
+.proposed table {
+    background-color: #fffde7;
+    border-left: 3px solid #f9a825;
+}
+
+/* Admonition blocks with :class: proposed */
+div.proposed {
+    background-color: #fffde7;
+    border-left: 4px solid #f9a825;
+    padding: 8px 12px;
+    margin: 1em 0;
+}
+
+div.proposed .admonition-title {
+    background-color: #f9a825;
+    color: #000;
+    margin: -8px -12px 8px -12px;
+    padding: 4px 12px;
+    font-weight: bold;
+}
