@@ -271,7 +271,7 @@ def _syntax_error_fn(loc):
 
 
 def _parse(text):
-    return PARSER.parse(text, syntax_error_fn=_syntax_error_fn)
+    return PARSER.parse(text, syntax_error_fn=_syntax_error_fn, start_symbol='PdnFile')
 
 
 # ---------------------------------------------------------------------------
