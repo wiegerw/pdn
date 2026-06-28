@@ -117,12 +117,6 @@ of the PDN standard. This is an intentional choice, since the moves which
 appear after a setup are ill-defined if the setup is ignored. Setups are changes
 on the board, and so they should be on the same level as moves. It is therefore
 not a good idea to model them as embedded commands inside comments.</p>
-<p><strong>Null moves</strong></p>
-<p>For programmers, null moves are sometimes useful to denote an empty move.
-A possible notation for a null move, proposed by Gérard Taille, is</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">FEN</span> <span class="s2">&quot;B::&quot;</span><span class="o">/</span>
-</pre></div>
-</div>
 <p><strong>Examples</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.31</span><span class="o">-</span><span class="mi">26</span> <span class="mi">17</span><span class="o">-</span><span class="mi">21</span> <span class="o">/</span><span class="n">FEN</span> <span class="s2">&quot;B:B1-16,18-21:W26,28,33-50&quot;</span><span class="o">/</span>
 <span class="p">{</span> <span class="n">White</span> <span class="n">forgot</span> <span class="n">to</span> <span class="n">make</span> <span class="n">a</span> <span class="n">capture</span> <span class="ow">and</span> <span class="n">played</span> <span class="mi">32</span><span class="o">-</span><span class="mi">28</span> <span class="n">instead</span> <span class="p">}</span>
@@ -157,6 +151,12 @@ are not allowed. The correct approach is to use a setup command. This can be enc
 </div>
 <p>The setup of the initial position is required here. If it was
 omitted, the second setup would be taken as initial position of the game.</p>
+<p><strong>Null moves</strong></p>
+<p>For programmers, null moves are sometimes useful to denote an empty move.
+A possible notation for a null move, proposed by Gérard Taille, is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">FEN</span> <span class="s2">&quot;B::&quot;</span><span class="o">/</span>
+</pre></div>
+</div>
 </section>
 </section>
 

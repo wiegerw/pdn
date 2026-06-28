@@ -24,6 +24,7 @@ class PDNParser(tpg.Parser):
         token DRAW2            '1-1(?![0-9])'                                                          ;
         token LOSS2            '0-2'                                                                   ;
         token DOUBLEFORFEIT    '0-0'                                                                   ;
+        token MOVESTRENGTH     '([!?]+)|(\([!?]+\))'                                                   ;
         token LPAREN           '\('                                                                    ;
         token RPAREN           '\)'                                                                    ;
         token LBRACKET         '\['                                                                    ;
@@ -33,7 +34,6 @@ class PDNParser(tpg.Parser):
         token MOVENUMBER       '\d+\.(\.\.)?'                                                          ;
         token NUMERICMOVE      '[\d]+(\s?[-x]\s?[\d]+)+[*?!]?'                                         ;
         token ALPHANUMERICMOVE '([a-h][1-8](\s*[x:]\s*[a-h][1-8])+)|([a-h][1-8]\s*[-]?\s*[a-h][1-8])'  ;
-        token MOVESTRENGTH     '([!?]+)|(\([!?]+\))'                                                   ;
         token NAG              '\$\d+'                                                                 ;
         token SETUP            '/[^/]*/'                                                               ;
         token STRING           '"(\\"|[^"])*"'                                                         ;

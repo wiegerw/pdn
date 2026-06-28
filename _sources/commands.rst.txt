@@ -87,15 +87,6 @@ appear after a setup are ill-defined if the setup is ignored. Setups are changes
 on the board, and so they should be on the same level as moves. It is therefore
 not a good idea to model them as embedded commands inside comments. 
 
-**Null moves**
-
-For programmers, null moves are sometimes useful to denote an empty move.
-A possible notation for a null move, proposed by Gérard Taille, is
-
-::
-
-  /FEN "B::"/
-
 **Examples**
 
 ::
@@ -129,3 +120,12 @@ are not allowed. The correct approach is to use a setup command. This can be enc
 
 The setup of the initial position is required here. If it was
 omitted, the second setup would be taken as initial position of the game.
+
+**Null moves**
+
+For programmers, null moves are sometimes useful to denote an empty move.
+A possible notation for a null move, proposed by Gérard Taille, is
+
+::
+
+  /FEN "B::"/
