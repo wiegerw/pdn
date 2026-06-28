@@ -15,7 +15,7 @@ PDN 3.0 standard
    pdntags
    grammar
    commands
-   pdnnext
+   future
    implementation
    examples
    issues

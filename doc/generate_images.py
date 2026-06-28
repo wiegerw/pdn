@@ -62,7 +62,7 @@ IMAGES = [
         fen='W:W28,31-36,38-50:B1-19,25',
         colors=DEFAULT_COLORS,
     ),
-    # -- grammar.rst / pdnnext.rst: the 47x36 move-disambiguation example.
+    # -- grammar.rst / future.rst: the 47x36 move-disambiguation example.
     # White (king) at 47 can fly-capture to 36 via two valid routes:
     #   47x38x24x13x36 capturing {42,29,19,31}, or
     #   47x38x20x9x36 capturing {42,29,14,31}
