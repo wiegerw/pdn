@@ -14,7 +14,7 @@ PDN 3.0 standard
    encoding
    pdntags
    grammar
-   extensions
+   commands
    pdnnext
    implementation
    examples

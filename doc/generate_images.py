@@ -43,7 +43,7 @@ IMAGES = [
         tag="23,B,8,8,A1,1",
         colors=GREEN_COLORS,
     ),
-    # -- extensions.rst: a game starting with an illegal move, corrected via Setup --
+    # -- commands.rst: a game starting with an illegal move, corrected via Setup --
     dict(
         filename="setup1.png",
         tag="20,W,10,10,N2,0",
