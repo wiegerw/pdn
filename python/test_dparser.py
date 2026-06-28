@@ -6,12 +6,21 @@
 #
 # NOTE: dparser requires swig and a C compiler to build. If swig is not available,
 # all tests in this file are automatically skipped.
+#
+# NOTE: dparser 1.31.8's C extension uses Py_BuildValue '#' formats without the
+# PY_SSIZE_T_CLEAN macro, which is a hard error in Python 3.12+. Tests are skipped
+# on Python 3.12+ until a compatible release is available.
 
+import sys
 from pathlib import Path
 
 import pytest
 
 dparser = pytest.importorskip('dparser')
+
+if sys.version_info >= (3, 12):
+    pytest.skip('dparser 1.31.8 is not compatible with Python 3.12+ (PY_SSIZE_T_CLEAN)',
+                allow_module_level=True)
 
 GAMES_DIR = Path(__file__).parent.parent / 'games'
 
