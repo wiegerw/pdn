@@ -59,7 +59,7 @@
       var rx = (size - dx) / 2;
       var ry = rx * 0.55;
       var rim = rx * 0.35;
-      var stroke = contrastColor(color) == '#fff' ? '#dfdfdf' : '#000';
+      var stroke = contrastColor(color) === '#fff' ? '#dfdfdf' : '#000';
 
       // rim: the visible curved front edge of the disc
       ctx.beginPath();
@@ -108,13 +108,13 @@
         c = columns - c - 1;
       }
 
-      var left = notation_start == 0 || notation_start == 2;
-      var bottom = notation_start == 0 || notation_start == 1;
+      var left = notation_start === 0 || notation_start === 2;
+      var bottom = notation_start === 0 || notation_start === 1;
 
       r = bottom ? rows - r - 1 : r;
       c = left ? c : columns - c - 1;
 
-      if (notation_type == 'N')
+      if (notation_type === 'N')
       {
         var f = rc2f(r, c, rows, columns);
         return "" + f;
@@ -133,7 +133,7 @@
       }
       var dx = 2;
       var fill = contrastColor(fieldcolor(r, c));
-      var halo = fill == '#fff' ? '#000' : '#fff';
+      var halo = fill === '#fff' ? '#000' : '#fff';
       ctx.textAlign = "left";
       ctx.textBaseline = "top";
       ctx.lineWidth = 3;
@@ -145,7 +145,7 @@
 
     function is_empty_field(r, c)
     {
-      if (type_number == 30) // Turkish draughts
+      if (type_number === 30) // Turkish draughts
       {
         return false;
       }
@@ -153,11 +153,11 @@
       {
         if (flipped)
         {
-          return (invert_flag == 0) == (r % 2 == (columns - c) % 2);
+          return (invert_flag === 0) === (r % 2 === (columns - c) % 2);
         }
         else
         {
-          return (invert_flag == 0) == ((rows - r) % 2 == c % 2);
+          return (invert_flag === 0) === ((rows - r) % 2 === c % 2);
         }
       }
     }
@@ -170,11 +170,11 @@
       }
       var minrow = rows - ~~(rows / 2) + 1;
       var maxrow = rows;
-      if (type_number == 31) // Thai
+      if (type_number === 31) // Thai
       {
         minrow++;
       }
-      else if (type_number == 30) // Turkish
+      else if (type_number === 30) // Turkish
       {
         minrow = rows - 3;
         maxrow = rows - 2;
@@ -190,11 +190,11 @@
       }
       var minrow = 0;
       var maxrow = ~~(rows / 2) - 2;
-      if (type_number == 31) // Thai
+      if (type_number === 31) // Thai
       {
         maxrow--;
       }
-      else if (type_number == 30) // Turkish
+      else if (type_number === 30) // Turkish
       {
         minrow = 1;
         maxrow = 2;
@@ -204,7 +204,7 @@
 
     function piece_color(is_player)
     {
-      return (is_player != flipped) ? player_piece_color : opponent_piece_color;
+      return (is_player !== flipped) ? player_piece_color : opponent_piece_color;
     }
 
     function drawfield(ctx, r, c)
@@ -244,7 +244,7 @@
           drawfield(ctx, r, c);
         }
       }
-      if (type_number == 30) drawgrid(ctx, columns * size, rows * size);
+      if (type_number === 30) drawgrid(ctx, columns * size, rows * size);
     }
 
     function drawborder(ctx, w, h)
@@ -279,8 +279,8 @@
     // supported (no kings, no alpha squares) - that's all the diagrams need.
     function numeric_square(r, c)
     {
-      var left = notation_start == 0 || notation_start == 2;
-      var bottom = notation_start == 0 || notation_start == 1;
+      var left = notation_start === 0 || notation_start === 2;
+      var bottom = notation_start === 0 || notation_start === 1;
       var r2 = bottom ? rows - r - 1 : r;
       var c2 = left ? c : columns - c - 1;
       return rc2f(r2, c2, rows, columns);
@@ -377,14 +377,14 @@
           drawnumber(ctx, c2 * size, r2 * size, r2, c2);
         }
       }
-      if (type_number == 30) drawgrid(ctx, canvas.width, canvas.height);
+      if (type_number === 30) drawgrid(ctx, canvas.width, canvas.height);
       drawborder(ctx, canvas.width, canvas.height);
     }
 
     function parse_gametype(gametype)
     {
       var values = gametype.split(',');
-      if (values.length != 6)
+      if (values.length !== 6)
       {
         alert('a gametype tag should have 6 values!');
         return false;
@@ -564,7 +564,7 @@
       opponent_piece_color = table[idx][3];
       light_field_color = table[idx][4];
       dark_field_color = table[idx][5];
-      flipped = table[idx][6] == 'flipped';
+      flipped = table[idx][6] === 'flipped';
       theinput = document.getElementById('theinput');
       theinput.value = content;
       draw(content);
@@ -581,7 +581,7 @@
       {
         return;
       }
-      if (keycode == 13)
+      if (keycode === 13)
       {
         theinput = document.getElementById('theinput');
         var content = theinput.value;
@@ -634,9 +634,9 @@
       textarea.value += 'start color = ' + start_color + ' (unused)\n';
       textarea.value += 'number of columns = ' + columns + '\n';
       textarea.value += 'number of rows = ' + rows + '\n';
-      textarea.value += 'notation type = ' + notation_type + (notation_type == 'N' ? ' (numeric)' : ' (algebraic)') + '\n';
+      textarea.value += 'notation type = ' + notation_type + (notation_type === 'N' ? ' (numeric)' : ' (algebraic)') + '\n';
       textarea.value += 'first square location = ' + notation_start + ' (' + notation_start_explanation() + ')\n';
-      textarea.value += 'invert flag = ' + invert_flag + ' (bottom left square is ' + (invert_flag == 0 ? 'not ' : '') + 'empty)\n';
+      textarea.value += 'invert flag = ' + invert_flag + ' (bottom left square is ' + (invert_flag === 0 ? 'not ' : '') + 'empty)\n';
       textarea.value += 'default orientation = ' + (flipped ? 'flipped' : 'normal') + '\n';
       textarea.value += 'player piece color = ' + player_piece_color + '\n';
       textarea.value += 'opponent piece color = ' + opponent_piece_color + '\n';
