@@ -1,10 +1,15 @@
-"""Build backend extending setuptools to auto-build dparser from ../github-dparser.
+"""Build backend extending setuptools to auto-build optional dependencies.
 
-When `pip install -e .` is run, this backend clones the dparser repository (if
-absent), compiles the C libraries with make, and installs the Cython extension --
-all before setuptools processes the pdn package itself.  If the build fails for
-any reason (no C compiler, no make, no network), installation of pdn continues
-and dparser tests are simply skipped via pytest.importorskip.
+When `pip install -e .` is run this backend:
+
+1. Clones and compiles dparser from ../github-dparser (if absent), and installs
+   the Cython extension.  If the build fails, dparser tests are skipped.
+
+2. Runs antlr4 to generate Python parser code from grammars/PdnReading.g4 and
+   grammars/PdnWriting.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
+   available, the ANTLR4 tests are skipped.
+
+All failures are non-fatal: the pdn package itself always installs successfully.
 """
 from __future__ import annotations
 
@@ -16,9 +21,21 @@ from pathlib import Path
 from setuptools.build_meta import *  # noqa: F401, F403
 from setuptools.build_meta import build_editable as _orig_build_editable
 from setuptools.build_meta import build_wheel as _orig_build_wheel
+from setuptools.build_meta import (
+    get_requires_for_build_editable as _orig_get_requires_editable,
+)
+from setuptools.build_meta import (
+    get_requires_for_build_wheel as _orig_get_requires_wheel,
+)
 
 _DPARSER_SRC = Path(__file__).parent.parent / 'github-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
+
+_ANTLR_GRAMMARS = [
+    Path(__file__).parent.parent / 'grammars' / 'PdnReading.g4',
+    Path(__file__).parent.parent / 'grammars' / 'PdnWriting.g4',
+]
+_ANTLR_OUT = Path(__file__).parent / 'pdn_antlr'
 
 
 def _target_python() -> str:
@@ -69,11 +86,58 @@ def _ensure_dparser() -> None:
         )
 
 
+def _ensure_antlr4() -> None:
+    import shutil
+    try:
+        antlr4_cmd = shutil.which('antlr4')
+        if not antlr4_cmd:
+            print('Warning: antlr4 command not found; ANTLR4 tests will be skipped.',
+                  file=sys.stderr, flush=True)
+            return
+        _create_antlr_package_stub()
+        for grammar in _ANTLR_GRAMMARS:
+            subprocess.run(
+                [antlr4_cmd, '-Dlanguage=Python3', '-o', str(_ANTLR_OUT),
+                 '-visitor', str(grammar)],
+                check=True,
+            )
+    except Exception as exc:
+        print(
+            f'Warning: could not generate ANTLR4 parsers ({exc}); ANTLR4 tests will be skipped.',
+            file=sys.stderr, flush=True,
+        )
+
+
+def _create_antlr_package_stub() -> None:
+    """Create pdn_antlr/ with a bare __init__.py so setuptools can discover it.
+
+    setuptools validates that every listed package directory exists during
+    get_requires_for_build_*.  The actual parser files are generated later in
+    build_wheel / build_editable after antlr4 runs.
+    """
+    _ANTLR_OUT.mkdir(exist_ok=True)
+    init = _ANTLR_OUT / '__init__.py'
+    if not init.exists():
+        init.touch()
+
+
+def get_requires_for_build_wheel(config_settings=None):
+    _create_antlr_package_stub()
+    return _orig_get_requires_wheel(config_settings)
+
+
+def get_requires_for_build_editable(config_settings=None):
+    _create_antlr_package_stub()
+    return _orig_get_requires_editable(config_settings)
+
+
 def build_wheel(wheel_directory, config_settings=None, metadata_directory=None):
     _ensure_dparser()
+    _ensure_antlr4()
     return _orig_build_wheel(wheel_directory, config_settings, metadata_directory)
 
 
 def build_editable(wheel_directory, config_settings=None, metadata_directory=None):
     _ensure_dparser()
+    _ensure_antlr4()
     return _orig_build_editable(wheel_directory, config_settings, metadata_directory)

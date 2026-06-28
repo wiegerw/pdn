@@ -9,6 +9,7 @@ version = "0.1.0"
 requires-python = ">=3.8"
 dependencies = [
     "tpg @ git+https://codeberg.org/cdsoft/tpg.git",
+    "antlr4-python3-runtime==4.13.0",
 ]
 
 [project.optional-dependencies]
@@ -16,3 +17,4 @@ dev = ["pytest"]
 
 [tool.setuptools]
 py-modules = ["pdn_reading_tpg", "pdn_writing_tpg"]
+packages = ["pdn_antlr"]
