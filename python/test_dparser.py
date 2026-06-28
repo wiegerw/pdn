@@ -263,16 +263,27 @@ def d_result2_loss(t):
 PARSER = dparser.Parser(modules=globals())
 
 
+# dparser's default my_syntax_error_func calls self.this.__getattr__() on the
+# SWIG C object, which does not exist in Python 3. Provide a compatible replacement
+# that only accesses loc.s (which is handled via dparser_swigc directly).
+def _syntax_error_fn(loc):
+    raise dparser.SyntaxErr(f'syntax error at byte offset {loc.s}')
+
+
+def _parse(text):
+    return PARSER.parse(text, syntax_error_fn=_syntax_error_fn)
+
+
 # ---------------------------------------------------------------------------
 # Tests
 # ---------------------------------------------------------------------------
 
 @pytest.mark.parametrize('path', sorted((GAMES_DIR / 'succeed').glob('*.pdn')), ids=lambda p: p.name)
 def test_parse_succeed(path):
-    PARSER.parse(path.read_text(encoding='utf-8', errors='replace'))
+    _parse(path.read_text(encoding='utf-8', errors='replace'))
 
 
 @pytest.mark.parametrize('path', sorted((GAMES_DIR / 'fail').glob('*.pdn')), ids=lambda p: p.name)
 def test_parse_fail(path):
     with pytest.raises(Exception):
-        PARSER.parse(path.read_text(encoding='utf-8', errors='replace'))
+        _parse(path.read_text(encoding='utf-8', errors='replace'))
