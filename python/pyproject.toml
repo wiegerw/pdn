@@ -8,10 +8,10 @@ version = "0.1.0"
 requires-python = ">=3.8"
 dependencies = [
     "tpg @ git+https://codeberg.org/cdsoft/tpg.git",
-    "dparser",
 ]
 
 [project.optional-dependencies]
+dparser = ["dparser"]
 dev = ["pytest"]
 
 [tool.setuptools]
