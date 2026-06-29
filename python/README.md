@@ -12,40 +12,35 @@ in Python, together with their tests.
 | [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading_dparser.g`, `grammars/pdn_writing_dparser.g` |
 | [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading_grammatica.grammar`, `grammars/pdn_writing_grammatica.grammar` |
 
-## Requirements
-
-- Python 3.8 or later
-- pip
-- For dparser: a C compiler and `make`
-- For ANTLR4 parser generation: Java runtime and the `antlr4` command
-
 ## Install
 
-From within the `python/` directory:
+Run from within the `python/` directory, selecting the parser engines you want:
 
 ```bash
-pip install -e ".[dev]"
+pip install -e ".[tpg]"                          # TPG only
+pip install -e ".[tpg,antlr4]"                   # TPG + ANTLR4
+pip install -e ".[tpg,dparser,antlr4,grammatica]" # all parsers
+pip install -e ".[tpg,dparser,antlr4,grammatica,dev]"  # all parsers + pytest
 ```
 
-This single command:
+Each extra corresponds to one parser engine:
 
-1. **Installs TPG** — clones `../github-tpg` if it does not exist, then installs
-   it from the local clone.  If the clone fails a warning is printed and TPG
-   tests are skipped automatically.
-2. **Installs `antlr4-python3-runtime`** (required to run the generated ANTLR4
-   parser at test time).
-3. **Builds dparser** — clones `../github-dparser` if it does not exist, runs
-   `make` to build the C libraries, then installs the Cython Python extension.
-   If the build fails (no C compiler, no `make`, no network) a warning is
-   printed and dparser tests are skipped automatically.
-4. **Generates the ANTLR4 parser** — runs `antlr4 -Dlanguage=Python3` on both
-   grammar files and writes the generated Python source into `pdn_antlr/`.
-   If `antlr4` or Java is not available a warning is printed and ANTLR4 tests
-   are skipped automatically.
+| Extra | What it needs |
+|---|---|
+| `tpg` | nothing extra (Python only) |
+| `dparser` | a C compiler and `make` |
+| `antlr4` | Java runtime and the `antlr4` command |
+| `grammatica` | Java runtime |
+| `dev` | nothing extra |
 
-Downloads are cached: repeating `pip install -e .` reuses the already-cloned
-`../github-tpg` and `../github-dparser` repositories and skips `make` targets
-whose outputs are up to date.
+The build backend (`_build_backend.py`) handles installation of all four parsers:
+
+- **TPG** — clones `../git-tpg` on first use, then installs from the local clone.
+- **dparser** — clones `../git-dparser` on first use, compiles the C libraries, then installs the Cython extension.
+- **ANTLR4** — runs `antlr4 -Dlanguage=Python3` on the grammar files and writes the generated Python source into `pdn_antlr/`.
+- **Grammatica** — no installation needed; requires `java` on `PATH` at test time.
+
+If a parser cannot be installed (missing compiler, missing `antlr4`/`java`, no network), a warning is printed and its tests are skipped automatically. Already-cloned repositories are reused on subsequent installs.
 
 ## Run the tests
 

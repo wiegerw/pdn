@@ -7,12 +7,14 @@ backend-path = ["."]
 name = "pdn"
 version = "0.1.0"
 requires-python = ">=3.8"
-dependencies = [
-    "antlr4-python3-runtime==4.13.0",
-]
+dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest"]
+tpg        = []
+dparser    = []
+antlr4     = ["antlr4-python3-runtime==4.13.0"]
+grammatica = []
+dev        = ["pytest"]
 
 [tool.setuptools]
 py-modules = ["pdn_reading_tpg", "pdn_writing_tpg"]

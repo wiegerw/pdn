@@ -2,10 +2,10 @@
 
 When `pip install -e .` is run this backend:
 
-1. Clones TPG from ../github-tpg (if absent) and installs it.
+1. Clones TPG from ../git-tpg (if absent) and installs it.
    If the clone fails, TPG tests are skipped.
 
-2. Clones and compiles dparser from ../github-dparser (if absent), and installs
+2. Clones and compiles dparser from ../git-dparser (if absent), and installs
    the Cython extension.  If the build fails, dparser tests are skipped.
 
 3. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
@@ -31,10 +31,10 @@ from setuptools.build_meta import (
     get_requires_for_build_wheel as _orig_get_requires_wheel,
 )
 
-_TPG_SRC = Path(__file__).parent.parent / 'github-tpg'
+_TPG_SRC = Path(__file__).parent.parent / 'git-tpg'
 _TPG_REPO = 'https://codeberg.org/cdsoft/tpg.git'
 
-_DPARSER_SRC = Path(__file__).parent.parent / 'github-dparser'
+_DPARSER_SRC = Path(__file__).parent.parent / 'git-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
 
 _ANTLR_GRAMMARS = [
