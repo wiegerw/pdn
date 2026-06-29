@@ -35,6 +35,25 @@
             
   <section id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
+<p>29 June 2026</p>
+<ul class="simple">
+<li><p>Renamed all grammar files in <code class="docutils literal notranslate"><span class="pre">grammars/</span></code> to follow a consistent
+<code class="docutils literal notranslate"><span class="pre">topic_parser.ext</span></code> convention (e.g. <code class="docutils literal notranslate"><span class="pre">pdn_reading_dparser.g</span></code>,
+<code class="docutils literal notranslate"><span class="pre">pdn_reading_antlr.g4</span></code>, <code class="docutils literal notranslate"><span class="pre">pdn_reading_grammatica.grammar</span></code>).</p></li>
+<li><p>Extracted the TPG grammars from inline Python class docstrings into
+standalone files <code class="docutils literal notranslate"><span class="pre">grammars/pdn_reading_tpg.g</span></code> and
+<code class="docutils literal notranslate"><span class="pre">grammars/pdn_writing_tpg.g</span></code>.</p></li>
+<li><p>Added an ANTLR4 reading and writing grammar
+(<code class="docutils literal notranslate"><span class="pre">grammars/pdn_reading_antlr.g4</span></code>, <code class="docutils literal notranslate"><span class="pre">grammars/pdn_writing_antlr.g4</span></code>)
+with an auto-generated Python parser.</p></li>
+<li><p>Moved Python tests to <code class="docutils literal notranslate"><span class="pre">python/tests/</span></code>.</p></li>
+<li><p>Restructured the Python package build: each parser engine now has its
+own pip extra (<code class="docutils literal notranslate"><span class="pre">[tpg]</span></code>, <code class="docutils literal notranslate"><span class="pre">[dparser]</span></code>, <code class="docutils literal notranslate"><span class="pre">[antlr4]</span></code>, <code class="docutils literal notranslate"><span class="pre">[grammatica]</span></code>).
+All parser dependencies are managed via a custom build backend that clones
+or downloads each engine to a fixed local directory (<code class="docutils literal notranslate"><span class="pre">git-tpg</span></code>,
+<code class="docutils literal notranslate"><span class="pre">git-dparser</span></code>, <code class="docutils literal notranslate"><span class="pre">git-grammatica</span></code>) so repeated installs do not
+re-download anything.</p></li>
+</ul>
 <p>25 June 2026</p>
 <ul class="simple">
 <li><p>Replaced the board-diagram images in the documentation, which had been

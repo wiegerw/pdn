@@ -2,6 +2,29 @@
 Changelog
 =========
 
+29 June 2026
+
+* Renamed all grammar files in ``grammars/`` to follow a consistent
+  ``topic_parser.ext`` convention (e.g. ``pdn_reading_dparser.g``,
+  ``pdn_reading_antlr.g4``, ``pdn_reading_grammatica.grammar``).
+
+* Extracted the TPG grammars from inline Python class docstrings into
+  standalone files ``grammars/pdn_reading_tpg.g`` and
+  ``grammars/pdn_writing_tpg.g``.
+
+* Added an ANTLR4 reading and writing grammar
+  (``grammars/pdn_reading_antlr.g4``, ``grammars/pdn_writing_antlr.g4``)
+  with an auto-generated Python parser.
+
+* Moved Python tests to ``python/tests/``.
+
+* Restructured the Python package build: each parser engine now has its
+  own pip extra (``[tpg]``, ``[dparser]``, ``[antlr4]``, ``[grammatica]``).
+  All parser dependencies are managed via a custom build backend that clones
+  or downloads each engine to a fixed local directory (``git-tpg``,
+  ``git-dparser``, ``git-grammatica``) so repeated installs do not
+  re-download anything.
+
 25 June 2026
 
 * Replaced the board-diagram images in the documentation, which had been
