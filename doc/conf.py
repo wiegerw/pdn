@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = u'Portable Draughts Notation (PDN) Standard'
-copyright = u'2011 - 2025, Wieger Wesselink'
+copyright = u'2011 - 2026, Wieger Wesselink'
 author = u'Wieger Wesselink'
 release = '3.0'
 version = '3.0'
