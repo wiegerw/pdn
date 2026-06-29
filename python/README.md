@@ -17,9 +17,9 @@ in Python, together with their tests.
 Run from within the `python/` directory, selecting the parser engines you want:
 
 ```bash
-pip install -e ".[tpg]"                          # TPG only
-pip install -e ".[tpg,antlr4]"                   # TPG + ANTLR4
-pip install -e ".[tpg,dparser,antlr4,grammatica]" # all parsers
+pip install -e ".[tpg]"                                # TPG only
+pip install -e ".[tpg,antlr4]"                         # TPG + ANTLR4
+pip install -e ".[tpg,dparser,antlr4,grammatica]"      # all parsers
 pip install -e ".[tpg,dparser,antlr4,grammatica,dev]"  # all parsers + pytest
 ```
 
@@ -30,15 +30,15 @@ Each extra corresponds to one parser engine:
 | `tpg` | nothing extra (Python only) |
 | `dparser` | a C compiler and `make` |
 | `antlr4` | Java runtime and the `antlr4` command |
-| `grammatica` | Java runtime |
+| `grammatica` | Java runtime and `ant` |
 | `dev` | nothing extra |
 
 The build backend (`_build_backend.py`) handles installation of all four parsers:
 
-- **TPG** — clones `../git-tpg` on first use, then installs from the local clone.
-- **dparser** — clones `../git-dparser` on first use, compiles the C libraries, then installs the Cython extension.
+- **TPG** — clones https://codeberg.org/cdsoft/tpg to `../git-tpg` on first use, then installs from the local clone.
+- **dparser** — clones https://github.com/jplevyak/dparser to `../git-dparser` on first use, compiles the C libraries, then installs the Cython extension.
 - **ANTLR4** — runs `antlr4 -Dlanguage=Python3` on the grammar files and writes the generated Python source into `pdn_antlr/`.
-- **Grammatica** — no installation needed; requires `java` on `PATH` at test time.
+- **Grammatica** — clones `../git-grammatica` on first use and builds the JAR with `ant`.
 
 If a parser cannot be installed (missing compiler, missing `antlr4`/`java`, no network), a warning is printed and its tests are skipped automatically. Already-cloned repositories are reused on subsequent installs.
 

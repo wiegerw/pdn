@@ -6,13 +6,24 @@ from pathlib import Path
 
 import pytest
 
-GAMES_DIR = Path(__file__).parent.parent / 'games'
-JAR = Path(__file__).parent / 'grammatica-1.5.jar'
-GRAMMAR = Path(__file__).parent.parent / 'grammars' / 'pdn_reading_grammatica.grammar'
+GAMES_DIR = Path(__file__).parent.parent.parent / 'games'
+GRAMMAR = Path(__file__).parent.parent.parent / 'grammars' / 'pdn_reading_grammatica.grammar'
+_GRAMMATICA_SRC = Path(__file__).parent.parent.parent / 'git-grammatica'
+
+
+def _find_jar():
+    if _GRAMMATICA_SRC.exists():
+        jars = sorted(_GRAMMATICA_SRC.rglob('grammatica*.jar'))
+        if jars:
+            return jars[0]
+    return None
+
+
+JAR = _find_jar()
 
 pytestmark = pytest.mark.skipif(
-    shutil.which('java') is None,
-    reason='Java runtime not available',
+    shutil.which('java') is None or JAR is None,
+    reason='Java or grammatica JAR not available; run pip install -e ".[grammatica]"',
 )
 
 

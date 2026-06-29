@@ -8,7 +8,10 @@ When `pip install -e .` is run this backend:
 2. Clones and compiles dparser from ../git-dparser (if absent), and installs
    the Cython extension.  If the build fails, dparser tests are skipped.
 
-3. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
+3. Clones Grammatica from ../git-grammatica (if absent) and builds the JAR
+   with ant.  If ant is unavailable or the build fails, Grammatica tests are skipped.
+
+4. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
    grammars/pdn_writing_antlr.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
    available, the ANTLR4 tests are skipped.
 
@@ -36,6 +39,9 @@ _TPG_REPO = 'https://codeberg.org/cdsoft/tpg.git'
 
 _DPARSER_SRC = Path(__file__).parent.parent / 'git-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
+
+_GRAMMATICA_SRC = Path(__file__).parent.parent / 'git-grammatica'
+_GRAMMATICA_REPO = 'https://github.com/cederberg/grammatica.git'
 
 _ANTLR_GRAMMARS = [
     Path(__file__).parent.parent / 'grammars' / 'pdn_reading_antlr.g4',
@@ -115,6 +121,32 @@ def _ensure_dparser() -> None:
         )
 
 
+def _ensure_grammatica() -> None:
+    import shutil
+    try:
+        if not _GRAMMATICA_SRC.exists():
+            print(f'Cloning grammatica from {_GRAMMATICA_REPO} ...', flush=True)
+            subprocess.run(
+                ['git', 'clone', '--depth=1', _GRAMMATICA_REPO, str(_GRAMMATICA_SRC)],
+                check=True,
+            )
+        if list(_GRAMMATICA_SRC.rglob('grammatica*.jar')):
+            return  # JAR already built
+        if not shutil.which('ant'):
+            print('Warning: ant not found; grammatica tests will be skipped.',
+                  file=sys.stderr, flush=True)
+            return
+        subprocess.run(
+            ['ant', '-buildfile', str(_GRAMMATICA_SRC / 'build.xml')],
+            check=True,
+        )
+    except Exception as exc:
+        print(
+            f'Warning: could not set up grammatica ({exc}); grammatica tests will be skipped.',
+            file=sys.stderr, flush=True,
+        )
+
+
 def _ensure_antlr4() -> None:
     import shutil
     try:
@@ -163,6 +195,7 @@ def get_requires_for_build_editable(config_settings=None):
 def build_wheel(wheel_directory, config_settings=None, metadata_directory=None):
     _ensure_tpg()
     _ensure_dparser()
+    _ensure_grammatica()
     _ensure_antlr4()
     return _orig_build_wheel(wheel_directory, config_settings, metadata_directory)
 
@@ -170,5 +203,6 @@ def build_wheel(wheel_directory, config_settings=None, metadata_directory=None):
 def build_editable(wheel_directory, config_settings=None, metadata_directory=None):
     _ensure_tpg()
     _ensure_dparser()
+    _ensure_grammatica()
     _ensure_antlr4()
     return _orig_build_editable(wheel_directory, config_settings, metadata_directory)
