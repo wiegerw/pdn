@@ -5,13 +5,12 @@ in Python, together with their tests.
 
 ## Parsers
 
-| Module / package | Grammar engine | Grammar file |
-|---|---|---|
-| `pdn_reading_tpg.py` | [TPG](https://codeberg.org/cdsoft/tpg) | `grammars/pdn_reading_tpg.g` |
-| `pdn_writing_tpg.py` | TPG | `grammars/pdn_writing_tpg.g` |
-| `pdn_antlr/` | [ANTLR4](https://www.antlr.org/) | `grammars/pdn_reading_antlr.g4`, `grammars/pdn_writing_antlr.g4` |
-| *(via `grammars/pdn_reading_dparser.g`)* | [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading_dparser.g` |
-| *(via `grammars/pdn_reading_grammatica.grammar`)* | [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading_grammatica.grammar` |
+| Grammar engine | Grammar files |
+|---|---|
+| [TPG](https://codeberg.org/cdsoft/tpg) | `grammars/pdn_reading_tpg.g`, `grammars/pdn_writing_tpg.g` |
+| [ANTLR4](https://www.antlr.org/) | `grammars/pdn_reading_antlr.g4`, `grammars/pdn_writing_antlr.g4` |
+| [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading_dparser.g`, `grammars/pdn_writing_dparser.g` |
+| [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading_grammatica.grammar`, `grammars/pdn_writing_grammatica.grammar` |
 
 ## Requirements
 
@@ -30,7 +29,9 @@ pip install -e ".[dev]"
 
 This single command:
 
-1. **Downloads TPG** from Codeberg (git source) and installs it.
+1. **Installs TPG** — clones `../github-tpg` if it does not exist, then installs
+   it from the local clone.  If the clone fails a warning is printed and TPG
+   tests are skipped automatically.
 2. **Installs `antlr4-python3-runtime`** (required to run the generated ANTLR4
    parser at test time).
 3. **Builds dparser** — clones `../github-dparser` if it does not exist, runs
@@ -43,8 +44,8 @@ This single command:
    are skipped automatically.
 
 Downloads are cached: repeating `pip install -e .` reuses the already-cloned
-dparser repository and skips `make` targets whose outputs are up to date.
-TPG and `antlr4-python3-runtime` are cached by pip in the usual pip cache.
+`../github-tpg` and `../github-dparser` repositories and skips `make` targets
+whose outputs are up to date.
 
 ## Run the tests
 

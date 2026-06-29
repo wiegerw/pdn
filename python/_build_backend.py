@@ -2,10 +2,13 @@
 
 When `pip install -e .` is run this backend:
 
-1. Clones and compiles dparser from ../github-dparser (if absent), and installs
+1. Clones TPG from ../github-tpg (if absent) and installs it.
+   If the clone fails, TPG tests are skipped.
+
+2. Clones and compiles dparser from ../github-dparser (if absent), and installs
    the Cython extension.  If the build fails, dparser tests are skipped.
 
-2. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
+3. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
    grammars/pdn_writing_antlr.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
    available, the ANTLR4 tests are skipped.
 
@@ -27,6 +30,9 @@ from setuptools.build_meta import (
 from setuptools.build_meta import (
     get_requires_for_build_wheel as _orig_get_requires_wheel,
 )
+
+_TPG_SRC = Path(__file__).parent.parent / 'github-tpg'
+_TPG_REPO = 'https://codeberg.org/cdsoft/tpg.git'
 
 _DPARSER_SRC = Path(__file__).parent.parent / 'github-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
@@ -52,6 +58,29 @@ def _target_python() -> str:
             if candidate.exists():
                 return str(candidate)
     return sys.executable
+
+
+def _ensure_tpg() -> None:
+    try:
+        if not _TPG_SRC.exists():
+            print(f'Cloning tpg from {_TPG_REPO} ...', flush=True)
+            subprocess.run(
+                ['git', 'clone', '--depth=1', _TPG_REPO, str(_TPG_SRC)],
+                check=True,
+            )
+        env = {k: v for k, v in os.environ.items()
+               if k not in ('PYTHONPATH', 'PYTHONNOUSERSITE')
+               and not k.startswith('_PYPROJECT_HOOKS_')}
+        subprocess.run(
+            [_target_python(), '-m', 'pip', 'install', str(_TPG_SRC)],
+            check=True,
+            env=env,
+        )
+    except Exception as exc:
+        print(
+            f'Warning: could not install tpg ({exc}); TPG tests will be skipped.',
+            file=sys.stderr, flush=True,
+        )
 
 
 def _ensure_dparser() -> None:
@@ -132,12 +161,14 @@ def get_requires_for_build_editable(config_settings=None):
 
 
 def build_wheel(wheel_directory, config_settings=None, metadata_directory=None):
+    _ensure_tpg()
     _ensure_dparser()
     _ensure_antlr4()
     return _orig_build_wheel(wheel_directory, config_settings, metadata_directory)
 
 
 def build_editable(wheel_directory, config_settings=None, metadata_directory=None):
+    _ensure_tpg()
     _ensure_dparser()
     _ensure_antlr4()
     return _orig_build_editable(wheel_directory, config_settings, metadata_directory)
