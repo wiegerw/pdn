@@ -6,7 +6,7 @@ import pytest
 
 from pdn_reading_tpg import pdn_parse
 
-GAMES_DIR = Path(__file__).parent.parent / 'games'
+GAMES_DIR = Path(__file__).parent.parent.parent / 'games'
 
 
 @pytest.mark.parametrize('path', sorted((GAMES_DIR / 'succeed').glob('*.pdn')), ids=lambda p: p.name)

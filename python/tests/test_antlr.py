@@ -20,7 +20,7 @@ except ImportError as _e:
         allow_module_level=True,
     )
 
-GAMES_DIR = Path(__file__).parent.parent / 'games'
+GAMES_DIR = Path(__file__).parent.parent.parent / 'games'
 
 
 class _RaisingErrorListener(ErrorListener):

@@ -13,7 +13,7 @@ import pytest
 
 dparser = pytest.importorskip('dparser')
 
-GAMES_DIR = Path(__file__).parent.parent / 'games'
+GAMES_DIR = Path(__file__).parent.parent.parent / 'games'
 
 
 # ---------------------------------------------------------------------------
