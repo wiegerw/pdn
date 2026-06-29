@@ -56,9 +56,14 @@ ANTLR4
 ----------
 Test files
 ----------
-* :download:`games.zip <../games/games.zip>` A collection of PDN games used for testing the grammars.
 
-.. [DParser] DParser, a GLR parser generator written in C http://dparser.sourceforge.net/
-.. [Grammatica] Grammatica, an LL parser generator written in java http://grammatica.percederberg.net/
-.. [TPG] Toy Parser Generator, a parser written in python http://cdsoft.fr/tpg/
+The ``games/`` directory contains a collection of PDN games used for testing
+the grammars, organised into two subdirectories:
+
+* ``games/succeed/`` — files that every parser must accept without errors.
+* ``games/fail/`` — files that every parser must reject.
+
+.. [DParser] DParser, a GLR parser generator written in C https://github.com/jplevyak/dparser
+.. [Grammatica] Grammatica, an LL parser generator written in Java https://github.com/cederberg/grammatica
+.. [TPG] Toy Parser Generator, a parser written in Python https://codeberg.org/cdsoft/tpg
 .. [ANTLR4] ANTLR4, a parser generator supporting multiple target languages https://www.antlr.org/
