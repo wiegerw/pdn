@@ -126,8 +126,10 @@ def _ensure_grammatica() -> None:
     import urllib.request
     import zipfile
     try:
+        if _GRAMMATICA_SRC.exists() and list(_GRAMMATICA_SRC.rglob('grammatica*.jar')):
+            return  # already set up correctly
         if _GRAMMATICA_SRC.exists():
-            return
+            shutil.rmtree(_GRAMMATICA_SRC)
         print('Downloading grammatica 1.6 ...', flush=True)
         zip_path = _GRAMMATICA_SRC.parent / 'grammatica-1.6.zip'
         urllib.request.urlretrieve(_GRAMMATICA_URL, str(zip_path))
