@@ -39,7 +39,7 @@
 <p>This section contains concrete examples of PDN grammars.</p>
 <section id="dparser">
 <h2>DParser<a class="headerlink" href="#dparser" title="Link to this heading">¶</a></h2>
-<p><a class="reference internal" href="#id4" id="id1"><span>[DParser]</span></a> is a C parser generator.</p>
+<p><a class="reference internal" href="#id5" id="id1"><span>[DParser]</span></a> is a C parser generator.</p>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="_downloads/20ac67a53b6fbd7939620251224eb201/pdn_reading.g"><code class="xref download docutils literal notranslate"><span class="pre">pdn_reading.g</span></code></a> A fairly liberal reading grammar.</p></li>
 <li><p><a class="reference download internal" download="" href="_downloads/f8edc6f335172419761ad81aee1aac10/pdn_writing.g"><code class="xref download docutils literal notranslate"><span class="pre">pdn_writing.g</span></code></a> A PDN 3.0 writing grammar.</p></li>
@@ -49,7 +49,7 @@
 </section>
 <section id="grammatica">
 <h2>Grammatica<a class="headerlink" href="#grammatica" title="Link to this heading">¶</a></h2>
-<p><a class="reference internal" href="#id5" id="id2"><span>[Grammatica]</span></a> is a java parser generator.</p>
+<p><a class="reference internal" href="#id6" id="id2"><span>[Grammatica]</span></a> is a java parser generator.</p>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="_downloads/d015be2d6099f53f9019eb13cd72e1eb/pdn_reading.grammar"><code class="xref download docutils literal notranslate"><span class="pre">pdn_reading.grammar</span></code></a> A fairly liberal reading grammar.</p></li>
 <li><p><a class="reference download internal" download="" href="_downloads/bcd537e8df3f116e20a8b3077b283f67/pdn_writing.grammar"><code class="xref download docutils literal notranslate"><span class="pre">pdn_writing.grammar</span></code></a> A PDN 3.0 writing grammar.</p></li>
@@ -69,23 +69,40 @@
 <li><p><a class="reference download internal" download="" href="_downloads/0529b11fdd6828160bd7c960e4e9f674/pdn_writing_tpg.py"><code class="xref download docutils literal notranslate"><span class="pre">pdn_writing_tpg.py</span></code></a> A PDN 3.0 writing grammar.</p></li>
 </ul>
 </section>
+<section id="antlr4">
+<h2>ANTLR4<a class="headerlink" href="#antlr4" title="Link to this heading">¶</a></h2>
+<p><a class="reference internal" href="#id7" id="id4"><span>[ANTLR4]</span></a> is a parser generator supporting many target languages, including Python.</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="_downloads/a793b3edac2627e2dfd1dd115d6c48c3/PdnReading.g4"><code class="xref download docutils literal notranslate"><span class="pre">PdnReading.g4</span></code></a> A fairly liberal reading grammar.</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/4f829d95902e9a066a90c33112e39b41/PdnWriting.g4"><code class="xref download docutils literal notranslate"><span class="pre">PdnWriting.g4</span></code></a> A PDN 3.0 writing grammar.</p></li>
+</ul>
+<ul class="simple">
+<li><p>The ANTLR4 grammars use a semantic predicate on the <code class="docutils literal notranslate"><span class="pre">DRAW2</span></code> token to prevent
+the result <code class="docutils literal notranslate"><span class="pre">1-1</span></code> from being mis-tokenised when it appears as part of a numeric
+move such as <code class="docutils literal notranslate"><span class="pre">1-10</span></code>.</p></li>
+</ul>
+</section>
 <section id="test-files">
 <h2>Test files<a class="headerlink" href="#test-files" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="_downloads/10795dad6ad83f0d897dad5d55e25428/games.zip"><code class="xref download docutils literal notranslate"><span class="pre">games.zip</span></code></a> A collection of PDN games used for testing the grammars.</p></li>
 </ul>
 <div role="list" class="citation-list">
-<div class="citation" id="id4" role="doc-biblioentry">
+<div class="citation" id="id5" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">DParser</a><span class="fn-bracket">]</span></span>
 <p>DParser, a GLR parser generator written in C <a class="reference external" href="http://dparser.sourceforge.net/">http://dparser.sourceforge.net/</a></p>
 </div>
-<div class="citation" id="id5" role="doc-biblioentry">
+<div class="citation" id="id6" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Grammatica</a><span class="fn-bracket">]</span></span>
 <p>Grammatica, an LL parser generator written in java <a class="reference external" href="http://grammatica.percederberg.net/">http://grammatica.percederberg.net/</a></p>
 </div>
 <div class="citation" id="tpg" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">TPG</a><span class="fn-bracket">]</span></span>
 <p>Toy Parser Generator, a parser written in python <a class="reference external" href="http://cdsoft.fr/tpg/">http://cdsoft.fr/tpg/</a></p>
+</div>
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">ANTLR4</a><span class="fn-bracket">]</span></span>
+<p>ANTLR4, a parser generator supporting multiple target languages <a class="reference external" href="https://www.antlr.org/">https://www.antlr.org/</a></p>
 </div>
 </div>
 </section>
@@ -128,6 +145,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#dparser">DParser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#grammatica">Grammatica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toy-parser-generator">Toy Parser Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#antlr4">ANTLR4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#test-files">Test files</a></li>
 </ul>
 </li>

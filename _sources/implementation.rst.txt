@@ -40,6 +40,19 @@ Toy Parser Generator
 * :download:`pdn_reading_tpg.py <../python/pdn_reading_tpg.py>` A fairly liberal reading grammar.
 * :download:`pdn_writing_tpg.py <../python/pdn_writing_tpg.py>` A PDN 3.0 writing grammar.
 
+------
+ANTLR4
+------
+
+[ANTLR4]_ is a parser generator supporting many target languages, including Python.
+
+* :download:`PdnReading.g4 <../grammars/PdnReading.g4>` A fairly liberal reading grammar.
+* :download:`PdnWriting.g4 <../grammars/PdnWriting.g4>` A PDN 3.0 writing grammar.
+
+- The ANTLR4 grammars use a semantic predicate on the ``DRAW2`` token to prevent
+  the result ``1-1`` from being mis-tokenised when it appears as part of a numeric
+  move such as ``1-10``.
+
 ----------
 Test files
 ----------
@@ -48,3 +61,4 @@ Test files
 .. [DParser] DParser, a GLR parser generator written in C http://dparser.sourceforge.net/
 .. [Grammatica] Grammatica, an LL parser generator written in java http://grammatica.percederberg.net/
 .. [TPG] Toy Parser Generator, a parser written in python http://cdsoft.fr/tpg/
+.. [ANTLR4] ANTLR4, a parser generator supporting multiple target languages https://www.antlr.org/
