@@ -18,3 +18,6 @@ dev = ["pytest"]
 [tool.setuptools]
 py-modules = ["pdn_reading_tpg", "pdn_writing_tpg"]
 packages = ["pdn_antlr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

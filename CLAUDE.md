@@ -41,22 +41,22 @@ pytest
 
 Run a single test file:
 ```bash
-pytest test_tpg.py
-pytest test_antlr.py
-pytest test_dparser.py
-pytest test_grammatica.py   # requires java on PATH
+pytest tests/test_tpg.py
+pytest tests/test_antlr.py
+pytest tests/test_dparser.py
+pytest tests/test_grammatica.py   # requires java on PATH
 ```
 
 Run tests for one PDN file only (e.g. `succeed/game1.pdn`):
 ```bash
-pytest test_tpg.py -k "game1"
+pytest tests/test_tpg.py -k "game1"
 ```
 
 ## Grammar architecture
 
 There are four parallel implementations of the same PDN grammar, each in a different parser technology:
 
-- **TPG** (`python/pdn_reading_tpg.py`, `pdn_writing_tpg.py`): inline Python grammars, always available, the most portable choice.
+- **TPG** (`python/pdn_reading_tpg.py`, `pdn_writing_tpg.py`): grammars live in `grammars/pdn_reading_tpg.g` and `grammars/pdn_writing_tpg.g`, loaded at import time via `tpg.ParserMetaClass`; always available, the most portable choice.
 - **ANTLR4** (`grammars/pdn_reading_antlr.g4`, `grammars/pdn_writing_antlr.g4`): generated into `python/pdn_antlr/` at install time; generated files are git-ignored. Regenerate after editing `.g4` files by re-running `pip install -e .` or calling `antlr4` directly.
 - **dparser** (`grammars/pdn_reading_dparser.g`, tested via `python/test_dparser.py`): uses the Cython-based `dparser` package built from `../github-dparser`.
 - **Grammatica** (`grammars/pdn_reading_grammatica.grammar`): LL(1), tested by shelling out to `grammatica-1.5.jar`.

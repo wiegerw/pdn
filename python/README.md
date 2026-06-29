@@ -7,8 +7,8 @@ in Python, together with their tests.
 
 | Module / package | Grammar engine | Grammar file |
 |---|---|---|
-| `pdn_reading_tpg.py` | [TPG](https://codeberg.org/cdsoft/tpg) | *(inline)* |
-| `pdn_writing_tpg.py` | TPG | *(inline)* |
+| `pdn_reading_tpg.py` | [TPG](https://codeberg.org/cdsoft/tpg) | `grammars/pdn_reading_tpg.g` |
+| `pdn_writing_tpg.py` | TPG | `grammars/pdn_writing_tpg.g` |
 | `pdn_antlr/` | [ANTLR4](https://www.antlr.org/) | `grammars/pdn_reading_antlr.g4`, `grammars/pdn_writing_antlr.g4` |
 | *(via `grammars/pdn_reading_dparser.g`)* | [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading_dparser.g` |
 | *(via `grammars/pdn_reading_grammatica.grammar`)* | [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading_grammatica.grammar` |
@@ -54,10 +54,10 @@ pytest
 
 | Test file | Parser tested | Skip condition |
 |---|---|---|
-| `test_tpg.py` | TPG | never skipped |
-| `test_antlr.py` | ANTLR4 | `pdn_antlr/` not yet generated |
-| `test_dparser.py` | dparser | `dparser` not importable |
-| `test_grammatica.py` | Grammatica | `java` not on PATH |
+| `tests/test_tpg.py` | TPG | never skipped |
+| `tests/test_antlr.py` | ANTLR4 | `pdn_antlr/` not yet generated |
+| `tests/test_dparser.py` | dparser | `dparser` not importable |
+| `tests/test_grammatica.py` | Grammatica | `java` not on PATH |
 
 Each test suite is parametrised over the PDN game files in `../games/`:
 

@@ -37,8 +37,8 @@ Toy Parser Generator
 
 [TPG]_ is a python parser generator.
 
-* :download:`pdn_reading_tpg.py <../python/pdn_reading_tpg.py>` A fairly liberal reading grammar.
-* :download:`pdn_writing_tpg.py <../python/pdn_writing_tpg.py>` A PDN 3.0 writing grammar.
+* :download:`pdn_reading_tpg.g <../grammars/pdn_reading_tpg.g>` A fairly liberal reading grammar.
+* :download:`pdn_writing_tpg.g <../grammars/pdn_writing_tpg.g>` A PDN 3.0 writing grammar.
 
 ------
 ANTLR4
