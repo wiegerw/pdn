@@ -9,9 +9,9 @@ in Python, together with their tests.
 |---|---|---|
 | `pdn_reading_tpg.py` | [TPG](https://codeberg.org/cdsoft/tpg) | *(inline)* |
 | `pdn_writing_tpg.py` | TPG | *(inline)* |
-| `pdn_antlr/` | [ANTLR4](https://www.antlr.org/) | `grammars/PdnReading.g4`, `grammars/PdnWriting.g4` |
-| *(via `grammars/pdn_reading.g`)* | [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading.g` |
-| *(via `grammars/pdn_reading.grammar`)* | [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading.grammar` |
+| `pdn_antlr/` | [ANTLR4](https://www.antlr.org/) | `grammars/pdn_reading_antlr.g4`, `grammars/pdn_writing_antlr.g4` |
+| *(via `grammars/pdn_reading_dparser.g`)* | [dparser](https://github.com/jplevyak/dparser) | `grammars/pdn_reading_dparser.g` |
+| *(via `grammars/pdn_reading_grammatica.grammar`)* | [Grammatica](https://grammatica.percederberg.net/) | `grammars/pdn_reading_grammatica.grammar` |
 
 ## Requirements
 
@@ -76,6 +76,6 @@ pip install -e .
 Or invoke `antlr4` directly:
 
 ```bash
-antlr4 -Dlanguage=Python3 -o pdn_antlr -visitor ../grammars/PdnReading.g4
-antlr4 -Dlanguage=Python3 -o pdn_antlr -visitor ../grammars/PdnWriting.g4
+antlr4 -Dlanguage=Python3 -o pdn_antlr -visitor ../grammars/pdn_reading_antlr.g4
+antlr4 -Dlanguage=Python3 -o pdn_antlr -visitor ../grammars/pdn_writing_antlr.g4
 ```

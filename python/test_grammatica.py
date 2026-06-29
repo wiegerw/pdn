@@ -8,7 +8,7 @@ import pytest
 
 GAMES_DIR = Path(__file__).parent.parent / 'games'
 JAR = Path(__file__).parent / 'grammatica-1.5.jar'
-GRAMMAR = Path(__file__).parent.parent / 'grammars' / 'pdn_reading.grammar'
+GRAMMAR = Path(__file__).parent.parent / 'grammars' / 'pdn_reading_grammatica.grammar'
 
 pytestmark = pytest.mark.skipif(
     shutil.which('java') is None,

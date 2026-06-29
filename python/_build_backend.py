@@ -5,8 +5,8 @@ When `pip install -e .` is run this backend:
 1. Clones and compiles dparser from ../github-dparser (if absent), and installs
    the Cython extension.  If the build fails, dparser tests are skipped.
 
-2. Runs antlr4 to generate Python parser code from grammars/PdnReading.g4 and
-   grammars/PdnWriting.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
+2. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
+   grammars/pdn_writing_antlr.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
    available, the ANTLR4 tests are skipped.
 
 All failures are non-fatal: the pdn package itself always installs successfully.
@@ -32,8 +32,8 @@ _DPARSER_SRC = Path(__file__).parent.parent / 'github-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
 
 _ANTLR_GRAMMARS = [
-    Path(__file__).parent.parent / 'grammars' / 'PdnReading.g4',
-    Path(__file__).parent.parent / 'grammars' / 'PdnWriting.g4',
+    Path(__file__).parent.parent / 'grammars' / 'pdn_reading_antlr.g4',
+    Path(__file__).parent.parent / 'grammars' / 'pdn_writing_antlr.g4',
 ]
 _ANTLR_OUT = Path(__file__).parent / 'pdn_antlr'
 

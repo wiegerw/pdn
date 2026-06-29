@@ -5,7 +5,7 @@
 //
 // Portable Draughts Notation (PDN) Reading Grammar — ANTLR4
 
-grammar PdnReading;
+grammar pdn_reading_antlr;
 
 // Parser rules
 

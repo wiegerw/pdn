@@ -12,8 +12,8 @@ import pytest
 try:
     from antlr4 import CommonTokenStream, InputStream
     from antlr4.error.ErrorListener import ErrorListener
-    from pdn_antlr.PdnReadingLexer import PdnReadingLexer
-    from pdn_antlr.PdnReadingParser import PdnReadingParser
+    from pdn_antlr.pdn_reading_antlrLexer import pdn_reading_antlrLexer as PdnReadingLexer
+    from pdn_antlr.pdn_reading_antlrParser import pdn_reading_antlrParser as PdnReadingParser
 except ImportError as _e:
     pytest.skip(
         f'ANTLR4 parser not available ({_e}); run pip install -e . to generate it',

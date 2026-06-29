@@ -11,7 +11,7 @@
 //   - Square numbers have no zero prefix (1-50, not 01-09).
 //   - No ELLIPSES, no DOUBLEFORFEIT, no international results.
 
-grammar PdnWriting;
+grammar pdn_writing_antlr;
 
 // Parser rules
 
