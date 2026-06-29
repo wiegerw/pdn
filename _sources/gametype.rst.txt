@@ -18,8 +18,12 @@ A regular expression for the GameType tag is
   "[0-9]+(,[WB],[0-9]+,[0-9]+,[ANS][0123](,[01])?)?"
 
 The game type is a number followed by some optional attributes. Several numbers are
-predefined, as given by the following table. An interactive test page for the
-GameType tag can be found `here <_static/gametype_tester.html>`_.
+predefined, as given by the following table.
+
+.. tip::
+
+   Use the `interactive GameType tester <_static/gametype_tester.html>`_ to
+   explore and visualise any GameType value.
 
 +-------+----------------------------------------------------------------------------------------+------------------------------+---------------+-------------------+
 | Type  | Game                                                                                   | Full details                 | Result type   | Capture Separator |
