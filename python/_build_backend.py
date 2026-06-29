@@ -8,8 +8,8 @@ When `pip install -e .` is run this backend:
 2. Clones and compiles dparser from ../git-dparser (if absent), and installs
    the Cython extension.  If the build fails, dparser tests are skipped.
 
-3. Clones Grammatica from ../git-grammatica (if absent) and builds the JAR
-   with ant.  If ant is unavailable or the build fails, Grammatica tests are skipped.
+3. Downloads the Grammatica 1.6 release ZIP into ../git-grammatica (if absent).
+   If the download fails, Grammatica tests are skipped.
 
 4. Runs antlr4 to generate Python parser code from grammars/pdn_reading_antlr.g4 and
    grammars/pdn_writing_antlr.g4 into python/pdn_antlr/.  If antlr4 (or Java) is not
@@ -41,7 +41,7 @@ _DPARSER_SRC = Path(__file__).parent.parent / 'git-dparser'
 _DPARSER_REPO = 'https://github.com/jplevyak/dparser.git'
 
 _GRAMMATICA_SRC = Path(__file__).parent.parent / 'git-grammatica'
-_GRAMMATICA_REPO = 'https://github.com/cederberg/grammatica.git'
+_GRAMMATICA_URL = 'https://github.com/cederberg/grammatica/releases/download/v1.6/grammatica-1.6.zip'
 
 _ANTLR_GRAMMARS = [
     Path(__file__).parent.parent / 'grammars' / 'pdn_reading_antlr.g4',
@@ -123,23 +123,20 @@ def _ensure_dparser() -> None:
 
 def _ensure_grammatica() -> None:
     import shutil
+    import urllib.request
+    import zipfile
     try:
-        if not _GRAMMATICA_SRC.exists():
-            print(f'Cloning grammatica from {_GRAMMATICA_REPO} ...', flush=True)
-            subprocess.run(
-                ['git', 'clone', '--depth=1', _GRAMMATICA_REPO, str(_GRAMMATICA_SRC)],
-                check=True,
-            )
-        if list(_GRAMMATICA_SRC.rglob('grammatica*.jar')):
-            return  # JAR already built
-        if not shutil.which('ant'):
-            print('Warning: ant not found; grammatica tests will be skipped.',
-                  file=sys.stderr, flush=True)
+        if _GRAMMATICA_SRC.exists():
             return
-        subprocess.run(
-            ['ant', '-buildfile', str(_GRAMMATICA_SRC / 'build.xml')],
-            check=True,
-        )
+        print('Downloading grammatica 1.6 ...', flush=True)
+        zip_path = _GRAMMATICA_SRC.parent / 'grammatica-1.6.zip'
+        urllib.request.urlretrieve(_GRAMMATICA_URL, str(zip_path))
+        with zipfile.ZipFile(zip_path) as zf:
+            top_dirs = {Path(name).parts[0] for name in zf.namelist()}
+            zf.extractall(_GRAMMATICA_SRC.parent)
+        zip_path.unlink()
+        if len(top_dirs) == 1:
+            shutil.move(str(_GRAMMATICA_SRC.parent / top_dirs.pop()), str(_GRAMMATICA_SRC))
     except Exception as exc:
         print(
             f'Warning: could not set up grammatica ({exc}); grammatica tests will be skipped.',

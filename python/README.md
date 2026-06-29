@@ -30,7 +30,7 @@ Each extra corresponds to one parser engine:
 | `tpg` | nothing extra (Python only) |
 | `dparser` | a C compiler and `make` |
 | `antlr4` | Java runtime and the `antlr4` command |
-| `grammatica` | Java runtime and `ant` |
+| `grammatica` | Java runtime |
 | `dev` | nothing extra |
 
 The build backend (`_build_backend.py`) handles installation of all four parsers:
@@ -38,7 +38,7 @@ The build backend (`_build_backend.py`) handles installation of all four parsers
 - **TPG** — clones https://codeberg.org/cdsoft/tpg to `../git-tpg` on first use, then installs from the local clone.
 - **dparser** — clones https://github.com/jplevyak/dparser to `../git-dparser` on first use, compiles the C libraries, then installs the Cython extension.
 - **ANTLR4** — runs `antlr4 -Dlanguage=Python3` on the grammar files and writes the generated Python source into `pdn_antlr/`.
-- **Grammatica** — clones `../git-grammatica` on first use and builds the JAR with `ant`.
+- **Grammatica** — downloads the v1.6 release ZIP into `../git-grammatica` on first use.
 
 If a parser cannot be installed (missing compiler, missing `antlr4`/`java`, no network), a warning is printed and its tests are skipped automatically. Already-cloned repositories are reused on subsequent installs.
 
